@@ -1,0 +1,99 @@
+
+<html>
+
+<head> 
+<title> Sistemi Operativi III  </title>
+
+</head>
+
+<!--
+<body background="../../images/bckgd_carta_blue.gif">
+<body TEXT="#ffff00" bgcolor="#009999">
+-->
+<body bgcolor="#FFFFFF">
+<font face="Arial, Helvetica, sans-serif"> 
+<h2> 
+<p align="center">
+Modalita` d'esame per il corso di Sistemi Operativi II - Laurea Magistrale 
+(validite per l'AA.2010/2011) <br>
+Corso di Laurea Specialistica in Ingegneria Informatica<br>
+</p>
+</h2>
+<h3>
+<p align="center">
+Docente Francesco Quaglia 
+</p>
+</h3>
+</p>
+
+<hr>
+<p> Il superamento dell'esame richiede lo svolgimento di una prova scritta e lo 
+sviluppo dei seguenti progetti software interni al Kernel LINUX:
+
+<h3>
+Progetto A - Sincronizzazione tramite barriera 
+</h3>
+
+Sviluppare un sistema di sincronizzazione basato su barriera 
+che sia in grado di gestire TAG di sincronizzazione diffrenziati nell'intervallo [0,31].
+L'interfaccia per il sistema di sincronizzazione (in termini di system-call) dovra' essere la seguente:
+<ul>
+<li> <b>int get_barrier(key_t key, int flags)</b> - installazione del della barriera con chiave di identificazione key, e ritorno del
+ codice operativo (barrier-descriptor); flags definisce installazioni esclusive o non, oppure semplici aperture
+<li> <b>int sleep_on_barrier(int bd, int tag)</b> - richiesta di blocco sulla barriera, con indicazione del 
+TAG relativo
+<li> <b>int awake_barrier(int bd, int tag)</b> - riveglio da barriera di processi con un determinato tag
+<li> <b>int release_barrier(int md)</b> - disinstallazione della barriera 
+</ul>
+
+Inoltre,
+deve venire gestito in modo automatico dal kernel il risveglio da barriera in caso di segnalazione.
+
+
+
+<p>
+<h3>
+Progetto B - Semantica di sessione sui file
+</h3>
+Sviluppare software aggiuntivo per il VFS LINUX in modo da poter
+supportare una semantica di sessione per l`accesso ai file di uno
+specifico file system gestibile tramite VFS (es. EXT2). L'interfaccia
+per l'apertura di un file in modalita` sessione puo` essere realizzata
+tramite un`apposita system call opensession() o sfruttando la system call esiste
+nte
+open(). Quando un file viene aperto in modalita' sessione, il suo contenuto vien
+e
+riversato su memoria volatile distinta dal BUFFER CACHE e gli aggiornamenti non 
+sono resi visibili ad altri canali aperti su
+quello stesso file se non quando questo viene chiuso. Si ipotizzi che
+la taglia massima per i file gestibili in sessione sia limitata (ad
+esempio 16KB), e che esista un numero massimo di sessioni contemporaneamente ape
+rte gestibili dal
+kernel.
+<p>
+
+
+<hr>
+
+
+
+<h3>
+Consegna dei progetti
+</h3>
+I progetti possono essere consegnati in un qualsiasi momento durante l`anno accademico a ricevimento studenti.
+<p>
+<hr>
+
+
+</font>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

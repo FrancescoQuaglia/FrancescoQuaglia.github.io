@@ -1,0 +1,77 @@
+
+<html>
+
+<head> 
+<title> Sistemi Operativi III  </title>
+
+</head>
+
+<!--
+<body background="../../images/bckgd_carta_blue.gif">
+<body TEXT="#ffff00" bgcolor="#009999">
+-->
+<body bgcolor="#FFFFFF">
+<font face="Arial, Helvetica, sans-serif"> 
+<h2> 
+<p align="center">
+Modalita` d'esame per il corso di Sistemi Operativi II - Laurea Magistrale 
+(validite per l'AA.2009/2010) <br>
+Corso di Laurea Specialistica in Ingegneria Informatica<br>
+</p>
+</h2>
+<h3>
+<p align="center">
+Docente Francesco Quaglia 
+</p>
+</h3>
+</p>
+
+<hr>
+<p> Il superamento dell'esame richiede lo svolgimento di una prova scritta e lo 
+sviluppo dei seguenti progetti software interni al Kernel LINUX:
+
+<h3>
+Progetto A - Sistema di sincronizzazione
+</h3>
+Sviluppare un sistema di sincronizzazione basato su mutex
+che sia in grado di gestire priorita' differenziate per l'accesso 
+alla risorsa di mutua esclusione.
+L'interfaccia per il sistema di sincronizzazione (in termini di system-call) dovra' essere la seguente:
+<ul>
+<li> <b>int get_mutex(key_t key, int flags)</b> - installazione del mutex con chiave di identificazione key, e ritorno del codice operativo (mutex-descriptor); flags definisce installazioni esclusive o non, oppure semplici aperture
+<li> <b>int lock_mutex(int md, int priority, int flags)</b> - richiesta di acquisizione del mutex, con indicazione della priorita' e del flag per modatita' bloccante o non; si assuma 0 come priorita' di default, e MAXPRIORITY (da definire in fase di progetto) come priorita' massima
+<li> <b>int unlock_mutex(int md)</b> - rilascio del mutex
+<li> <b>int release_mutex(int md)</b> - disinstallazione del mutex
+</ul>
+
+Mutex non disponibili devono portare in stato di wait nel caso di operazioni di acquisizione bloccanti. Quando il mutex viene rilasciato, il processo/thread da risvegliare e' quello con la richiesta pendente a piu' alta priorita'. Inoltre, deve venire gestito in modo automatico dal kernel il rilascio di mutex acquisiti (e non esplicitamente rilaciati) in caso di terminazione (forzata o non) di processo/thread.
+
+<p>
+<h3>
+Progetto B - Da definire
+</h3>
+
+<hr>
+
+
+
+<h3>
+Consegna dei progetti
+</h3>
+I progetti possono essere consegnati in un qualsiasi momento durante l`anno accademico a ricevimento studenti.
+<p>
+<hr>
+
+
+</font>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

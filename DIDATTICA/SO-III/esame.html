@@ -1,0 +1,109 @@
+
+<html>
+
+<head> 
+<title> Sistemi Operativi III  </title>
+
+</head>
+
+<!--
+<body background="../../images/bckgd_carta_blue.gif">
+<body TEXT="#ffff00" bgcolor="#009999">
+-->
+<body bgcolor="#FFFFFF">
+<font face="Arial, Helvetica, sans-serif"> 
+<h2> 
+<p align="center">
+Modalita` d'esame per il corso di Sistemi Operativi III (validite per l'AA.2006/2007) <br>
+Corso di Laurea Specialistica in Ingegneria Informatica<br>
+</p>
+</h2>
+<h3>
+<p align="center">
+Docente Francesco Quaglia 
+</p>
+</h3>
+</p>
+
+<hr>
+<p> Il superamento dell'esame richiede lo svolgimento di una prova scritta e lo sviluppo dei seguenti 3 progetti software interni al Kernel LINUX:
+
+<h3>
+Sistema di notifica
+</h3>
+Sviluppare un sistema di notifica di "notizie" in cui ogni nuova
+notizia (semplicemente rappresentata tramite una sequenza di byte),
+invalida la precedente, ed un accesso ad una notizia valida da parte di
+almeno un thread invalida la notizia stessa. Il servizio di consegna
+di una nuova notizia al kernel deve essere supportato tramite una apposita
+system call. Il servizio di accesso ad una notizia registrata dal kernel deve anche esso
+essere suppotato tramite una apposita system call, che puo' operare in
+modo bloccante e non (la condizione di blocco e' determinata dai
+parametri della system call e dallo stato attuale del sistema di notifica interno al
+kernel, ovvero dalla presenza/assenza di una notizia valida). Piu' thread possono entrare in stato di blocco
+in attesa di una notizia valida. All'arrivo di una notizia, tutti i thread eventualmente in attesa devono essere risvegliati e a tutti
+ deve essere notificata la notizia arrivata.
+Il software deve prevedere la gestione del risveglio a causa di una segnalazione. Questo implica che la system call per l`accesso ad una notizia deve poter notificare
+il suo fallimento a causa di un risveglio da segnale.<br>
+L'interfaccia per il sistema di notifica dovra' essere la seguente:
+<ul>
+<li> storenew(const char * buff, int size)
+<li> getnew(char * buff, int size, int mode)
+</ul>
+
+<p>
+<h3>
+Monitor di fault di memoria
+</h3>
+Sviluppare un sistema di monitoraggio dei fault di memoria. Il sistema
+deve registrare per ogni thread il numero di fault di memoria occorsi
+dalla sua attivazione e la loro tipologia (es. accesso in scrittura/lettura, accesso ad area testo/dati).
+Ogni thread puo` richiedere al kernel informazioni riguardanti i suoi fault di memoria tramite una apposita system call.
+
+L'interfaccia per il sistema di notifica dovra' essere la seguente:
+<ul>
+<li> getfaultinfo(int pid, struct fault_info * buff)
+</ul>
+
+<p>
+<h3>
+Semantica di sessione sui file
+</h3>
+Sviluppare software aggiuntivo per il VFS LINUX in modo da poter
+supportare una semantica di sessione per l`accesso ai file di uno
+specifico file system gestibile tramite VFS (es. EXT2). L'interfaccia
+per l'apertura di un file in modalita` sessione puo` essere realizzata
+tramite un`apposita system call opensession() o sfruttando la system call esistente
+open(). Quando un file viene aperto in modalita' sessione, il suo contenuto viene
+riversato su memoria volatile distinta dal BUFFER CACHE e gli aggiornamenti non sono resi visibili ad altri canali aperti su
+quello stesso file se non quando questo viene chiuso. Si ipotizzi che
+la taglia massima per i file gestibili in sessione sia limitata (ad
+esempio 16KB), e che esista un numero massimo di sessioni contemporaneamente aperte gestibili dal
+kernel.
+<p>
+
+
+<hr>
+
+
+
+<h3>
+Consegna dei progetti
+</h3>
+I progetti possono essere consegnati in un qualsiasi momento durante l`anno accademico a ricevimento studenti.
+<p>
+<hr>
+
+
+</font>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

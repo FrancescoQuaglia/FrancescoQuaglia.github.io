@@ -1,0 +1,415 @@
+
+<html>
+
+<head> 
+<title> Operating Systems II  </title>
+
+</head>
+
+<!--
+<body background="../../images/bckgd_carta_blue.gif">
+<body TEXT="#ffff00" bgcolor="#009999">
+-->
+<body bgcolor="#FFFFFF">
+<font face="Arial, Helvetica, sans-serif"> 
+<h2> 
+<p align="center">
+Operating Systems II (6 CFU)<br>
+Laurea Magistrale in Computer Engineering<br>
+</p>
+</h2>
+<h3>
+<p align="center">
+Lecturer: Francesco Quaglia 
+</p>
+</h3>
+</p>
+
+<p>
+<h4>
+Follow this link for the Italian version of the site - <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO-II-6CRM/index_it.html"><font color="red">ITA</a>
+</font>
+ 
+</h4>
+
+
+<hr>
+<h2>
+<p>
+<blink>
+<font color="red">NEW
+</font>
+</blink>
+<p><b>4/5/2015 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-24-4-2015.txt">Results of the examination 
+held on 24-4-2015</a> 
+</h2>
+<p><b>20/4/2015 -</b> The examination planned for 24/4/2015 will be held at 3:30 PM - room 8, Via Eudossiana 
+<p><b>27/2/2015 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-19-2-2015.txt">Results of the examination 
+held on 19-2-2015</a> 
+<p><b>3/2/2015 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-27-1-2015.txt">Results of the examination 
+held on 27-1-2015</a> 
+<p><b>2/11/2014 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-30-10-2014.txt">Results of the examination 
+held on 30-10-2014</a> 
+<p><b>22/9/2014 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-17-9-2014.txt">Results of the examination 
+held on 17-9-2014</a> 
+<p><b>13/9/2014 -</b> The examination planned for 17/9/2014 will be held at 2:30 PM - room 33, Via Eudossiana 
+<p><b>24/4/2014 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-17-7-2014.txt">Results of the examination 
+held on 17-7-2014</a> 
+<p><b>24/4/2014 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-20-6-2014.txt">Results of the examination 
+held on 20-6-2014</a> 
+ <p><b>23/5/2014 -</b>  The lecture scheduled for 23/5/2014 has been cancelled. The final lecture for academic year 2013/2014 has been scheduled for 26/5/2014 (14:00 - Room A3)
+<p><b>30/4/2014 -</b> Lectures are suspeded till 8/5/2014 
+<p><b>24/4/2014 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-16-4-2014.txt">Results of the examination 
+held on 16-4-2014</a> 
+<p><b>13/4/2014 -</b> The examination planned for 16/4/2014 will be held at 4 PM - room 8, Via Eudossiana 
+<p><b>7/3/2014 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-26-2-2014.txt">Results of the examination 
+held on 26-2-2014</a> 
+<p><b>14/2/2014 -</b> The examination planned for 19/2/2014 has been rescheduled for 26/2/2014 (5 PM - room 8, Via Eudossiana)
+<p><b>7/2/2014 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-27-1-2014.txt">Results of the examination 
+held on 27-1-2014</a> 
+<p><b>31/10/2013 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-25-10-2013.txt">Results of the examination 
+held on 25-10-2013</a> 
+<p><b>24/10/2013 -</b> The examination scheduled for 25/10/2013 will take place in room 8 (via Eudossiana) at 10:00 AM
+<p><b>18/9/2013 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-17-9-2013.txt">Results of the examination 
+held on 17-9-2013</a> 
+<p><b>13/9/2013 -</b> The examination scheduled for 17/9/2013 will take place in room 33 (via Eudossiana) at 9:30 AM
+</h2>
+<p><b>25/7/2013 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-17-7-2013.txt">Results of the examination 
+held on 17-7-2013</a> 
+<p><b>25/6/2013 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-21-6-2013.txt">Results of the examination 
+held on 21-6-2013</a> 
+<p><b>15/6/2013 -</b> The examination scheduled for 21/6/2013 will take place in room 33 (via Eudossiana) at 10:00 AM
+<p><b>19/5/2013 -</b> The recovery lecture has been scheduled for May 21 at 2:00 PM (Room A3)
+<p><b>17/4/2013 -</b> The examination scheduled for 19/4/2013 will take place in room B2 (via Ariosto) at 5:30 PM
+ <p><b>21/3/2013 -</b>  The lecture scheduled for 22/3/2013 has been cancelled
+<!--
+<p><b>27/2/2013 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-19-2-2013.txt">Risultati della prova 
+d'esame di Sistemi Operativi del 19-2-2013</a>
+<p><b>15/2/2013 -</b> L'appello d'esame del 19/2/2013 avra' luogo alle ore 9:30 in aula 33 (via Eudossiana)
+</h2>
+<p><b>5/2/2013 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-25-1-2013.txt">Risultati della prova 
+d'esame di Sistemi Operativi del 25-1-2013</a>
+<p><b>20/1/2013 -</b> L'appello d'esame del 25/1/2013 avra' luogo alle ore 10:00 in aula 33 (via Eudossiana) 
+<p><b>14/9/2012 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-7-9-2012.txt">Risultati della prova 
+d'esame di Sistemi Operativi II del 7-9-2012</a> 
+<p><b>29/8/2012 -</b> L'appello d'esame del 7/9/2012 avra' luogo alle ore 16:00 in aula 33 (via Eudossiana) 
+<p><b>1/8/2012 -</b> Il prossimo appello d'esame del corso di Sistemi Operativi II si terra' il 
+giorno 7/9/2012
+<p><b>25/7/2012 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-20-7-2012.txt">Risultati della prova d'esame di Sistemi Operativi II del 20-7-2012</a> 
+<p><b>18/7/2012 -</b> L'appello d'esame del 20/7/2012 avra' luogo alle ore 16:00 in aula 8 (via Eudossiana) 
+<p><b>8/7/2012 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-28-6-2012.txt">Risultati della prova 
+d'esame di Sistemi Operativi II del 28-6-2012</a> 
+<p><b>26/6/2012 -</b> Esempi di testi d'esame recenti - <a href="http://www.dis.uniroma1.it/pub/quaglia/compiti-esame-SO-II.rar">download</a> 
+<p><b>25/6/2012 -</b> L'appello d'esame del 28/6/2012 avra' luogo alle ore 15 in aula 33 (via Eudossiana)
+<p><b>5/6/2012 -</b> I prossimi appelli del corso di Sistemi Operativi II si terranno nei giorni 28/6/2012 e 20/7/2012
+<p><b>8/5/2012 -</b> Le lezioni di Sistemi Operativi II del 9/5/2012 e del 10/5/2012 non avranno luogo 
+<p><b>6/5/2012 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-19-4-2012.txt">Risultati della prova d'esame di Sistemi Operativi II del 19-4-2012</a> 
+<p><b>13/4/2012 -</b> L'appello d'esame straordinario di Sistemi Operativi II del 19/4/2012 avra' luogo alle ore 17:30 in Aula B2 (via Ariosto).
+<p><b>2/4/2012 -</b> Si avvisa che a partire dalla data odierna le lezioni del corso di Sistemi Operativi II sono sospese e riprenderanno il giorno 11/4/2012 
+<p><b>28/2/2012 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-16-2-2012.txt">Risultati della prova d'esame di Sistemi Operativi II del 16-2-2012</a> 
+<p><b>24/2/2012 -</b> Si avvisa che le lezioni del corso di Sistemi Operativi II per l'AA. 2011/2012 avranno inizio il giorno 5 Marzo 2012 
+<p><b>15/2/2012 -</b> L'appello d'esame di Sistemi Operativi II del 16/2/2012 avra' luogo alle ore 9:30 in Aula 33 (via Eudossiana).
+<p><b>7/2/2012 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-26-1-2012.txt">Risultati della prova 
+d'esame di Sistemi Operativi II del 26-1-2012</a>
+<p><b>24/1/2012 -</b> L'appello d'esame di Sistemi Operativi II del 26/1/2012 avra'
+ luogo alle ore 9:30 in Aula 33 (via Eudossiana). 
+<p><b>14/12/2011 -</b> Gli appelli invernali del corso di Sistemi Operativi II si terranno nei giorn
+i 26/1/2012 e 16/2/2012
+<p><b>24/11/2011 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-11-
+11-2011.txt">Risultati della prova d'esame di Sistemi Operativi II del 11-11-2011</a> 
+<p><b>10/11/2011 -</b> L'appello di Sistemi Operativi II del giorno 11/11/2011 avra' luogo in Aula 33 alle ore 17:30
+<p><b>21/10/2011 -</b> L'appello straordinario del corso di Sistemi Operativi II si terra' il giorno 11/11/2011
+
+<p><b>14/9/2011 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-6-9-2011.txt">Risultati della prova d'esame di Sistemi Operativ
+i II del 6-9-2011</a>
+<p><b>5/9/2011 -</b> L'appello di Sistemi Operativi II del 6/9/2011 si terra' in Aula 33 (Via Eudossiana) alle ore 11:00.
+<p><b>30/7/2011 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-26-7-2011.txt">Risultati della prova d'esame di Sistemi Operativi del 26-7-2011</a>
+<p><b>29/7/2011 -</b> Il prossimo appello del corso di Sistemi Operativi II si terra' il giorno 6/9/2011
+
+<p><b>18/7/2011 -</b> L'appello di Sistemi Operativi II del 26/7/2011 si terra' in Aula 24 (Via Eudossiana) alle ore 11:00
+<p><b>29/6/2011 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-22-6-2011.txt">Risultati della prova d'esame di Sistemi Operativi del 22-6-2011</a> 
+<p><b>21/6/2011 -</b> L'appello di Sistemi Operativi II del 22/6/2011 si terra' in 
+Aula 33 (Via Eudossiana) alle ore 11:00.
+<p><b>3/6/2011 -</b> Gli appelli estivi del corso di Sistemi Operativi II si terranno nei
+giorni 22/6/2011 e 26/7/2011
+<p><b>12/4/2011 -</b>
+La lezione del giorno 13/4/2011 non avra' luogo.
+Quella del 14/4/2011 vertera' sul formato ELF e gli strumenti di compilazione, le cui slides sono disponibili tra il materiale didattico
+<p><b>15/3/2011 -</b>
+Le lezioni del corso di Sistemi Operativi II avranno inizio Giovedi' 24-3-2011.
+<p><b>9/3/2011 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-2-3-2011.txt">Risultati della prova d'esame di Sistemi Operativi del 2-3-2011</a>
+<p><b>1/3/2011 -</b> L'appello di recupero di Sistemi Operativi II del 2/3/
+2011 si terra' in aula 24 (via Eudossiana) alle ore 16</a>
+<p><b>23/2/2011 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/RISULTATI/risultati-16-2-2011.txt">Risultati della prova d'esame di Sistemi O
+perativi del 16-2-2011</a>
+
+<p><b>12/10/2010 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO/risultati-28-10-2010.txt">Risultati della prova d'esame del 28-10-2010</a>
+
+<p><b>8/10/2010 -</b> L'appello di recupero di Sistemi Operativi II si terra' il giorno 28/10/2010</a>
+<p><b>8/10/2010 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO-II-6CRM/risultati-SO-II-LM-23-9-2010.txt"> Risultati della prova d'esame del 23/9/2010</a>
+<p><b>22/7/2010 -</b> La prova d'esame del 23/9/2010 si svolgera' alle ore 15:30 in aula 3 (via ariosto)</a>
+<p><b>19/7/2010 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO-II-6CRM/risultati-SO-II-LM-19-7-2010.txt"> Risultati della prova d'esame del 19/7/2010</a>
+<p><b>16/7/2010 -</b> La prova d'esame di Sistemi Operativi II del 19/7/2010 si terra' in Aula B101 - Via Ariosto 25 - alle ore 11:30</a>
+<p><b>3/7/2010 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO-II-6CRM/risultati-SO-II-LM-21-6-2010.txt"> Risultati della prova d'esame del 21/6/2010</a>
+<p><b>18/6/2010 -</b> La prova d'esame di Sistemi Operativi II del 21/6/2010 si terra' alle ore 9 in Aula 29 (via Eudossiana) </a>
+<p><b>24/5/2010 -</b> Gli appelli estivi del corso di Sistemi Operativi II si terranno nei giorni 21/6/2010, 19/7/2010 e 23/9/2010</a>
+<p><b>1/3/2010 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO-II-6CRM/risultati-SO-II-LM-15-2-2010.txt"> Risultati della prova d'esame del 15/2/2010</a>
+<p><b>1/2/2010 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO-II-6CRM/risultati-SO-II-LM-22-1-2010.txt"> Risultati della prova d'esame del 22/1/2010</a>
+<p><b>28/1/2010 -</b> L'appello  di 
+Sistemi Operativi II del 15/2/2010 si terra' alle ore 10:30 in Aula 11 (Via Eudossiana)</a>
+<p><b>18/1/2010 -</b> L'appello  di 
+Sistemi Operativi II del 22/1/2010 si terra' alle ore 9:30 in Aula 11 (Via Eudossiana)</a>
+
+<p><b>7/10/2009 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO-II-6CRM/risultati-SO-II-LM-22-9-2009.txt"> Risultati della prova d'esame del 22/9/2009</a>
+<p><b>21/9/2009 -</b> La prova d'esame di Sistemi Operativi II del 22-9-2009
+ avra' luogo alle ore 14:00 in Aula 22 (via Eudossiana)</a>
+<p><b>31/8/2009 -</b> Il prossimo appello di Sistemi Operativi II avra' luogo il giorno 22/9/2009 
+<p><b>17/7/2009 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO-II-6CRM/risultati-SO-II-LM-15-7-2009.txt"> Risultati della prova d'esame del 15/7/2009</a>
+<p><b>14/7/2009 -</b> La prova d'esame di Sistemi Operativi II del 15-7-2009
+ avra' luogo alle ore 10:30 in Aula 5 (via Eudossiana)</a>
+<p><b>1/7/2009 -</b> <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO-II-6CRM/risultati-SO-II-LM-26-6-2009.txt"> Risultati della prova d'esame del 26/6/2009</a>
+
+<p><b>24/6/2009 -</b> La prova d'esame di Sistemi Operativi II del 26-6-2009
+ avra' luogo alle ore 11:00 in Aula 6 (via Eudossiana)</a>
+<p><b>21/5/2009 -</b> Gli appelli estivi del corso di Sistemi Operativi II si svolgeranno il 26-6-2009
+ (mattina) ed il 15-7-2009 (mattina)</a>
+<p><b>30/4/2009 -</b>
+La lezione di Sistemi Operativi II del giorno 4/5/2009 iniziera' alle ore 14:30 anziche' alle ore 14:00.
+<p><b>7/3/2009 -</b>
+Le slides per la parte iniziale del corso verranno rese disponibili entro il giorno 8/3/2009.
+
+<p>Il primo appello di recupero di Sistemi Oper
+ativi III si svolgera' il giorno 10/9/2008
+<p>La prova d'esame di Sistemi Operativi III del 15/4/2008 si svolgera' alle ore 16:30 in Aula B1, Via Ariosto 25. Non e' necessaria la prenotazione.
+<p> La prova d'esame di Sistemi Operativi III del 19/9/2007 avra' luogo alle ore 10:00 in Aula 11 (Via Eudossiana). Non e' necessaria la prenotazione.
+<p>Il primo appello di recupero di Sistemi Operativi III e' fissato per il giorno 19/9/2007. 
+<p>La prova d'esame del 20 Luglio 2007 si svolgera' in Aula 7 (via Eudossiana) alle ore 15:30. Non e' necessaria la prenotazione.
+<p> La lezione di Sistemi Operativi III di Giovedi' 21 Giugno 2007 verra' svolta in Aula 24 (non in Aula 40) 
+<p>Il terzo appello di recupero di Sistemi Operativi III e' fissato per il giorno 18/4/2007.
+<p>L'appello del 18 Aprile 2007 avra' luogo alle ore 10:00 in aula 38 (via Eudossiana). Non e' necessaria la prenotazione. 
+<p>L'appello del 19 Luglio 2006 avra' luogo alle ore 17:00 in aula 29 (via Eudossiana). Non e' necessaria la prenotazione. 
+<p><a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO-III/risultati-13-12-2005.txt"> Risultati della prova d'esame del 13/12/2005</a>
+<p><a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO-III/risultati-23-9-2005.txt"> Risultati della prova d'esame del 23/9/2005</a>
+<p><a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO-III/risultati-25-7-2005.txt"> Risultati della prova d'esame del 25/7/2005</a>
+<p><a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO-III/risultati-6-7-2005.txt"> Risultati della prova d'esame del 6/7/2005</a>
+<p>
+<p>
+Seguire questo <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO-III/esame.html"> link</a>
+per informazioni sulla modalita' d'esame per l'AA.2006/2007
+<p>
+-->
+
+<hr>
+<h3>
+Lecture schedule (starting on 27/2/2014)
+</h3>
+<p> Thursday (10:15-11:45/12:00-13:30  Room B2)
+<p> Friday (17:30-19:00  Room B2)
+
+<hr>
+<h3>
+Course objectives and examination rules
+</h3>
+
+<p> The Operating Systems II course aims at presenting advanced design/implementation methods and techniques for modern operating systems. The topics dealt with by the course are bind to case studies oriented to LINUX systems and x86 compliant processors. The course requires basic knowledge on the structure and functionalities of operating systems, and knowledge on C programming. <br>
+<p>
+The examination consists of a set of questions and additionally requires  the development of software sub-systems to be embedded within the LINUX kernel whose specification 
+can be found at the URL  
+<a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO-II-6CRM/esame.html">link</a>).
+
+<hr>
+
+<h3>
+References 
+</h3>
+<ul>
+<li>  William Stallings, "Operating Systems". Jackson Libri. 
+<li>  Abraham Silberschatz, Peter B. Galvin, "Operating Systems". Addison - Wesley 
+<li> Andrew S. Tanenbaum, "Modern Operating Systems". Jackson Libri.
+<li>   Francesco Quaglia, Camil Demetrescu, "Programmazione in Ambiente UNIX". <a href="http://ftp.dis.uniroma1.it/pub/quaglia/dispensa.pdf"> Available as pdf</a>
+<li>  "Manuale di Informatica". Calderini  Editore, edizione 2002.
+</ul>
+
+<h3>
+Useful links 
+</h3>
+<ul>
+<li> <a href="http://www.intel.com"> 
+IA-32 documentation</a>
+<li> <a href="http://www.kernel.org/"> LINUX kernel source code</a>
+<li> <a href="http://www.xml.com/ldd/chapter/book/"> LINUX device drivers </a>
+<li> <a href="http://en.tldp.org/LDP/tlk/tlk.html"> LINUX internals</a>
+<li> <a href="http://www.bertolinux.com/kernel/italiano/KernelAnalysis-HOWTO-1.html"> LINUX internals</a>
+<li> <a href="http://lxr.linux.no/"> Cross-Referencing Linux</a>
+<li> <a href="http://www.infsec.ethz.ch/people/schapatr/BOtutorial.pdf">Buffer overflow tutorial</a>
+ 
+</ul>
+
+
+<hr>
+
+<!--
+
+<h3>
+Examples of past examinations:
+</h3>
+<ul>
+<li>  28-6-2006 - <a href="http://www.dis.uniroma1.it/pub/quaglia/SO-III-28-6-2006.pdf"> download</a>
+<li>  13-12-2005 - <a href="http://www.dis.uniroma1.it/pub/quaglia/SO-III-13-12-2005.pdf"> download</a>
+<li>  23-9-2005 - <a href="http://www.dis.uniroma1.it/pub/quaglia/SO-III-23-9-2005.pdf"> download</a>
+<li>  6-7-2005 - <a href="http://www.dis.uniroma1.it/pub/quaglia/SO-III-6-7-2005.pdf"> download</a>
+<li>  25-7-2005 - <a href="http://www.dis.uniroma1.it/pub/quaglia/SO-III-25-7-2005.pdf"> download</a>
+</ul>
+
+
+<hr>
+-->
+
+
+<h3>
+List of planned topics (2013-2014)
+</h3>
+<ul>
+<li> Kernel Internals
+<ul>
+ <li> Addressing and software protection models
+ <li> Kernel access GATEs
+ <li> System calls dispatching 
+<li> Advanced management of interrupts
+<li> System interactions with the caching hierarchy
+</ul>
+ <br>
+
+
+
+<li> Case studies: LINUX 2.4/2.6 (x86 architectures)
+<ul> 
+<li> Boot basics
+<li> Main data structures and initialization 
+<li> System call mechanisms
+<li> Steady state behavior 
+<li> Kernel hacking 
+ <li> Modules
+</ul>
+<br>
+
+<li> Compilation and executable formats 
+<ul> 
+<li> ELF
+<li>Advanced compilation tools 
+</ul>
+<br>
+
+
+<li> Security
+<ul> 
+<li>Objectives 
+<li> Cryptography and authentication 
+<li>  System internal attacks 
+<li>  Protection mechanisms and security oriented systems 
+<li> Istrusion detection systems (IDS)
+<li> Intrusion prevention systems (Reference Monitors)
+</ul>
+
+
+</ul>
+
+<hr>
+<h3>
+Slides 
+</h3>
+
+<ul>
+<li>Software protection and system call mechanisms (with case study on LINUX) - (<font color="red">download</font> 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/system-call-mechanisms-eng.pdf"> eng</a>
+-
+<a href="http://www.dis.uniroma1.it/pub/quaglia/partA-new.pdf"> ita</a>
+)
+
+<li>LINUX memory management system  - 
+(<font color="red">download</font>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-memory-boot-eng.pdf"> eng</a>
+- 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-memory-system-new.pdf"> ita</a>
+)
+
+<li>x86/LINUX trap/interrupt supports  - 
+(<font color="red">download</font>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-idt-boot-eng.pdf"> eng</a>
+- 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-idt-boot.pdf"> ita</a>
+)
+<li>Memory management example  <a href="http://www.dis.uniroma1.it/pub/quaglia/memory-management-example.txt"> (download)</a>
+<li>Addendum A  - 
+(<font color="red">download</font>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/addendum-A-eng.pdf"> eng</a>
+- 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/addendum-A.pdf"> ita</a>
+)
+<li>LINUX kernel audit/debugging  - 
+(<font color="red">download</font>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-kernel-debugging-eng.pdf"> eng</a>
+- 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-kernel-debugging.pdf"> ita</a>
+)
+<li>ELF format and advanced compilation techniques <a href="http://www.dis.uniroma1.it/pub/quaglia/seminario-elf-2010.pdf"> (download)</a> - please refer also the the Web page of <a href="http://www.dis.uniroma1.it/~pellegrini"> Dr. Pellegrini </a>
+<li>LINUX task/process management  - 
+(<font color="red">download</font>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-sched-boot-eng.pdf"> eng</a>
+- 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/advanced-sched.pdf"> ita</a>
+)
+<li>Addendum-B <a href="http://www.dis.uniroma1.it/pub/quaglia/addendum-B.pdf"> (download)</a>
+<li>LINUX VFS  - 
+(<font color="red">download</font>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-vfs-boot-eng.pdf"> eng</a>
+- 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-vfs.pdf"> ita</a>
+)
+<li>LINUX modules  - 
+(<font color="red">download</font>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-modules-eng.pdf"> eng</a>
+- 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-modules.pdf"> ita</a>
+)
+<li>Char device example via modules <a href="http://www.dis.uniroma1.it/pub/quaglia/noiser-char-dev.tar"> (download)</a>
+<li>Proc file system example via modules <a href="http://www.dis.uniroma1.it/pub/quaglia/proc-example.tar"> (download)</a>
+<li>Security  - 
+(<font color="red">download</font>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/security-eng.pdf"> eng</a>
+- 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/security.pdf"> ita</a>
+)
+<li>Software exploit (buffer overflow): base example <a href="http://www.dis.uniroma1.it/pub/quaglia/exploit-example.c"> (download)</a>
+- advanced examples <a href="http://www.dis.uniroma1.it/pub/quaglia/exploit-examples.tar"> (download)</a>
+<!--
+<li>Sottosistema di trap/interrupt in LINUX <a href="http://www.dis.uniroma1.it/pub/quaglia/linux-idt-system.pdf"> (download)</a>
+<li>Esercitazione sul sottosistema di memoria in LINUX <a href="http://www.dis.uniroma1.it/pub/quaglia/esercitazione_memoria.txt"> (download)</a>
+<li>Addendum-A <a href="http://www.dis.uniroma1.it/pub/quaglia/addendum-A.pdf"> (download)</a>
+<li>Strumenti per il debugging su Kernel LINUX <a href="http://www.dis.uniroma1.it/pub/quaglia/linux-kernel-debugging.pdf"> (download)</a>
+<li>Sottosistema di gestione di task/processi in LINUX <a href="http://www.dis.uniroma1.it/pub/quaglia/advanced-sched.pdf"> (download)</a>
+<li>Addendum-B <a href="http://www.dis.uniroma1.it/pub/quaglia/addendum-B.pdf"> (download)</a>
+<li>VFS in LINUX <a href="http://www.dis.uniroma1.it/pub/quaglia/linux-vfs.pdf"> (download)</a>
+<li>Moduli LINUX <a href="http://www.dis.uniroma1.it/pub/quaglia/linux-modules.pdf"> (download)</a>
+<li>Un esempio di char device tramite modulo <a href="http://www.dis.uniroma1.it/pub/quaglia/noiser-char-dev.tar"> (download)</a>
+<li>Sicurezza <a href="http://www.dis.uniroma1.it/pub/quaglia/security.pdf"> (download)</a>
+<li>Esempi di software exploit: caso base <a href="http://www.dis.uniroma1.it/pub/quaglia/exploit-example.c"> (download)</a>
+- casi avanzati <a href="http://www.dis.uniroma1.it/pub/quaglia/exploit-examples.tar"> (download)</a>
+
+<li>Formato ELF e tecniche avanzate di compilazione <a href="http://www.dis.uniroma1.it/pub/quaglia/seminario-elf-2010.pdf"> (download)</a>
+- Esempi di manipolazione del codice <a href="http://www.dis.uniroma1.it/pub/quaglia/esempi-manipolazione-codice.tar.bz2"> (download)</a>
+</ul>
+-->
+
+</font>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

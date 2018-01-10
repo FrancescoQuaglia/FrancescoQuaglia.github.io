@@ -1,0 +1,206 @@
+
+<html>
+
+<head> 
+<title> Sistemi Operativi III  </title>
+
+</head>
+
+<!--
+<body background="../../images/bckgd_carta_blue.gif">
+<body TEXT="#ffff00" bgcolor="#009999">
+-->
+<body bgcolor="#FFFFFF">
+<font face="Arial, Helvetica, sans-serif"> 
+<h2> 
+<p align="center">
+Sistemi Operativi III <br>
+Corso di Laurea Specialistica in Ingegneria Informatica<br>
+</p>
+</h2>
+<h3>
+<p align="center">
+Docente Francesco Quaglia 
+</p>
+</h3>
+</p>
+
+
+<!--
+<hr>
+<h2>
+<p>
+<blink>
+<font color="red">NEW
+</font>
+</blink>
+
+<a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO-II/risultati-SOII-22-9-2003.txt">Risultati della prova scritta dell'appello del 22-9-2003</a>
+<p>
+<a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO-II/prenotazione.html">Iscrizione on line all'appello del 22-9-2003</a>
+<p>
+La consegna delle tesine nell'ambito dell'appello del 22 Settembre 2003 avverra' a partire dal giorno 23/9/2003 in Via Salaria 113
+
+
+<p>
+Contattare il docente tramite email ENTRO il 21/9/2003 per avere un appuntamento per la consegna della tesina
+<p>
+
+
+<br><a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO-II/risultati-SOII-16-7-2003.txt">Risultati della prova scritta dell'appello del 16-7-2003</a>
+<p>
+<br><a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO-II/risultati-SOII-28-3-2003.txt">Risultati della prova scritta dell'appello del 28-3-2003</a>
+<p>
+
+</h2> 
+-->
+
+
+
+<!--
+La consegna delle tesine nell'ambito dell'appello del 17 Settembre avverra' secondo il seguente schema:
+<ul>
+<li> Mercoledi' 18 Settembre alle ore 9:00 per tesine sviluppate su sistemi UNIX/LINUX ed aventi codice da 1 a 5;
+<li> Mercoledi' 18 Settembre alle ore 14:00 per tesine sviluppate su sistemi UNIX/LINUX ed aventi codice da 6 a 10;
+<li> Giovedi' 19 Settembre alle ore 9:00 per tesine sviluppate su sistemi Windows NT/2000 ed aventi codice da 1 a 5;
+<li> Giovedi' 19 Settembre alle ore 14:00 per tesine sviluppate su sistemi Windows NT/2000 ed aventi codice da 6 a 10;
+</ul>
+La consegna avverra' in Via Salaria 113, aula C2.<br>
+<br>
+<h2>
+AVVISO
+<ul>
+<li> A causa dello sciopero dei trasporti, l'esercitazione di Sistemi Operativi II del 14/3/2003 non avra' luogo. L'esercitazione verra' recuperata il giorno martedi' 18/3/2003 nel regolare orario di lezione. 
+</ul>
+</h2>
+
+
+
+<hr>
+<h3>
+<blink>Modalita' d'esame </blink>
+</h3>
+<p> L'esame richiede il superamento di una prova scritta e lo sviluppo di una tesina. Il voto conseguito alla prova scritta pesa 3/5 sul voto finale, quello relativo alla tesina pesa 2/5 sul voto finale. <b>Entrambe le prove devono essere sostenute nello stesso anno accademico, sebbene possono essere sostenute in appelli differenti.</b><br>
+<p>
+<hr>
+<p>
+<h3>
+Assegnazione tesine via Web
+</h3>
+<p>
+Seguire <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO-II/assegnazione-tesina.html">questo link</a> per accedere al sistema di assegnazione delle tesine via WEB.
+-->
+
+
+<!--
+<li> <a href="http://ftp.dis.uniroma1.it/pub/quaglia/esempio.pdf"> Esempi di prova scritta d'esame.</a> 
+<li> Testi di appelli d'esame:</a> 
+<ul>
+<li> appello del 17-9-2002 - <a href="http://ftp.dis.uniroma1.it/pub/quaglia/17-9-2002.pdf"> download</a> 
+<li> appello del 19-7-2002 - <a href="http://ftp.dis.uniroma1.it/pub/quaglia/19-7-2002.pdf"> download</a> 
+<li> appello del 5-7-2002 - <a href="http://ftp.dis.uniroma1.it/pub/quaglia/5-7-2002.pdf"> download</a> 
+</ul>
+</ul>
+<a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO-I/aggiorna.html"> Area riservata al docente.</a> 
+-->
+
+
+<p>
+
+<hr>
+<h3>
+Testi e riferimenti
+</h3>
+<ul>
+<li>  William Stallings, "Sistemi Operativi". Jackson Libri. 
+<li>  Abraham Silberschatz, Peter B. Galvin, "Sistemi Operativi". Addison - Wesley 
+<li> Andrew S. Tanenbaum, "I Moderni Sistemi Operativi". Jackson Libri.
+<li>   Francesco Quaglia, Camil Demetrescu, "Programmazione in Ambiente UNIX". <a href="http://ftp.dis.uniroma1.it/pub/quaglia/dispensa.pdf"> Disponibile in formato pdf</a>
+<li>  "Manuale di Informatica". Calderini  Editore, edizione 2002.
+</ul>
+
+<h3>
+Link utili 
+</h3>
+<ul>
+<li> <a href="http://www.intel.com"> 
+Documentazione su  IA-32</a>
+<li> <a href="http://www.kernel.org/"> Sorgenti Kernel LINUX</a>
+<li> <a href="http://www.xml.com/ldd/chapter/book/"> LINUX device drivers </a>
+<li> <a href="http://en.tldp.org/LDP/tlk/tlk.html"> Materiale su LINUX internals</a>
+<li> <a href="http://www.bertolinux.com/kernel/italiano/KernelAnalysis-HOWTO-1.html"> Materiale su LINUX internals</a>
+ 
+</ul>
+
+
+<hr>
+<h3>
+Programma previsto per l'a.a. 2003-2004
+</h3>
+<ul>
+<li> Kernel Internals
+<ul>
+ <li> Indirizzamento e modelli di protezione del codice
+ <li> GATE di accesso al codice Kernel
+ <li> Dispatching delle system call
+<li> Gestione avanzata degli Interrupt
+</ul>
+ <br>
+
+
+
+<li> Studio di caso: LINUX 2.4 su architettura i386
+<ul> 
+<li> Nozioni sul boot 
+<li> Strutture dati principali ed inizializzazione
+<li> Meccanismi interni per le system call
+<li> Comportamento a regime
+<li> Kernel hacking 
+ <li> Moduli
+</ul>
+<br>
+
+<li> Sicurezza
+<ul> 
+<li> Scopi della sicurezza
+<li> Crittografia e autenticazione 
+<li>  Attacchi interni al sistema 
+<li>  Meccanismi di protezione e sistemi fidati 
+<li> Tecniche di rilevamento delle intrusioni (IDS)
+<li> Tecniche di prevenzione delle intrusioni (Reference Monitor)
+<li> Esempi di sistemi operativi sicuri
+</ul>
+
+
+</ul>
+
+<hr>
+<h3>
+Slides delle lezioni
+</h3>
+<ul>
+<li>Protezione del codice e meccanismi per le system call (con studio di casu su LINUX) <a href="http://ftp.dis.uniroma1.it/pub/quaglia/partA.pdf"> (download)</a>
+<li>Sottosistema di memoria in LINUX <a href="http://ftp.dis.uniroma1.it/pub/quaglia/linux-memory-system.pdf"> (download)</a>
+<li>Sottosistema di trap/interrupt in LINUX <a href="http://ftp.dis.uniroma1.it/pub/quaglia/linux-idt-system.pdf"> (download)</a>
+<li>Esercitazione sul sottosistema di memoria in LINUX <a href="http://ftp.dis.uniroma1.it/pub/quaglia/esercitazione_memoria.txt"> (download)</a>
+<li>Strumenti per il debugging su Kernel LINUX <a href="http://ftp.dis.uniroma1.it/pub/quaglia/linux-kernel-debugging.pdf"> (download)</a>
+<li>Sottosistema di gestione di task/processi in LINUX <a href="http://ftp.dis.uniroma1.it/pub/quaglia/linux-sched-system.pdf"> (download)</a>
+<li>VFS in LINUX <a href="http://ftp.dis.uniroma1.it/pub/quaglia/linux-vfs.pdf"> (download)</a>
+<li>Moduli LINUX <a href="http://ftp.dis.uniroma1.it/pub/quaglia/linux-modules.pdf"> (download)</a>
+<li>Un esempio di char device tramite modulo <a href="http://ftp.dis.uniroma1.it/pub/quaglia/char_dev.c"> (download)</a>
+<li>Sicurezza <a href="http://ftp.dis.uniroma1.it/pub/quaglia/security.pdf"> (download)</a>
+
+</ul>
+
+</font>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
