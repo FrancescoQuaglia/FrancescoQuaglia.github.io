@@ -1,0 +1,380 @@
+
+<html>
+
+<head> 
+<title> Sistemi Operativi </title>
+
+</head>
+
+<body >
+<font face="Arial, Helvetica, sans-serif"> 
+
+
+<!--
+<body TEXT="#ffff00" bgcolor="#009999">
+-->
+
+<h2> 
+<p align="center">
+Sistemi Operativi  (6 CFU) <br>
+Corso di Laurea in Ingegneria Informatica<br>
+<b>AA. 2017/2018</b>
+</p>
+</h2>
+<h3>
+<p align="center">
+Docente: Francesco Quaglia 
+</p>
+</h3>
+</p>
+<hr>
+
+
+
+<h2>
+<p>
+<blink>
+<font color="red">NEW
+</font>
+<p><b>1/3/2017 -</b> Il corso avra' inizio il giorno 8/3/2018</a> 
+</h2>
+
+
+<hr>
+
+<h3>Orario delle lezioni</h3>
+<table width="512" border="1">
+  <tr>
+    <td width="97">Lunedi'</td>
+    <td>11:30-13.30</td>
+    <td  width="197">Aula A4</td>
+  </tr>
+  <tr>    <td>Giovedi'</td>
+    <td>11.30-13.30</td>
+    <td  width="197">Aula A4</td>
+  </tr>
+</table>
+
+<h3>Tutoraggio (attivo durante il periodo delle lezioni)</h3>
+<table width="512" border="1">
+  <tr>
+    <td width="97">Lunedi'</td>
+    <td>16:00-18.00</td>
+    <td  width="197">Aula A3</td>
+  </tr>
+</table>
+
+<hr>
+
+<h3>
+<blink>Obiettivi del corso </blink>
+</h3>
+<p>
+Il corso ha l'obbiettivo di presentare allo studente concetti basici riguardanti la strutturazione dei moderni sistemi operativi, unitamente alle funzionalita' che essi offrono sia 
+all'utenza che agli sviluppatori di applicazioni software. 
+Particolare attenzione verra' dedicata ai supporti che i sistemi operativi offrono per lo sviluppo del software in linguaggio C.
+I concetti introdotti verrano calati su due studi di caso, riguardanti la famiglia dei sistemi Unix e quella dei sistemi Windows. 
+
+
+<h3>
+<blink>Prerequisiti </blink>
+</h3>
+<ul>
+<li> Conoscenza di base del linguaggio C
+<li> Conoscenza di base di tool-chain di compilazione (e.g. gcc) 
+<li> Conoscenza dell'architettura di massima di un sistema di calcolo
+<li> Nozioni di programmazione e strutturazione del software di livello assembler (ASM) 
+</ul>
+<h3>
+<blink>Modalita' d'esame </blink>
+</h3>
+<p> L'esame richiede il superamento di una prova scritta e di una prova pratica di programmazione in linguaggio C da svolgersi in laboratorio. La prova scritta vale un massimo di 20 punti, con 12 come soglia per la sufficienza. La prova pratica in laboratorio vale un massimo di 10 punti, con 6 come soglia per la sufficienza. Il voto d'esame risultera' pari la somma dei punteggi conseguiti alle due prove.
+<p> Allo studente e' data la possibilita' di sviluppare una tesina (un piccolo progetto) in linguaggio C che vale fino ad un massimo di ulteriori 5 punti, i quali si sommeranno alla valutazione ottenuta come somma dei punteggi della prova scritta e della prova di programmazione in laboratorio.
+<b>L'assegnazione della tesina ha validita' per l'anno accademico corrente. La cosegna della tesina (se si e' scelto di effettuarla) dovra' quindi avvenire nello stesso anno accademico in cui viene svolta la prova d'esame.</b>
+<ul>
+<li> Seguire <a href="http://www.dis.uniroma1.it/~quaglia/DIDATTICA/SO/assegnazione-tesina.html">questo link</a> per accedere al sistema di assegnazione dei progetti via WEB.
+</ul>
+<hr>
+<h3>
+Testi consigliati 
+</h3>
+<ul>
+<li> [T1] Sistemi operativi - Silberschatz Abraham, Galvin Peter Baer, Gagne Greg - Addison Wesley, settima edizione (o superiori)
+<li> [T2] Operating Systems: Internals and Design Principles - William Stallings - Prentice Hall, fifth edition (o superiori)
+<li> [T3] Francesco Quaglia, Camil Demetrescu, "Programmazione in Ambiente UNIX". <a href="http://www.dis.uniroma1.it/pub/quaglia/dispensa.pdf"> Disponibile in formato pdf</a>
+<li> [T4] C/ANSI-C, Principi di Programmazione e Manuale di Riferimento - Brian W.Kernighan, Dennis M.Ritchie - Pearson, Prentice Hall 
+</ul>
+
+<h3>
+Link utili  
+</h3>
+
+<ul>
+<li> <a href="https://www.google.it/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiDvqqJj8vZAhVC6RQKHeJlDN0QFggvMAA&url=https%3A%2F%2Fwww.visualstudio.com%2Fit%2Fvs%2Fvisual-studio-express%2F&usg=AOvVaw1kzM8bYw3XdJkhFqiAvCkM">Link</a> alla pagina dell'ambiente Microsoft Visual Studio (Express Edition - Now Community) per lo sviluppo di applicazioni software in tecnologia C/Windows (Win-API)
+
+<li> <a href="https://msdn.microsoft.com/">Link</a> alla pagina MSDN (Microsoft Development Network) 
+
+<li> <a href="https://www.virtualbox.org/">Link</a> alla pagina dell'ambiente VirtualBox per la virtualizzazione delle macchine 
+</ul>
+
+<hr>
+
+<h3>
+Programma previsto per l'a.a. 2017-2018 
+</h3>
+
+<ul>
+<li>Introduzione ai sistemi operativi  
+<ul>
+ <li> Richiami sull'organizzazione di un sistema di calcolo
+ <li> Obiettivi dei sistemi operativi
+ <li> Sistemi batch uniprogrammati
+ <li> Sistemi batch multiprogrammati
+ <li> Sistemi time-sharing
+<li> Architettura di massima dei sistemi UNIX/Windows
+<li> Ambienti di esecuzione 
+<li> Aspetti basici sulla sicurezza del software 
+</ul>
+ <br>
+
+<li> Processi e thread 
+<ul>
+<li> Esecuzione e stati di processi
+<li> Multiprogrammazione e Swapping 
+<li> Strutture di controllo di processi
+<li> Immagine di un processo 
+<li> Liste di processi e scheduling 
+<li> Processi in sistemi UNIX/Windows
+<li> Sistemi multi-threading
+<li> Threads in sistemi UNIX/Windows
+</ul>
+
+ <br>
+<li> Scheduling della CPU 
+<ul> 
+ <li> Metriche di riferimento 
+<li>  Algorithmi di scheduling classici 
+<li>  Scheduling multiprocessore 
+<li>  Scheduling in sistemi UNIX/Windows 
+</ul>
+<br>
+
+
+<li>Gestione della memoria
+<ul>
+ <li> Binding degli indirizzi 
+ <li> Partizioni fisse e  variabili 
+ <li> Paginazione e segmentazione 
+ <li> Memoria virtuale 
+ <li> Gestione della memoria in sistemi UNIX/Windows 
+
+</ul>
+<br>
+
+
+<li> Virtual File System ed I/O 
+<ul>
+<li> Concetti basici 
+<li> Metodi di accesso e di allocazione 
+<li> Implementazione del virtual file system
+<li> Gestione dei buffer di I/O 
+<li> Gesitone delle utenze e dei permessi di accesso
+<li> Virtual file system ed I/O in sistemi UNIX/Windows
+
+</ul>
+<br>
+<li> Concorrenza, comunicazione e sincronizzazione 
+<ul>
+<li> Memoria condivisa e file-mapping 
+<li> Spinlocks, mutex e semafori 
+<li> Supporti in sistemi UNIX/Windows
+</ul>
+<br>
+
+<li> Eventi 
+<ul> 
+<li> Meccanismi di segnalazione e gestione di eventi sincroni ed asincroni
+<li> Supporti in sistemi UNIX/Windows
+</ul>
+<br>
+<li> Servizi di sistema per la programmazione di rete 
+<ul> 
+<li> Stack di protocolli di comunicazione
+<li> Sockets in sistemi UNIX/Windows 
+</ul>
+<br>
+
+
+</ul>
+
+
+
+
+
+
+<hr>
+<h3>
+Materiale didiattico 
+</h3>
+
+<table width="552" border="1">
+  <tr>
+    <td><b>Slides</b></td>
+    <td  width="297"><b>Esempi di codice</b></td>
+  </tr>
+  <tr>
+    <td><h3><a href="http://www.dis.uniroma1.it/pub/quaglia/SO-ord-2013-introduction.pdf">Introduzione ai sistemi operativi</a></h3></td>
+    <td  width="197"><a href="http://www.dis.uniroma1.it/pub/quaglia/env-and-security-examples.tar">Startup e buffer overflow</a><br><br>
+<small>Gli esempi sulla parte sicurezza (buffer overflow) sono sviluppati/configurati per ambiente:
+Linux i686 GNU - 
+gcc version 4.3.3 / Linux x86_64 GNU gcc 4.8.3</small></td>
+  </tr>
+
+  <tr>
+    <td><h3>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/SO-ORD-2013-processes-and-threads.pdf">Processi e thread</a></h3></td>
+    <td  width="197"><a href="http://www.dis.uniroma1.it/pub/quaglia/unix-processes-threads.tar.gz">Esempi Unix</a> / 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/windows-processes-threads.rar">Esempi Windows</a></td>
+  </tr>
+  <tr>
+    <td><h3>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/SO-ORD-2013-CPUscheduling.pdf">CPU scheduling</a></h3></td>
+    <td  width="197"><a href="http://www.dis.uniroma1.it/pub/quaglia/unix-cpu-scheduling.tar">Esempi Unix</a> / 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/windows-cpu-scheduling.tar">Esempi Windows</a></td>
+  </tr>
+  <tr>
+    <td><h3>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/SO-ORD-2013-memory-management.pdf">Gestione della memoria</a></h3></td>
+    <td  width="197"><a href="http://www.dis.uniroma1.it/pub/quaglia/unix-mem-examples.tar">Esempi Unix</a> / 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/virtual-alloc.c">Esempi Windows</a></td>
+  </tr>
+  <tr>
+    <td><h3>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/SO-ORD-2013-virtual-file-system.pdf">Virtual file system</a></h3></td>
+    <td  width="197"><a href="http://www.dis.uniroma1.it/pub/quaglia/unix-file-system.tar.gz">Esempi Unix</a> / 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/vfs-windows.tar">Esempi Windows</a></td>
+  </tr>
+  <tr>
+    <td><h3>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/SO-ORD-2013-IPC.pdf">Concorrenza, comunicazione e sincronizzazione</a></h3></td>
+    <td  width="197"><a href="http://www.dis.uniroma1.it/pub/quaglia/unix-shm-sem.tar">Esempi Unix</a> / 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/windows-shm-sem.tar">Esempi Windows</a></td>
+  </tr>
+  <tr>
+    <td><h3>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/SO-ORD-2013-eventi.pdf">Gestione di eventi</a></h3></td>
+    <td  width="197"><a href="http://www.dis.uniroma1.it/pub/quaglia/unix-events.tar.gz">Esempi Unix</a> / 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/windows-events.tar.gz">Esempi Windows</a></td>
+  </tr>
+  <tr>
+    <td><h3><font color="red">NEW
+</font><a href="http://www.dis.uniroma1.it/pub/quaglia/SO-ORD-2013-sockets.pdf">Sockets</a></h3></td>
+    <td  width="197"><a href="http://www.dis.uniroma1.it/pub/quaglia/sockets.tar">Esempi Unix/Windows</a> 
+  </tr>
+</table>
+<!--
+-->
+
+<!--
+<ul>
+<li>Introduzione: sistemi seriali, batch, multiprogrammazione, time sharing, architettura Windows/UNIX <a href="http://www.dis.uniroma1.it/pub/quaglia/introduzione.pdf"> (download)</a>
+<li>Esercitazioni linguaggio C <a href="http://www.dis.uniroma1.it/pub/quaglia/Cbasic.pdf"> (download)</a>
+<li>Processi <a href="http://www.dis.uniroma1.it/pub/quaglia/processi.pdf"> (download)</a>
+<li> Processi Windows - esempio di codice  <a href="http://www.dis.uniroma1.it/pub/quaglia/win-processes-example.c"> (download)  </a>
+<li> Processi Windows - esempio di codice  <a href="http://www.dis.uniroma1.it/pub/quaglia/windows-processes-environment.c"> (download)  </a>
+<li>Threads <a href="http://www.dis.uniroma1.it/pub/quaglia/threads.pdf"> (download)</a>
+<li>Esercitazione threads <a href="http://www.dis.uniroma1.it/pub/quaglia/unix-threads.c"> (software UNIX)</a> - <a href="http://www.dis.uniroma1.it/pub/quaglia/win-threads.c"> (software Windows)</a> 
+<li>Scheduling della CPU <a href="http://www.dis.uniroma1.it/pub/quaglia/CPUscheduling.pdf"> (download)</a>
+<li>Gestione della memoria <a href="http://www.dis.uniroma1.it/pub/quaglia/gestionememoria.pdf"> (download)</a>
+<li>Gestione Memoria Unix - esempio di codice  <a href="http://www.dis.uniroma1.it/pub/quaglia/brk-mmap.c"> (download)  </a>
+<li>Gestione Memoria Windows - esempio di codice  <a href="http://www.dis.uniroma1.it/pub/quaglia/virtual-alloc.c"> (download)  </a>
+<li>File system <a href="http://www.dis.uniroma1.it/pub/quaglia/filesystem.pdf"> (download)</a>
+<li>Esercitazione sul file system UNIX<a href="http://www.dis.uniroma1.it/pub/quaglia/esercFS-UNIX.pdf"> (download)</a>
+ <a href="http://www.dis.uniroma1.it/pub/quaglia/fs-unix-example.zip"> (software download)  </a>
+<li>Esercitazione sul file system Windows (versione A)<a href="http://www.dis.uniroma1.it/pub/quaglia/esercFS-windows.pdf"> (download)</a>
+<li>Esercitazione sul file system Windows (versione B)<a href="http://www.dis.uniroma1.it/pub/quaglia/esercFS-windows1.c"> (download)</a>
+<li>I/O: buffering e schedulazione del disco <a href="http://www.dis.uniroma1.it/pub/quaglia/bufferI-O.pdf"> (download)</a>
+<li>Memoria condivisa, sezioni critiche e semafori <a href="http://www.dis.uniroma1.it/pub/quaglia/shmsem.pdf"> (download)</a>
+<li>Esercitazione: sincronizzazione tramite semafori <a href="http://www.dis.uniroma1.it/pub/quaglia/semaphores-UNIX.c"> (software UNIX) </a> - <a href="http://www.dis.uniroma1.it/pub/qu
+aglia/semaphores-win.c"> (software Windows) </a>
+<li>Scambio di messaggi <a href="http://www.dis.uniroma1.it/pub/quaglia/scambiomessaggi.pdf"> (download)</a>
+<li>
+Esercitazione: client/server tramite scambio messaggi <a href="http://www.dis.uniroma1.it/pub/quaglia/client-server-UNIX.c"> (software UNIX)</a> - <a href="http://www.dis.uniroma1.it/pub/quaglia/client-server-windows.c"> (software Windows)</a>
+<li>Tecniche di gestione del deadlock <a href="http://www.dis.uniroma1.it/pub/quaglia/gestionedeadlock.pdf"> (download)</a>
+<li>Gestione di eventi asincroni <a href="http://www.dis.uniroma1.it/pub/quaglia/eventiasincroni.pdf"> (download)</a>
+<li>Esempi di uso dei segnali UNIX (parte A)
+ <a href="http://www.dis.uniroma1.it/pub/quaglia/unix-signals.tar.gz"> (software download)  </a>
+<li>Esempi di uso dei segnali UNIX (parte B)
+ <a href="http://www.dis.uniroma1.it/pub/quaglia/unix-reliablesignals.tar.gz"> (software download)  </a>
+<li>Esempi di gestione di eventi/messaggi-evento Windows
+ <a href="http://www.dis.uniroma1.it/pub/quaglia/windows-events.tar.gz"> (software download)  </a>
+<li><font color="red">NEW!
+</font>
+Programmazione di rete <a href="http://www.dis.uniroma1.it/pub/quaglia/programmazionerete.pdf"> (download)</a>
+<li><font color="red">NEW!
+</font>
+Esercitazione su Sockets <a href="http://www.dis.uniroma1.it/pub/quaglia/EsercitazioneSocket.pdf"> (download)
+</a> -
+<li><font color="red">NEW!
+</font>
+Codice sorgente per piattaforma UNIX <a href="http://www.dis.uniroma1.it/pub/quaglia/02-linux-src.zip"> (download)
+</a> -
+<li><font color="red">NEW!
+</font>
+Codice sorgente per piattaforma Windows <a href="http://www.dis.uniroma1.it/pub/quaglia/02-windows-src.zip"> (download)
+</a> 
+<li>Esercitazione sul file system UNIX<a href="http://www.dis.uniroma1.it/pub/quaglia/esercFS-UNIX.pdf"> (download)</a>
+ <a href="http://www.dis.uniroma1.it/pub/quaglia/fs-unix-example.zip"> (software download)  </a>
+<li>Esercitazione sul file system Windows (version A)<a href="http://www.dis.uniroma1.it/pub/quaglia/esercFS-windows.pdf"> (download)</a>
+<li>Esercitazione sul file system Windows (version B)<a href="http://www.dis.uniroma1.it/pub/quaglia/esercFS-windows1.c"> (download)</a>
+<li>Memoria condivisa, sezioni critiche e semafori <a href="http://www.dis.uniroma1.it/pub/quaglia/shmsem.pdf"> (download)</a>
+<li>Esercitazione: sincronizzazione tramite semafori <a href="http://www.dis.uniroma1.it/pub/quaglia/semaphores-UNIX.c"> (software UNIX) </a> - <a href="http://www.dis.uniroma1.it/pub/qu
+aglia/semaphores-win.c"> (software Windows) </a>
+<li>Scambio di messaggi <a href="http://www.dis.uniroma1.it/pub/quaglia/scambiomessaggi.pdf"> (download)</a>
+<li>Esercitazione: client/server tramite scambio messaggi <a href="http://www.dis.uniroma1.it/pub/quaglia/client-server-UNIX.c"> (software UNIX)</a> - <a href="http://www.dis.uniroma1.it/pub/quaglia/client-server-windows.c"> (software Windows)</a>
+<li>Pipes <a href="http://www.dis.uniroma1.it/pub/quaglia/pipes.pdf"> (download)</a>
+<li>Esercitazione sulle Pipes <a href="http://www.dis.uniroma1.it/pub/quaglia/eserc-pipes.pdf"> (download)  
+</a> -
+Codice sorgente per piattaforma UNIX <a href="http://www.dis.uniroma1.it/pub/quaglia/shellpipe-unix.c"> (download)
+</a> - 
+Codice sorgente per piattaforma Windows <a href="http://www.dis.uniroma1.it/pub/quaglia/shellpipe-win.c"> (download)  
+</a>
+<li>Tecniche di gestione del deadlock <a href="http://www.dis.uniroma1.it/pub/quaglia/gestionedeadlock.pdf"> (download)</a>
+
+<li>Gestione di eventi asincroni <a href="http://www.dis.uniroma1.it/pub/quaglia/eventiasincroni.pdf"> (download)</a>
+<li>Esercitazione sui segnali UNIX <a href="http://www.dis.uniroma1.it/pub/quaglia/boundary_tracker.c"> (download)  </a>
+<li>Esercitazione su Segnali ed Eventi <a href="http://www.dis.uniroma1.it/pub/quaglia/eserc-segnali.pdf"> (download) 
+</a> -
+Codice sorgente per piattaforma UNIX <a href="http://www.dis.uniroma1.it/pub/quaglia/signal-unix.c"> (download)
+</a> - 
+Codice sorgente per piattaforma Windows <a href="http://www.dis.uniroma1.it/pub/quaglia/signal-win.c"> (download)  
+</a>
+<li>Programmazione di rete <a href="http://www.dis.uniroma1.it/pub/quaglia/programmazionerete.pdf"> (download)</a>
+
+<li>Esercitazione su Sockets <a href="http://www.dis.uniroma1.it/pub/quaglia/EsercitazioneSocket.pdf"> (download)
+</a> -
+Codice sorgente per piattaforma UNIX <a href="http://www.dis.uniroma1.it/pub/quaglia/02-linux-src.zip"> (download)
+</a> -
+Codice sorgente per piattaforma Windows <a href="http://www.dis.uniroma1.it/pub/quaglia/02-windows-src.zip"> (download)
+</a> 
+<li>Esercitazione su RAW socket <a href="http://www.dis.uniroma1.it/pub/quaglia/string_over_IP.c"> (download)</a>
+
+
+<li>Soluzioni di alcuni esercizi d'esame <a href="http://www.dis.uniroma1.it/pub/quaglia/esercizi.pdf"> (download)</a>
+<li><blink><font color="red">NEW</font></blink> Processi Windows - esempio di codice  <a href="http://www.dis.uniroma1.it/pub/quaglia/win-processes-example.c"> (download)  </a>
+-->
+</ul>
+<p>
+<hr>
+</font>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
