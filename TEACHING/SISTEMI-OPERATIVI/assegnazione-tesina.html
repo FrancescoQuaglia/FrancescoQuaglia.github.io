@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<title>Assegnazione della tesina di Sistemi Operativi</title>
+</head>
+
+
+<body bgcolor="#FFFFFF"> 
+<font face="Arial, Helvetica, sans-serif"> 
+
+<h2 style="text-align: center">
+Assegnazione della tesina di Sistemi Operativi<br>
+Docente Francesco Quaglia
+<BR>
+Corso di Laurea in Ing. Informatica
+<BR>
+Universita' di Roma Tor Vergata
+</h2>
+
+
+<P>
+
+<hr>
+<h2>
+Modalita' di assegnazione
+</h2>
+Utilizzando la form sottostante, inserire cognomi e nomi dei
+componenti del gruppo (max 2 persone) e l'indirizzo di posta
+elettronica del primo componente per ricevere la specifica della
+tesina, <strong> selezionare il sistema operativo di riferimento
+(UNIX/LINUX/Mac-OS, Windows, Piattaforma Mista Windows-UNIX 
+) </strong> e premere "INVIO". L'assegnazione della
+tesina avverra' in modo casuale (la tesina da sviluppare verra'
+selezionata casualmente in un insieme di tesine possibili) ed il
+sistema restituira' la specifica della tesina assegnata <b> via e-mail</b> al
+primo componente del gruppo.
+<p>
+
+<hr>
+<h2>
+Validita' dell'assegnazione
+</h2>
+L'assegnazione corrente ha VALIDITA' per l'AA.2017/2018, e non oltre.
+<p>
+<B>NOTA BENE</B><br> In caso si tenti di effettuare
+un'assegnazione di tesina multipla, la prima assegnazione registrata
+sul database ed associata ad almeno uno di componenti del gruppo verra' ritenuta valida.
+
+<p>
+
+<hr>
+<h2>
+Consegna e discussione delle tesine
+</h2>
+La discussione della tesina avra' luogo in concomitanza con gli
+appelli d'esame (tipicamente nei giorni successivi alle prove d'esame), pur non essendo necessario consegnare la tesina nello
+stesso appello in cui si sostiene la prova scritta.  La presentazione
+della tesina deve avvenire attraverso una relazione strutturata (in
+linea di massima) come segue:
+</font>
+<UL>
+    <LI><font face="Arial, Helvetica, sans-serif">Introduzione contenente le specifiche 
+      del progetto</font></LI>
+    <LI><font face="Arial, Helvetica, sans-serif">Discussione delle scelte di 
+      progetto e realizzative, e delle tecniche e metodologie generali usate</font></LI>
+    <LI><font face="Arial, Helvetica, sans-serif">Breve manuale d'uso 
+      dei programmi (come compilare, come installare)</font></LI>
+    <LI><font face="Arial, Helvetica, sans-serif">Tutti i sorgenti 
+      del progetto (escluse eventuali librerie esterne ed header di libreria/sistema)</font></LI>
+  </UL>
+
+<font face="Arial, Helvetica, sans-serif">All'atto della discussione della tesina e' inoltre necessario portare un dispositivo di memoria USB con tutti i sorgenti in modo da rendere possibile la verifica del corretto funzionamento dei moduli sviluppati.
+
+<p>
+<hr>
+
+<h2>
+Form per l'assegnazione
+</h2>
+
+
+
+
+
+<FORM action="https://www.dis.uniroma1.it/~quaglia/cgi-bin/log-mail.pl" method="post">
+
+
+
+<TABLE border="0" width="100%" ALIGN="CENTER">
+
+
+
+    <tr>
+      <td width="50%" align="right">Cognome e nome del primo componente del gruppo <b>(obbligatorio)</b>:</td>
+      <td width="50 %" align="left"><input type="text" name="nome1" size="30"></td>
+</tr>
+<tr>
+
+      <td width="50 %" align="right">Indirizzo di posta elettronica <b>(obbligatorio)</b>:</td>
+      <td width="50 %" align="left"><input type="text" name="address" size="30"></td>
+    </tr>
+
+
+
+    <tr>
+      <td width="50%" align="right">Cognome e nome del secondo componente del gruppo:</td>
+
+      <td width="50%" align="left"><input type="text" name="nome2" size="30"></td>
+    </tr>
+
+
+    <tr>
+
+      <td width="50%" align="right">Sistema Operativo</td>
+      <td width="50%" align="left">
+      <SELECT name="SO">
+	  <OPTION value="0">UNIX/LINUX/Mac-OS</OPTION>
+	  <OPTION value="1">Windows</OPTION>
+	  <OPTION value="2">Piattaforma mista UNIX/Windows</OPTION>
+	  </SELECT></td>
+    </tr>
+
+  </table>
+
+<P style="text-align: center">
+<INPUT type="submit" value="INVIO" name="INVIO">
+</P>
+
+
+
+<P style="text-align: center">
+<INPUT type="reset" value="Annulla i dati inseriti">
+</P>
+</FORM>
+
+
+</font>
+</body>
+</html>
+
