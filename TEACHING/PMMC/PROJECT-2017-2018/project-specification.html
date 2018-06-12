@@ -1,0 +1,82 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"> 
+<title> Sistemi Operativi III  </title>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<font face="Arial, Helvetica, sans-serif"> 
+<h2> 
+<p align="center">
+Multi/Many-core Programming (6 CFU)<br>
+MS Degree in Computer Engineering<br>
+Academic Year 2017/2018<br>
+</p>
+</h2>
+<h3>
+<p align="center">
+Lecturer: Francesco Quaglia 
+</p>
+</h3>
+</p>
+
+
+<hr>
+<p> The examination requires fulfilling the developement of a Linux kernel subsystem compliant with the following specification: 
+
+</p><h3>
+Project - Linux Mail slots 
+</h3>
+This specification related the implementation of a special device file 
+that is accessible according to FIFO style semantic (via 
+open/close/read/write services), but offering an execution semantic of 
+read/write services such that any segment that is posted to the stream 
+associated with the file is seen as an independent data unit (a 
+message), thus being posted and delivered atomically (all or nothing) 
+and in data separation (with respect to other segments) to the reading 
+threads.
+ 
+<p>The device file needs to be multi-instance (by having the possibility
+ to manage at least 256 different instances) so that mutiple FIFO style 
+streams (characterized by the above semantic) can be concurrently 
+accessed by active processes/threads.
+
+</p><p>The device file needs to also support ioctl commands in order to 
+define the run time behavior of any I/O session targeting it (such as 
+whether read and/or write operations on a session need to be performed 
+according to blocking or non-blocking rules). 
+
+</p><p>Parameters that are left to the designer, which should be selected via reasonable policies, are:
+</p><ul>
+<li> the maximum size of managed data-units (this might also be made tunable via ioctl up to an absolute upper limit) 
+</li><li> the maximum storage that can be (dynamically) reserved for any individual mail slot 
+</li><li> the range of device file minor numbers supported by the driver (it could be the interval [0-255] or not)
+</li></ul>
+<p><b>NOTE:</b> this project deals with implementing within Linux 
+services similar to those that are offered by Windows "mail slots", 
+which is the reason for the selected project name
+</p><p>
+
+</p><hr>
+
+
+
+<h3>
+Project delivery
+</h3>
+Projects can be delivered (for analysis and discussion) at any scheduled tutoring slot
+<hr>
+
+</font>
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
