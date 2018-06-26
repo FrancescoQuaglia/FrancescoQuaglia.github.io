@@ -1,0 +1,18 @@
+
+University of Rome Tor Vergata
+MS in Computer Engineering
+
+Multi/many-core programming course 
+
+Results of the examination held on 25/6/2018
+Top score: 18
+
+Student-ID	Outcome
+
+0245894		14/18
+0246425		18/18
+0245720		18/18
+0245267		14/18
+0244962		17/18
+
+
