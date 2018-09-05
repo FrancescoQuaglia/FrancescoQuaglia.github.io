@@ -1,5 +1,5 @@
 Universita' di Roma Tor Vergata
-Corso di Laurea in Ingeneria Informatica
+ Corso di Laurea in Ingeneria Informatica
 
 Risultati dell'appello (prova pratica in laboratorio) di Sistemi Operativi del 18/7/2018
 
