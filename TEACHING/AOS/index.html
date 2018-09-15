@@ -1,0 +1,700 @@
+
+<html>
+
+<head> 
+<title> Advanced Operating Systems  </title>
+
+</head>
+
+<!--
+<body background="../../images/bckgd_carta_blue.gif">
+<body TEXT="#ffff00" bgcolor="#009999">
+-->
+<body bgcolor="#FFFFFF">
+<font face="Arial, Helvetica, sans-serif"> 
+<h2> 
+<p align="center">
+Advanced Operating Systems (9 CFU)<br>
+Academic Year 2018-2019<br>
+Laurea Magistrale in Computer Engineering<br>
+University of Rome Tor Vergata<br>
+</p>
+</h2>
+<h3>
+<p align="center">
+Lecturer: Francesco Quaglia 
+</p>
+</h3>
+</p>
+
+
+<hr>
+<h2>
+<p>
+<blink>
+<font color="red">NEW
+</font>
+</blink>
+<p><b>14/9/2018 -</b> Ths site has been made up and running.
+</h2>
+
+<hr>
+<h3>
+Lecture schedule (starting on 24/9/2018)
+</h3>
+<table width="512" border="1">
+  <tr>
+<td> Monday </td>
+<td>9:30-11:15</td>
+<td> Room C6</td> 
+  </tr>
+<tr>
+<td>Wednesday</td>
+<td/> 11:30-13:15 </td>
+<td> Room C12</td>
+</tr>
+<tr>
+<td> Friday</td>
+<td> 11:30-13:15 </td>
+<td> Room B9</td>
+</tr>
+</table>
+
+<hr>
+<h3>
+Course objectives and examination rules
+</h3>
+
+<p> The 'Advanced Operating Systems' course aims at presenting advanced design/implementation methods and techniques for modern operating systems. It will also provide insights on actual hardware operations in modern 
+processors (including implicit and explicit parallelism) and how these impact software design approaches. 
+The topics dealt with by the course are bound to case studies oriented to Linux systems and x86 compliant processors. A strong focus on system level security aspects will be made, which will include the analysis of the correlaton between hardware and software as well as advanced methods and tehcniques for system security. The course requires basic knowledge on the structure and functionalities of operating systems, and knowledge on C/ASM programming. <br>
+<p> The lecture flow will be based on presenting concepts in combination with running examples. Both the slides and the software examples will be made available while delivering the course, 
+ clearly in advance to discussing them at any lecture. The slides as well as the software examples can be accessed and downloaded from links posted in a bottom section of this Web page 
+<p>
+The examination consists of a set of questions and additionally requires the development of software sub-systems (a project) to be embedded within the Linux kernel, 
+whose specification for the academic year 2017/2018 will be posted during the course delivery. Each student is supposed to finalize both these parts of the examination within the same accademic year. The delivery of sofwtare project does not need to coincide with the scheduled examination dates. Rather, students can deliver their projects at any student reception (see <a href="../../teaching.html">this link</a>).
+
+<hr>
+
+<h3>
+References 
+</h3>
+<ul>
+<li>  William Stallings, "Operating Systems". Jackson Libri. 
+<li>  Abraham Silberschatz, Peter B. Galvin, "Operating Systems". Addison - Wesley 
+<li> Andrew S. Tanenbaum, "Modern Operating Systems". Jackson Libri.
+</ul>
+
+<h3>
+Useful links (permanently on going)
+</h3>
+<ul>
+<li> <a href="https://software.intel.com/en-us/articles/intel-sdm"> 
+x86 documentation</a>
+<li> <a href="http://www.kernel.org/"> LINUX kernel source code</a>
+<li> <a href="http://www.xml.com/ldd/chapter/book/"> LINUX device drivers </a>
+<li> <a href="http://en.tldp.org/LDP/tlk/tlk.html"> LINUX internals</a>
+<li> <a href="http://www.bertolinux.com/kernel/italiano/KernelAnalysis-HOWTO-1.html"> LINUX internals</a>
+<li> <a href="http://lxr.linux.no/"> Cross-Referencing Linux</a>
+<li> <a href="https://www.kernel.org/doc/gorman/pdf/understand.pdf"> Understanding The
+Linux Virtual Memory Manager</a>
+ 
+</ul>
+
+<h3>
+IMPORTANT NOTICE
+</h3>
+<p>Even though the above references and links are provided, I must alert students that no unique 
+hand-book can fully cover the presented topics (and/or the way of presenting them). Hope this will be an added value to the course, rather than a limitation. Please come to any available student reception as soon as any doubt, or the need for whathever clarification, arises. 
+
+<hr>
+
+<h3>
+List of planned topics (2018-2019) - interleaved schedule will drive the presentation
+</h3>
+<ul>
+<li> Hardware review
+  <ul>
+      <li>Pipelining and superscalar processors
+      <li>Speculative hardware
+      <li>Multi-processors and multi-cores
+      <li>Physical memory organization
+      <li> Memory coherency and consistency
+      <li> Hardware synchronization support
+      <li> Advanced interrupt architectures 
+   </ul>
+
+<p>
+<li> Kernel Internals
+<ul>
+ <li> Addressing and software protection models
+ <li> Kernel access GATEs
+ <li> System calls dispatching 
+<li> System level memory management 
+<li> Advanced management of interrupts
+<li> System (kernel) scalability 
+<li> Virtual file system structures 
+<li> Software interactions with the memory hierarchy
+<li>Linearizability and advanced thread coordination approaches
+</ul>
+
+<!--
+<li> Compilation and executable formats 
+<ul> 
+<li> ELF
+<li>Advanced compilation tools 
+</ul>
+<br>
+-->
+
+<p>
+<li> Security
+<ul> 
+<li>System security aspects 
+<li>Authentication and habilitation
+<li>Protection domains and secure operating systems
+<li>System internal attacks and countermeasures
+<li>IDS and Reference Monitor architectures
+<li>Attacks at the border between hardware and software
+</ul>
+<p>
+<li> Case studies: Linux kernel 2.4/2.6/3.xx/4.xx (x86 architectures)
+<ul> 
+<li> Boot basics
+<li> Main data structures and initialization 
+<li> System call mechanisms
+<li> Steady state behavior 
+<li> Kernel hacking 
+ <li> Modules
+
+</ul>
+<br>
+<br>
+
+</ul>
+</ul>
+
+<hr>
+<h3>
+Slides and software
+</h3>
+<table width="610" border="1">
+<tr bgcolor="#00FF40">
+<td> <b>Slides</b> </td>
+<td> 
+Software protection, system call mechanisms and kernel hacking basics (with case study on Linux) -  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-basics.pdf"> download</a>
+</li>
+</tr>
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>- Example of user code ASM usage   
+<a href="http://www.dis.uniroma1.it/pub/quaglia/asm-swap.c"> download</a>
+<p>- Example of user level C/ASM mixed code   
+<a href="http://www.dis.uniroma1.it/pub/quaglia/asm-c-mixed.tar"> download</a>
+<p>- Example of VDSO access and analysis  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/vdso.c"> download</a>
+<p>- Example of ASM and system traps usage   
+<a href="http://www.dis.uniroma1.it/pub/quaglia/asm-terminal-echo.c"> download</a>
+<p>
+- Baseline example of system-call-table dynamic hacking   
+<a href="http://www.dis.uniroma1.it/pub/quaglia/baseline-sys-call-table-hacking.tar"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#00FF40">
+<td> <b>Slides</b> </td>
+<td>
+Kernel level memory management (with case study on LINUX) -  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-mem.pdf"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+- Virtual to physical mapping discover via module   
+<a href="http://www.dis.uniroma1.it/pub/quaglia/virtual-to-physical-mapping-oracle.tar"> download</a>
+<p>
+- Message log/deliver service via module   
+<a href="http://www.dis.uniroma1.it/pub/quaglia/sys-call-table-hacking.tar.gz"> download</a>
+<p>
+- Basic NUMA performance test   
+<a href="http://www.dis.uniroma1.it/pub/quaglia/numa-test.c"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#00FF40">
+<td> <b>Slides</b> </td>
+<td>
+<p>
+Addendum A - <a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-addendum-A-eng.pdf"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#00FF40">
+<td> <b>Slides</b> </td>
+<td>
+<p>
+LINUX kernel audit/debugging  - 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-linux-kernel-debugging-eng.pdf"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#00FF40">
+<td> <b>Slides</b> </td>
+<td>
+<p>
+LINUX modules  - 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-linux-modules.pdf"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+- System-call-table dynamic hacking plus memory management plus module params  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/sys-call-table-hacking-more-advanced.tar.gz"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+- Page table audit  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/page-table-audit.tar"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+- Modules cross referencing  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/module-cross-references.tar"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#00FF40">
+<td> <b>Slides</b> </td>
+<td>
+<p>
+Advanced task/thread management concepts (with case study on LINUX) - 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-task-management.pdf"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+-  Basic usage of work queues  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/work-queues.tar"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+-  Basic usage of wait queues  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/wait-queues.tar"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+-  Basic usage of per thread wait queues and individual thread awake  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/wait-queues-variant.tar"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+-  A sleep/wakeup queue  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/sleep-wakeup-queue.tar"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+-  A full sleep/wakeup queue  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/full-sleep-wakeup-queue.tar"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+-  Basic usage of kernel threads  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/kernel-threads.tar"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+-  An amortized constant time sleep/wakeup queue  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/O1-sleep-wakeup-queue.tar"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+-  A process wide mutex  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/process-wide-mutex.tar"> download</a>
+</td>
+</tr>
+<tr bgcolor="#00FF40">
+
+<td> <b>Slides</b> </td>
+<td>
+<p>
+Advanced trap/interrupt architectures -  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-traps-interrupts.pdf"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#00FF40">
+<td> <b>Slides</b> </td>
+<td>
+<p>
+Management of caching components (data cache and TLB) -  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-addendum-B.pdf"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+- Linux implementation of a page fault monitoring service via modules  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/pf-monitor.tar.gz"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+- Master/slave synchronization and kernel code patch simulation  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/master-slave-sync.tar"> download</a>
+</td>
+</tr>
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+- Management of TLB/Cache  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/tlb-cache-management.tar"> download</a>
+</td>
+</tr>
+<tr bgcolor="#00FF40">
+<td> <b>Slides</b> </td>
+<td>
+<p>
+Virtual file systems internals (with case study on Linux) -  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-virtual-file-system.pdf"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+- Linux implementation of a device file for a broadcas service on ttys (via modules) -  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/broadcast-dev.tar.gz"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+- A basic proc file  -  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/proc-example.tar"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+-  A device file for hitting processes 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/address-space-hit.tar"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+<font color="red"><h3>NEW </h3></font>
+-  Stdin interceptor on bash 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/terminal-interceptor.tar"> download</a>
+</td>
+</tr>
+<tr bgcolor="#00FF40">
+<td> <b>Slides</b> </td>
+<td>
+<p>
+Security   
+<a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-security.pdf"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+- Software exploits (setup for Linux 2.6.5-7.282-smp i686 i386 GNU/Linux -  gcc  3.3.3)
+<a href="http://www.dis.uniroma1.it/pub/quaglia/exploit-examples.tar"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+<font color="red"><h3>NEW </h3></font>
+- A basic trojan-horse for the ls command 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/tr-example-1.c"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+<font color="red"><h3>NEW </h3></font>
+- Example of UID/EUID management 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/suid-seuid-example.c"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+<font color="red"><h3>NEW </h3></font>
+- Software exploits (setup for Linux 3-16-7 x86_64 GNU/Linux - gcc 4.3.8)
+<a href="http://www.dis.uniroma1.it/pub/quaglia/buffer_overflow_x86_64.tar"> download</a>
+</td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software examples</b> </td>
+<td>
+<p>
+<font color="red"><h3>NEW </h3></font>
+- A Linux reference monitor 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/reference-monitor.tar"> download</a>
+</td>
+</tr>
+
+</table>
+
+<!--
+<tr bgcolor="#00FF40">
+<td> <b>Slides</b> </td>
+<td>
+<p>
+Basic support for guest systems execution  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-virtualization-support.pdf"> download</a>
+</td>
+</tr>
+-->
+
+
+<!--
+<ul>
+<li>
+Software protection, system call mechanisms and kernel hacking basics (with case study on LINUX) -  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-basics.pdf"> download</a>
+<li>
+Example of user code ASM usage   
+<a href="http://www.dis.uniroma1.it/pub/quaglia/asm-swap.c"> download</a>
+<li>
+Example of user level C/ASM mixed code   
+<a href="http://www.dis.uniroma1.it/pub/quaglia/asm-c-mixed.tar"> download</a>
+<li>
+Example of VDSO access and analysis -  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/vdso.c"> download</a>
+<li>
+Example of ASM and system traps usage   
+<a href="http://www.dis.uniroma1.it/pub/quaglia/asm-terminal-echo.c"> download</a>
+<li>
+Baseline example of system-call-table dynamic hacking -  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/baseline-sys-call-table-hacking.tar"> download</a>
+<li>
+Kernel level memory management (with case study on LINUX) -  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-mem.pdf"> download</a>
+<li>
+Example of system-call-table dynamic hacking -  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/sys-call-table-hacking.tar.gz"> download</a>
+<li>
+Addendum A <a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-addendum-A-eng.pdf"> download</a>
+<li>
+LINUX kernel audit/debugging  - 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-linux-kernel-debugging-eng.pdf"> download</a>
+
+<li>
+LINUX modules  - 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-linux-modules.pdf"> download</a>
+<li>
+Advanced task/thread management concepts (with case study on LINUX) - 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-task-management.pdf"> download</a>
+
+<li>
+Example of system-call-table dynamic hacking (more advanced) -  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/sys-call-table-hacking-more-advanced.tar.gz"> download</a>
+
+<li>
+Advanced trap/interrupt architectures -  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-traps-interrupts.pdf"> download</a>
+
+<li>
+Executable Formats, Program Startup, and Binary Manipulation -  
+<a href="http://www.dis.uniroma1.it/~pellegrini/didattica/so-ii/elf-2015.pdf"> download</a>
+
+<li>
+Management of caching components (data cache and TLB) -  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-addendum-B.pdf"> download</a>
+
+<li>
+Linux implementation of a page fault monitoring service (via modules) -  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/pf-monitor.tar.gz"> download</a>
+
+<li>
+Virtual file systems internals (with case study on Linux) -  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-virtual-file-system.pdf"> download</a>
+
+<li>
+Linux implementation of a device file for a broadcas service on ttys (via modules) -  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/broadcast-dev.tar.gz"> download</a>
+
+<li>
+<font color="red">NEW </font>
+Security   
+<a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-security.pdf"> download</a>
+
+<li>
+<font color="red">NEW </font>
+Software exploit (buffer overflow): base example <a href="http://www.dis.uniroma1.it/pub/quaglia/exploit-example.c"> (download)</a>
+- advanced examples <a href="http://www.dis.uniroma1.it/pub/quaglia/exploit-examples.tar"> (download)</a>
+
+<li>
+<font color="red">NEW </font>
+Basic support for guest systems execution  
+<a href="http://www.dis.uniroma1.it/pub/quaglia/AOSV-virtualization-support.pdf"> download</a>
+-->
+
+<!--
+<a href="http://www.dis.uniroma1.it/pub/quaglia/partA-new.pdf"> ita</a>
+)
+-->
+
+<!--
+<li>LINUX memory management system  - 
+(<font color="red">download</font>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-memory-boot-eng.pdf"> eng</a>
+- 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-memory-system-new.pdf"> ita</a>
+)
+
+<li>x86/LINUX trap/interrupt supports  - 
+(<font color="red">download</font>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-idt-boot-eng.pdf"> eng</a>
+- 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-idt-boot.pdf"> ita</a>
+)
+<li>Memory management example  <a href="http://www.dis.uniroma1.it/pub/quaglia/memory-management-example.txt"> (download)</a>
+<li>Addendum A  - 
+(<font color="red">download</font>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/addendum-A-eng.pdf"> eng</a>
+- 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/addendum-A.pdf"> ita</a>
+)
+<li>LINUX kernel audit/debugging  - 
+(<font color="red">download</font>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-kernel-debugging-eng.pdf"> eng</a>
+- 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-kernel-debugging.pdf"> ita</a>
+)
+<li>ELF format and advanced compilation techniques <a href="http://www.dis.uniroma1.it/pub/quaglia/seminario-elf-2010.pdf"> (download)</a> - please refer also the the Web page of <a href="http://www.dis.uniroma1.it/~pellegrini"> Dr. Pellegrini </a>
+<li>LINUX task/process management  - 
+(<font color="red">download</font>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-sched-boot-eng.pdf"> eng</a>
+- 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/advanced-sched.pdf"> ita</a>
+)
+<li>Addendum-B <a href="http://www.dis.uniroma1.it/pub/quaglia/addendum-B.pdf"> (download)</a>
+<li>LINUX VFS  - 
+(<font color="red">download</font>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-vfs-boot-eng.pdf"> eng</a>
+- 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-vfs.pdf"> ita</a>
+)
+<li>LINUX modules  - 
+(<font color="red">download</font>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-modules-eng.pdf"> eng</a>
+- 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/linux-modules.pdf"> ita</a>
+)
+<li>Char device example via modules <a href="http://www.dis.uniroma1.it/pub/quaglia/noiser-char-dev.tar"> (download)</a>
+<li>Proc file system example via modules <a href="http://www.dis.uniroma1.it/pub/quaglia/proc-example.tar"> (download)</a>
+<li>Security  - 
+(<font color="red">download</font>
+<a href="http://www.dis.uniroma1.it/pub/quaglia/security-eng.pdf"> eng</a>
+- 
+<a href="http://www.dis.uniroma1.it/pub/quaglia/security.pdf"> ita</a>
+)
+<li>Software exploit (buffer overflow): base example <a href="http://www.dis.uniroma1.it/pub/quaglia/exploit-example.c"> (download)</a>
+- advanced examples <a href="http://www.dis.uniroma1.it/pub/quaglia/exploit-examples.tar"> (download)</a>
+
+-->
+<!--
+<li>Sottosistema di trap/interrupt in LINUX <a href="http://www.dis.uniroma1.it/pub/quaglia/linux-idt-system.pdf"> (download)</a>
+<li>Esercitazione sul sottosistema di memoria in LINUX <a href="http://www.dis.uniroma1.it/pub/quaglia/esercitazione_memoria.txt"> (download)</a>
+<li>Addendum-A <a href="http://www.dis.uniroma1.it/pub/quaglia/addendum-A.pdf"> (download)</a>
+<li>Strumenti per il debugging su Kernel LINUX <a href="http://www.dis.uniroma1.it/pub/quaglia/linux-kernel-debugging.pdf"> (download)</a>
+<li>Sottosistema di gestione di task/processi in LINUX <a href="http://www.dis.uniroma1.it/pub/quaglia/advanced-sched.pdf"> (download)</a>
+<li>Addendum-B <a href="http://www.dis.uniroma1.it/pub/quaglia/addendum-B.pdf"> (download)</a>
+<li>VFS in LINUX <a href="http://www.dis.uniroma1.it/pub/quaglia/linux-vfs.pdf"> (download)</a>
+<li>Moduli LINUX <a href="http://www.dis.uniroma1.it/pub/quaglia/linux-modules.pdf"> (download)</a>
+<li>Un esempio di char device tramite modulo <a href="http://www.dis.uniroma1.it/pub/quaglia/noiser-char-dev.tar"> (download)</a>
+<li>Sicurezza <a href="http://www.dis.uniroma1.it/pub/quaglia/security.pdf"> (download)</a>
+<li>Esempi di software exploit: caso base <a href="http://www.dis.uniroma1.it/pub/quaglia/exploit-example.c"> (download)</a>
+- casi avanzati <a href="http://www.dis.uniroma1.it/pub/quaglia/exploit-examples.tar"> (download)</a>
+
+<li>Formato ELF e tecniche avanzate di compilazione <a href="http://www.dis.uniroma1.it/pub/quaglia/seminario-elf-2010.pdf"> (download)</a>
+- Esempi di manipolazione del codice <a href="http://www.dis.uniroma1.it/pub/quaglia/esempi-manipolazione-codice.tar.bz2"> (download)</a>
+</ul>
+-->
+
+</font>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
