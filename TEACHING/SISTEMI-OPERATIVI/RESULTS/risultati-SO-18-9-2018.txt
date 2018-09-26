@@ -6,7 +6,8 @@ Risultati dell' appello (prova scritta) di Sistemi Operativi del 18/9/2018
 Votazione massima ottenibile: 21
 Soglia per la sufficienza: 12
 
-Matricola	VOTO
+Matricola	Voto
+
 227111		12
 239156		14
 215742		non suff.
