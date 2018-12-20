@@ -1,0 +1,81 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"> 
+<title> Sistemi Operativi III  </title>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<font face="Arial, Helvetica, sans-serif"> 
+<h2> 
+<p align="center">
+Advanced Operating Systems (9 CFU)<br>
+MS Degree in Computer Engineering<br>
+Academic Year 2018/2019<br>
+</p>
+</h2>
+<h3>
+<p align="center">
+Lecturer: Francesco Quaglia 
+</p>
+</h3>
+</p>
+
+
+<hr>
+<p> The examination requires fulfilling the developement of a Linux kernel subsystem compliant with the following specification: 
+
+</p><h3>
+Sessioned file access 
+</h3>
+This specification is related to the implementation of a device  
+driver that allows sessioned file access for files that are
+kept in a specific directory within the VFS tree.
+The pathname of this directory is a parameter of the device driver.
+Lets' suppose that this pathname is dir-A, then for any file F in dir-A
+the driver enables creating a sessioned file F in another directory whose pathname will be
+dir-B. This pathname can be selected by the sofwtare designer.
+
+The device driver need to suppor creation and removal of sessiond files with arbitrary names in/from dir-B.
+
+When a sessioned file F in dir-B is opened,  a new incarnation of this file is created and its content needs to be atomically filled with the one of the corresponding file F in dir-A. However,  
+its update operations must not be immediately visible on the corresponding file F in dir-A (or on other files).
+These updates must be atomically flushed to F in dir-A only upon the closure of an I/O session on the sessioned file F residing in dir-B. In other words, all the operations on the sessioned file remain volatile up to its closure.
+If upon such closure, the  the corresponding file F in dir-A no longer exists, then the closing process must 
+receive the SIGPIPE signal.
+
+Sessioned files in dir-B must support at least the following set of file-operations:
+<ul>
+<li>open
+<li> close
+<li>read
+<li>write
+<li>lseek
+
+Volatile i-nodes are allowed for sessioned files in dir-B, so that they can be eliminated when umounting the file-system 
+they belong to.
+Also, for simplicity of the design, we can assume that the maximum size of a file F in dir-A to be accessed via the correspodning sessioned file F in dir-B does not exceed the maximum storage size garanteed by a single buddy-system allocation operation on the specific version of the Linux kernel where the device driver is nested.
+
+Concurrent I/O sessions on files in dir-B must be allowed, as well as concurrent operations on a same I/O session, as usual for files in Linux. On the other hand, atomicity of the concurrent operations must still be guaranteed.
+</p><hr>
+
+
+
+<h3>
+Project delivery
+</h3>
+Projects can be delivered (for analysis and discussion) at any scheduled tutoring slot
+<hr>
+
+</font>
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
