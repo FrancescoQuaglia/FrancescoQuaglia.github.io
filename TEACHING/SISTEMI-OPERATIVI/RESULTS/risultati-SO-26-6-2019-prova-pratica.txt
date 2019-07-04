@@ -15,7 +15,7 @@ Matricola	voto
 233382		non suff.
 218205		11
 251648		10
-231780		non suff.
+231780		7	
 241424		non suff.
 244242		7
 253111		non suff.
