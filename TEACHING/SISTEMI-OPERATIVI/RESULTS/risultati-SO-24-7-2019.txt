@@ -1,0 +1,47 @@
+
+Universita' di Roma Tor Vergata
+Corso di Laurea in Ingeneria Informatica
+
+Risultati dell'appello (prova scritta) di Sistemi Operativi del 24/7/2019
+
+Votazione massima ottenibile: 21
+Soglia per la sufficienza: 12
+
+
+Matricola	voto
+
+242968		10
+164659		non suff.
+252792		12
+243651		16
+258021		16
+252227		14
+232437		non suff.
+259756		19
+258245		non suff.
+218004		non suff.
+253186		19
+239888		non suff.
+245805		14
+252770		14
+202629		non firmata la delibera
+253281		non suff.
+228577		non suff.
+240253		non suff.
+232045		12
+239872		non suff.
+253015		17
+253189		19
+245754		12
+182354		non suff.
+241369		18
+232033		15
+215450		non suff.
+240379		13
+240149		non suff.
+253822		20
+201570		non suff.
+
+
+
+
