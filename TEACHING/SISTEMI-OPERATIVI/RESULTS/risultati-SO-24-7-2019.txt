@@ -10,7 +10,7 @@ Soglia per la sufficienza: 12
 
 Matricola	voto
 
-242968		10
+242968		non suff.
 164659		non suff.
 252792		12
 243651		16
