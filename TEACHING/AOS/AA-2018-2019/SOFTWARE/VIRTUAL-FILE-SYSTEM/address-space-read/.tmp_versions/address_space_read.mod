@@ -1,0 +1,2 @@
+/home/francesco/git-web-site/FrancescoQuaglia.github.io/TEACHING/AOS/SOFTWARE/VIRTUAL-FILE-SYSTEM/address-space-read/address_space_read.ko
+/home/francesco/git-web-site/FrancescoQuaglia.github.io/TEACHING/AOS/SOFTWARE/VIRTUAL-FILE-SYSTEM/address-space-read/address_space_read.o

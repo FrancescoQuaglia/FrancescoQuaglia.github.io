@@ -1,0 +1,2 @@
+/home/francesco/LEZIONE/BASIC-KERNEL-PROGRAMMING/SYS-CALL-TABLE-DISCOVERY/sys_call_table_hacker.ko
+/home/francesco/LEZIONE/BASIC-KERNEL-PROGRAMMING/SYS-CALL-TABLE-DISCOVERY/sys_call_table_hacker.o

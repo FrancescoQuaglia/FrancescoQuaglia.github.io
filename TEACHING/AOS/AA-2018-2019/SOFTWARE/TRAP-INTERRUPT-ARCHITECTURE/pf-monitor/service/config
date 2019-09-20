@@ -1,0 +1,2 @@
+grep " sys_call_table" /boot/System.map-3.16.7-7-desktop | awk '/ff/{print "unsigned long sys_call_table = 0x"$1}'
+grep " sys_ni_syscall" /boot/System.map-3.16.7-7-desktop | awk '/ff/{print "unsigned long sys_ni_syscall = 0x"$1}'

@@ -1,0 +1,2 @@
+/home/francesco/git-web-site/FrancescoQuaglia.github.io/TEACHING/AOS/SOFTWARE/TRAP-INTERRUPT-ARCHITECTURE/master-slave-synch-and-kernel-patching/master-slave-synch.ko
+/home/francesco/git-web-site/FrancescoQuaglia.github.io/TEACHING/AOS/SOFTWARE/TRAP-INTERRUPT-ARCHITECTURE/master-slave-synch-and-kernel-patching/master-slave-synch.o
