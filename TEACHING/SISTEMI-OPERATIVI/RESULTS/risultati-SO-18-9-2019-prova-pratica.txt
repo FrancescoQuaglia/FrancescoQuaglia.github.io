@@ -21,7 +21,7 @@ Matricola	voto
 203293		non suff.
 258070		non suff.
 255060		non suff.
-245245		6
+245245		7
 252225		8
 259756		6
 240471		6
