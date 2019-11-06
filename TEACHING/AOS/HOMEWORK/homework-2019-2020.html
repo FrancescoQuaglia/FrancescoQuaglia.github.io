@@ -77,7 +77,7 @@ The service should guarantee no intermediate copy of the message content between
 </h3>
 
 <p>This homework deals with the implementation of a Linuk kernel module that discovers at run-time the positioning of the system-call table. The assumption is that the module programmer can exploit the compressed executable image of the kernel as exposed in /boot (the script at <a href="../SOFTWARE/decompress.sh">this link</a> can be used as a facility for decompressing the kernel image).
-	The module should include a function returning the current memory address of the system-call table, also logging it  via a kernel level message accessible via the 'dmesg' shell command. The module shoudl also include a function that identifies free entires of the system-call table, to be possibly used for inserting new services into the kernel. Essentially, this homework deals with providing a baseline module for hacking the system-call table which is independent of the kernel version (and should work across, e.g., kernel 3 to 5).
+	The module should include a function returning the current memory address of the system-call table, also logging it  via a kernel level message accessible via the 'dmesg' shell command. The module should also include a function that identifies free entires of the system-call table, to be possibly used for inserting new services into the kernel. Essentially, this homework deals with providing a baseline module for hacking the system-call table which is independent of the kernel version (and should work across, e.g., kernel 3 to 5).
 	
 <hr>
 
