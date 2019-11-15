@@ -1,0 +1,63 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"> 
+<title> Advanced Operating Systems  </title>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<font face="Arial, Helvetica, sans-serif"> 
+
+<hr>
+<h2> 
+<p align="center">
+Seminar Announcement<br>
+</p>
+</h2>
+<h3>
+<p align="center">
+Speaker: Prof. Paolo Romano<br>
+Location and schedule: Room Archimede - November 21 2019 at 15:00-16:30
+</p>
+</h3>
+</p>
+
+<hr>
+
+<p><b> Title </b>
+
+<p>Bridging the gap between transactional memory and two emerging hardware technologies: non-volatile memories and heterogeneous computing architectures.
+
+<p><b> Abstract </b>
+
+
+<p>Transactional Memory (TM) is a simple, yet powerful, synchronization abstraction for concurrent programming, whose popularity has grown largely over the last years: nowadays, hardware supports for TM are provided in commodity CPUs (e.g., by Intel and IBM) and, at the software level, TM has been integrated in mainstream programming languages, such as C/C++ and Java.
+
+In this talk I will present the novel challenges and research opportunities that arise in the area of TM due to the emergence of two recent hardware trends, namely Non-Volatile Memory (NVM) and heterogeneous computing architectures.
+
+On the front of NVM, I will present NV-HTM [1], a system that allows the execution of transactions over NVM using unmodified commodity hardware TM (HTM) implementations. NV-HTM exploits a hardware-software co-design approach that exploits two key novel ideas: i) relying on software to persist transactional modifications after they have been committed via HTM; ii) asynchronous checkpointing schemes that  not only bound the log space and recovery time, but also implement wear leveling techniques to enhance NVM's endurance. As I will show, NV-HTM can achieve up to 10x speed-ups and up to 11.6x reduced flush operations with respect to state of the art solutions, which, unlike NV-HTM, require custom modifications to existing HTM systems.
+
+On the front of heterogeneous computing, I will present the abstraction of Heterogeneous Transactional Memory (HeTM) [2]. HeTM provides programmers with the illusion of a single memory
+region, shared among the CPUs and the (discrete) GPU(s) of a heterogeneous system, with support for atomic transactions. Besides introducing the abstract semantics and programming
+model of HeTM, I will present the design and evaluation of a concrete implementation of the proposed abstraction, which we named Speculative HeTM (SHeTM). SHeTM makes use of a novel
+design that leverages speculative techniques that aim at hiding the large communication latency between CPUs and discrete GPUs and at minimizing inter-device synchronization
+overhead.
+
+<p><b> References </b>
+
+<p>[1] D. Castro, J. Barreto and P. Romano, Hardware Transactional Memory meets Persistent Memory, 32nd IEEE International Parallel & Distributed Processing Symposium (IPDPS), 2018
+<p>[2] D. Castro, P. Romano, A. Ilic and A. Khan, HeTM: Transactional Memory for Heterogeneous Systems, 28th International Conference on Parallel Architectures and Compilation Techniques (PACT 2019)
+
+<p><b>Short Bio </b>
+
+<p>Paolo Romano received his PhD from Rome University "Sapienza" (2007) and his Master degree "summa cum laude from Rome University "Tor Vergata" (2002). Paolo is an Associate Professor at Técnico (U. Lisboa) and a Researcher at INESC-ID. His research interests include parallel and distributed computing, dependability, autonomic systems, performability modelling and evaluation, data management in large scale systems, cloud and high performance computing. In these areas, Paolo published more than 140 papers, receiving 3 best awards, and has coordinated several national and European projects, including a COST Action bringing together researchers from 60 institutions and 17 countries. Paolo serves regularly as Program Committee member and reviewer for renowned international conferences and journals, including EuroSys, DSN, ICDCS, MASCOTS, IEEE TKDE, IEEE TPDS, ACM TOPLAS.
+
+
+
+
+
+
+
+
+</font>
+
+</body>
