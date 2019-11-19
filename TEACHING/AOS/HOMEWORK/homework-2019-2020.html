@@ -81,6 +81,19 @@ The service should guarantee no intermediate copy of the message content between
 	
 <hr>
 
+<h3>
+	<A NAME="MSS"><b>Micro-sleep Service (MSS)</b></a>
+</h3>
+
+<p>This homework deals with the implementation of a Linuk kernel module that offers a new system call
+which implemements a thread sleep service at microsecond granularity. Essentially the new system call has an execution semantic equivalent to the classical usleep() Posix service. The requirement is that the precision according to which the sleep-timeout
+provided by the calling thread is matched upon thread awake should be at least the same as the one of the native usleep() service.
+The user program at  <a href="../SOFTWARE/usleep-test.c">this link</a> can be used in order to determine if the actual precision of the
+implemented sleep service is comparable with the one of usleep().
+	
+<hr>
+
+
 </font>
 
 </body>
