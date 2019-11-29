@@ -94,6 +94,18 @@ API that offers the possibility to set hr-timeouts, so hr-timers should be used 
 	
 <hr>
 
+<h3>
+	<A NAME="TI"><b>Trap Installer (TI)</b></a>
+</h3>
+
+<p>This homework deals with the implementation of a Linux kernel module that offers a new trap. 
+The new trap is a simple stub that can in turn pass control to a kernel function coded with a classical C-based
+interface. To find a free entry in the IDT table where to install the new trap either a search can be
+performed by exploiting the free_vectors symbol (this identifies a bitmap that can be accesses/modified with the test_bit(n,bitmap)/set_bit(n,bitmap) API) if available for module programming on the specific kernel version, or the entry 
+at displacement 255 can be overwritten (which is typically devoted to spurious interrupts). To manipulate the IDTR 
+the kernel API functions load_idt() and store_idt() can be exploited. Also, the notation ".globl NAME" can be exploited in a asm code block to make any label defined in the code block visible to the compiler via a corresponding function associated with NAME.  Recall that an IDT entry is a "struct desc_struct". Finally, the exemplifying assumption can be made that the kernel starts with the PTI=off option (KAISER is switched off).
+	
+<hr>
 
 </font>
 
