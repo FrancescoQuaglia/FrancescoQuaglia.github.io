@@ -1,6 +1,6 @@
 <html><head>
 <meta http-equiv="content-type" content="text/html; charset=windows-1252"> 
-<title> Sistemi Operativi III  </title>
+<title> Advanced Operating Systems Homework Page  </title>
 
 </head>
 
@@ -77,7 +77,7 @@ The service should guarantee no intermediate copy of the message content between
 </h3>
 
 <p>This homework deals with the implementation of a Linux kernel module that discovers at run-time the positioning of the system-call table. The assumption is that the module programmer can exploit the compressed executable image of the kernel as exposed in /boot (the script at <a href="../SOFTWARE/decompress.sh">this link</a> can be used as a facility for decompressing the kernel image).
-	The module should include a function returning the current memory address of the system-call table, also logging it  via a kernel level message accessible via the 'dmesg' shell command. The module should also include a function that identifies free entires of the system-call table, to be possibly used for inserting new services into the kernel. Essentially, this homework deals with providing a baseline module for hacking the system-call table which is independent of the kernel version (and should work across, e.g., kernel 3 to 5).
+	The module should include a function returning the current memory address of the system-call table, also logging it  via a kernel level message accessible via the 'dmesg' shell command. The module should also include a function that identifies free entries of the system-call table, to be possibly used for inserting new services into the kernel. Essentially, this homework deals with providing a baseline module for hacking the system-call table which is independent of the kernel version (and should work across, e.g., kernel 3 to 5).
 	
 <hr>
 
@@ -86,7 +86,7 @@ The service should guarantee no intermediate copy of the message content between
 </h3>
 
 <p>This homework deals with the implementation of a Linux kernel module that offers a new system call
-which implemements a thread sleep service at microsecond granularity. Essentially the new system call has an execution semantic equivalent to the classical usleep() Posix service. The requirement is that the precision according to which the sleep-timeout
+which implements a thread sleep service at microsecond granularity. Essentially the new system call has an execution semantic equivalent to the classical usleep() Posix service. The requirement is that the precision according to which the sleep-timeout
 provided by the calling thread is matched upon thread awake should be at least the same as the one of the native usleep() service.
 The user program at  <a href="../SOFTWARE/usleep-test.c">this link</a> can be used in order to determine if the actual precision of the
 implemented sleep service is comparable with the one of usleep(). The solution should NOT rely on a wait-event-queue 
@@ -105,6 +105,19 @@ performed by exploiting the free_vectors symbol (this identifies a bitmap that c
 at displacement 255 can be overwritten (which is typically devoted to spurious interrupts). To manipulate the IDTR 
 the kernel API functions load_idt() and store_idt() can be exploited. Also, the notation ".globl NAME" can be exploited in a asm code block to make any label defined in the code block visible to the compiler via a corresponding function associated with NAME.  Recall that an IDT entry is a "struct desc_struct". Finally, the exemplifying assumption can be made that the kernel starts with the PTI=off option (KAISER is switched off).
 	
+<hr>
+
+<h3>
+	<A NAME="PC"><b>Process Controller (PC)</b></a>
+</h3>
+
+<p>This homework deals with the implementation of a Linux kernel module that offers a device file
+which allows updating the content of memory locations in the address space of an arbitrary process. The device file must support a write
+operation that leads to update the content of some memory location (supposed to be of type long) 
+in the address space of the target process.
+To be successful, the write operation needs to receive as input-stream a sequence of bytes structured as follows: "PID ADDRESS NEW_VALUE", where PID is the target process identifier, ADDRESS is the memory address where the update 
+needs to be installed and NEW_VALUE is the value to be installed on that memory location.
+
 <hr>
 
 </font>
