@@ -1,0 +1,25 @@
+
+University of Rome Tor Vergata
+MS in Computer Engineering
+
+Advanced Operating Systems course 
+
+Results of the examination held on 28/2/2020
+Top score: 18
+Threshold for acceptance: 11
+
+Student-ID	Outcome
+
+266595		15
+273395		18
+266710		11
+266667		17
+265577		16
+264955		13
+273699		14
+273063		16
+277550		15
+277665		8
+264928		13
+	
+
