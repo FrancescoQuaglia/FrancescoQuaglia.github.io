@@ -1,0 +1,23 @@
+
+Dato il protrarsi dell'emergenza COVID-19, data l'impossibilita' di svolgere gli esami con le regole annunciate ad inizio
+corso sulla pagina web dello stesso,  e dato il decreto rettorale D.R. n.888/2020 emanato dal Magnifico Rettore di questo Ateneo inerente
+all'obbligo di svolgimento di esami da remoto (almeno fino al 30 Luglio 2020), i due appelli estivi del corso di Sistemi Operativi AA.2019-2020 verranno svolti secondo le seguenti regole:
+
+1) ogni studente svolgera' il suo esame tramite una connessione diretta con il docente utilizzando uno strumento di teleconferenza che verra' indicato dal docente 
+
+2) l'esame consistera' di domande ed esercizi su argomenti del corso e di una domanda di programmazione nella
+quale verra' richiesto di produrre del codice in linguaggio C (Posix o WinAPI a scelta dello studente) che sia conforme ad una data specifica; l'esame sara' quindi un unicum senza possibilita' di mantenere il voto solo per una delle parti (teoria/pratica); per l'erogazione delle domande il docente potra' avvalersi di form accessibili via web dallo studente
+
+3) durante lo svolgimento dell'esame lo studente potra' utilizzare il manuale on-line offerto dalla shell Linux o il manuale on-line esposto dal sito MSDN della Microsoft per quanto riguarda WinAPI, in particolare per fornire la risposta alla domanda di programmazione in linguaggio C
+
+4) L'UTILIZZO DI NESSUN ALTRO MATERIALE (INLCUSI SITI WEB DIVERSI DAL SITO MSDN) E' PERMESSO COSI' COME DI NESSUN ALTRO DISPOSITIVO CHE NON SIA IL PC TRAMITE IL QUALE SIA ATTIVA LA CONNESSIONE IN TELECONFERENZA COL DOCENTE
+
+4) durante la prova d'esame lo studente condividera' l'intero schermo del suo PC con il docente e terra' la telecamra sempre accesa a posizionata (in conformita' alle direttive di Ateneo) in modo da mostrare viso e mani; il non rispetto di tali regole 
+dara' luogo all'invalidazione della prova d'esame
+
+5) data la necessita' di organizzare uno schedule delle teleconferenze col docente, nessuno studente che non sia prenotato regolarmente su Delphi entro la data di scadenza delle prenotazioni potra' essere ammesso a sostenere l'esame in quell'appello 
+
+6) essendo questa una situazione di emergenza, uno studente che si registra su Delphi e non si presenta alla teleconferenza all'orario stabilito, oppure si presenta ma riceve un punteggio inferiore ai 10/30 alla prova d'esame, non verra' ammesso alla successiva prova d'esame erogata nella stessa sessione; chiaramente questa regola devia dalla flessibilita' che e' normalmente ammessa per lo svolgimento dell'esame di Sistemi Operativi, ed e' di fatto un richiamo alla responsabilita' individuale di non presentarsi all'esame con una base di preparazione del tutto inadeguata, impegnando quindi uno slot di teleconferenza in modo inutile, oppure di impegnare quello stesso slot senza nemmeno presentarsi poi all'esame
+
+7) tutto quello che e' specificato al punto 6 e' relativo al fatto che il corso di Sistemi Operativi ha una numerosita' di studenti elevatissima (almeno in base all'indicatore del numero dei registrati al canale TEAMS dello stesso), e la responsabilita' individuale deve poterci portare a non creare inutilmente disservizi, principalmente verso gli stessi studenti; in ogno caso, il punto 6) e' conforme a quanto stabilito (in materia di partecipazione degli studenti ad appelli di una stessa sessione) dalla "Carta dei diritti delle studentesse e degli studenti dell'Universita' degli studi di Roma "Tor Vergata"
+
