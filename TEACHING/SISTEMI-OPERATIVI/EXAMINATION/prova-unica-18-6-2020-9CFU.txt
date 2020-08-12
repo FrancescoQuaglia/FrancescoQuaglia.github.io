@@ -3,10 +3,10 @@ I seguenti 3 quesiti sono stati presentati alla prova unica di Sistemi Operativi
 a causa dell'emergenza COVID-19
 
 DOMANDA 1
-Descrivere l’algoritmo di di scheduling di CPU Round-Robin (RR), discutendo l’impatto della scelta del time-slice 
+Descrivere l'algoritmo di di scheduling di CPU Round-Robin (RR), discutendo l’impatto della scelta del time-slice 
 sul comportamento dei processi I/O bound. Si consideri inoltre il caso in cui vengono attivati allo stesso istante 
-temporale 5 processi P1, ... , P5. P1 e’ un processo I/O bound che interagisce con un dispositivo 
-D per N=10 volte e poi termina (il processo termina non appena l’ultima interazione è completata). 
+temporale 5 processi P1, ... , P5. P1 e' un processo I/O bound che interagisce con un dispositivo 
+D per N=10 volte e poi termina (il processo termina non appena l’ultima interazione e' completata). 
 Tutti gli altri processi sono CPU bound di durata infinita. Supponendo che (1) la lunghezza di ogni CPU burst di 
 P1 prima di una nuova richiesta di I/O sia nota a priori e pari a 5 ms., (2)  il dispositivo D impieghi 9 ms. per 
 ogni interazione, (3) il tempo di CPU per il dispatcher RR sia nullo, si determini (motivando la risposta) quale tra i seguenti 
