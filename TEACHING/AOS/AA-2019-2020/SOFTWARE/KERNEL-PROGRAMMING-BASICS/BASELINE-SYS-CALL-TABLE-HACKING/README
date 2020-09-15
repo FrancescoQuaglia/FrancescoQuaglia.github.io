@@ -1,0 +1,21 @@
+=============================================================================
+README FILE for the sys-call-table-hacker.c kernel module
+
+please compile the module with 'make'
+
+then mount the module with 'insmod sys-call-table-hacker.ko' - this needs sudo privilege
+
+VERY IMPORTANT: the module relies on 2 symbols from the kernel system map:
+
+1) sys_call_table (and the corresponding address)
+2) sys_ni_syscall (and the corresponding address)
+
+if the two are not set correctly into the source code of sys-call-table-hacker.c (preamble part) 
+your system will likely crash or freeze upon mounting the module
+
+the same is true if kaslr is active
+
+once the module is correctly installed, you can inspect via dmesg the modifications to the original sys-call-table
+so to identify the numerical codes that have been associated with the two added system-calls, namely 
+sys_my_first_syscall and sys_my_second_syscall
+=============================================================================

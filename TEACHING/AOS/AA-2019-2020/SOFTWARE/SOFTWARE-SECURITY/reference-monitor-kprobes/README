@@ -1,0 +1,25 @@
+=============================================================================
+README FILE for the reference_monitor.c kernel module
+
+please compile the module with 'make'
+
+then mount the module with 'insmod reference_monitor.ko' - this needs sudo privilege
+
+VERY IMPORTANT: the module relies on 2 symbols from the kernel system map:
+
+1) execve_stub (and the corresponding address)
+2) the next symbol to execve_stub (and the corresponding address) - this is referred to as next_symbol in the module
+	
+
+if the two symbols are not set correctly into the source code of reference_monitor.c (preamble part) 
+your system will likely crash or freeze upon mounting the module
+
+you also need to set a function pointer called sys_execve to the address of the corresponding kernel level function
+
+the current settings of these symbols is for kernel 
+3.16.7-7-desktop #1 SMP PREEMPT Wed Dec 17 18:00:44 UTC 2014 (762f27a) x86_64 x86_64 x86_64 GNU/Linux
+
+once the module is mounted, the root user is restricted in terms of priviledges according to the blacklist of executables that root is not allowed to exec
+
+the module is not unmountable - you need system reboot for restoring the original kernel image
+=============================================================================

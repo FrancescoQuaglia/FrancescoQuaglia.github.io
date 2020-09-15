@@ -1,0 +1,2 @@
+# bash
+for i in $(seq $1 1 $2); do echo 'attacking with string: '; ./print-string $i ; ./print-string $i > dev; echo ''; sleep 1; done

@@ -1,0 +1,4 @@
+# bash
+START=1
+STOP=10000
+for i in $(seq $START 1 $STOP); do ./a.out < dev; done

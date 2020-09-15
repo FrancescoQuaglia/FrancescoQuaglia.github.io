@@ -1,0 +1,369 @@
+/*
+* 
+* This is free software; you can redistribute it and/or modify it under the
+* terms of the GNU General Public License as published by the Free Software
+* Foundation; either version 3 of the License, or (at your option) any later
+* version.
+* 
+* This module is distributed in the hope that it will be useful, but WITHOUT ANY
+* WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+* A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+* 
+* @file virtual-to-physical-memory-mapper.c 
+* @brief This is the main source for the Linux Kernel Module which implements
+*       a system call that can be used to query the kernel for current mappings of virtual pages to 
+*	physical frames - this service is x86_64 specific in the curent implementation
+	NOTE: it is a baseline that does not fully comply with atomicity requirements in concurrent kernel 
+	level memory map management!!!!
+*
+* @author Francesco Quaglia
+*
+* @date March 29, 2019
+*/
+
+#define EXPORT_SYMTAB
+#include <linux/module.h>
+#include <linux/kernel.h>
+#include <linux/fs.h>
+#include <linux/cdev.h>
+#include <linux/errno.h>
+#include <linux/device.h>
+#include <linux/kprobes.h>
+#include <linux/mutex.h>
+#include <linux/mm.h>
+#include <linux/sched.h>
+#include <linux/slab.h>
+#include <linux/version.h>
+#include <linux/interrupt.h>
+#include <linux/time.h>
+#include <linux/string.h>
+#include <linux/vmalloc.h>
+#include <asm/page.h>
+#include <asm/cacheflush.h>
+#include <asm/apic.h>
+#include <linux/syscalls.h>
+
+
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Francesco Quaglia <quaglia@dis.uniroma1.it>, Romolo Marotta <marotta@diag.uniroma1.it>");
+MODULE_DESCRIPTION("SCTH");
+
+
+#define MODNAME "SCTH"
+
+
+//stuff for sys cal table hacking
+#if LINUX_VERSION_CODE > KERNEL_VERSION(3,3,0)
+    #include <asm/switch_to.h>
+#else
+    #include <asm/system.h>
+#endif
+
+// used to update write-protected pages
+#ifndef X86_CR0_WP
+#define X86_CR0_WP 0x00010000
+#endif
+
+
+extern int sys_vtpmo(unsigned long vaddr);
+unsigned long new_sys_call_array[] = {(unsigned long)sys_vtpmo};
+#define HACKED_ENTRIES (int)(sizeof(new_sys_call_array)/sizeof(unsigned long))
+unsigned long the_syscall_table;
+unsigned long the_ni_syscall;
+
+int restore[HACKED_ENTRIES] = {[0 ... (HACKED_ENTRIES-1)] -1};
+
+#ifdef RECOVER
+// get the current page table 
+static inline unsigned long _read_cr3(void) {
+          unsigned long val;
+          asm volatile("mov %%cr3,%0":  "=r" (val) : );
+          return val;
+}
+
+
+//stuff for actual service operations
+#define ADDRESS_MASK 0xfffffffffffff000
+#define PAGE_TABLE_ADDRESS phys_to_virt(_read_cr3() & ADDRESS_MASK)
+#define PT_ADDRESS_MASK 0x7ffffffffffff000
+#define VALID 0x1
+#define MODE 0x100
+#define LH_MAPPING 0x80
+
+#define PML4(addr) (((long long)(addr) >> 39) & 0x1ff)
+#define PDP(addr)  (((long long)(addr) >> 30) & 0x1ff)
+#define PDE(addr)  (((long long)(addr) >> 21) & 0x1ff)
+#define PTE(addr)  (((long long)(addr) >> 12) & 0x1ff)
+
+
+#define NO_MAP (-1)
+
+#define AUDIT if(0)
+
+
+
+/* This routine traverses the page table to check 
+ *  if a virtual page is mapped into a frame */
+
+int sys_vtpmo(unsigned long vaddr){
+
+    void* target_address;
+        
+	pud_t* pdp;
+	pmd_t* pde;
+	pte_t* pte;
+	pgd_t *pml4;
+
+	int frame_number;
+	unsigned long frame_addr;
+
+
+	target_address = (void*)vaddr; 
+        /* fixing the address to use for page table access */       
+
+	AUDIT{
+	printk("%s: ------------------------------\n",MODNAME);
+	}
+	
+	AUDIT
+	printk("%s: vtpmo asked to tell the physical memory positioning (frame number) for virtual address %p\n",MODNAME,(target_address));
+	
+	pml4  = PAGE_TABLE_ADDRESS;
+
+	AUDIT
+	printk("%s: PML4 traversing on entry %lld\n",MODNAME,PML4(target_address));
+
+	if(((ulong)(pml4[PML4(target_address)].pgd)) & VALID){
+	}
+	else{
+		AUDIT
+		printk("%s: PML4 region not mapped to physical memory\n",MODNAME);
+		return NO_MAP;
+	} 
+
+	pdp = __va((ulong)(pml4[PML4(target_address)].pgd) & PT_ADDRESS_MASK);           
+
+    	AUDIT
+	printk("%s: PDP traversing on entry %lld\n",MODNAME,PDP(target_address));
+
+	if((ulong)(pdp[PDP(target_address)].pud) & VALID){
+	}
+	else{ 
+		AUDIT
+		printk("%s: PDP region not mapped to physical memory\n",MODNAME);
+		return NO_MAP;
+	}
+
+	pde = __va((ulong)(pdp[PDP(target_address)].pud) & PT_ADDRESS_MASK);
+	AUDIT
+	printk("%s: PDE traversing on entry %lld\n",MODNAME,PDE(target_address));
+
+	if((ulong)(pde[PDE(target_address)].pmd) & VALID){
+	}
+	else{
+		AUDIT
+		printk("%s: PDE region not mapped to physical memory\n",MODNAME);
+		return NO_MAP;
+	}
+
+	if((ulong)pde[PDE(target_address)].pmd & LH_MAPPING){ 
+		AUDIT
+		printk("%s: PDE region mapped to large page\n",MODNAME);
+		frame_addr = (ulong)(pde[PDE(target_address)].pmd) & PT_ADDRESS_MASK; 
+		AUDIT
+		printk("%s: frame physical addr is 0X%p\n",MODNAME,(void*)frame_addr);
+
+		frame_number = frame_addr >> 12;
+
+		return frame_number;
+	}
+
+	AUDIT
+	printk("%s: PTE traversing on entry %lld\n",MODNAME,PTE(target_address));
+
+	pte = __va((ulong)(pde[PDE(target_address)].pmd) & PT_ADDRESS_MASK);           
+
+ 	if((ulong)(pte[PTE(target_address)].pte) & VALID){
+	   // DO NOTHING
+	}
+	else{
+ 		AUDIT
+		printk("%s: PTE region (page) not mapped to physical memory\n",MODNAME);
+		return NO_MAP;
+	}
+
+	frame_addr = (ulong)(pte[PTE(target_address)].pte) & PT_ADDRESS_MASK; 
+	
+	AUDIT
+	printk("%s: frame physical addr of Ox%p is 0x%p\n",MODNAME, (void*)vaddr, (void*)frame_addr);
+
+	frame_number = frame_addr >> 12;
+
+	return frame_number;
+	
+}
+
+#endif
+
+#define NO_MAP (-1)//to migrate
+#define ADDRESS_MASK 0xfffffffffffff000//to migrate
+
+#define START 			0xffffffff00000000ULL		// use this as starting address --> this is a biased search since does not start from 0xffff000000000000
+#define MASK_12 		0x0000000000000fffULL		// mask to get least 12 bits
+#define ALIGN_12_INC		(MASK_12+0x1ULL)		// value to iterate over entries of size equal to 2**12
+#define MASK_21 		0x00000000001fffffULL		// mask to get least 21 bits
+#define ALIGN_21_INC		(MASK_21+0x1ULL)		// value to iterate over entries of size equal to 2**21
+#define MAX_ADDR		0xfffffffffff00000ULL
+#define FIRST_NI_SYSCALL	134
+#define SECOND_NI_SYSCALL	174
+
+#define ENTRIES_TO_EXPLORE 256
+
+
+// offset between text and rodata sections in the kernel image (module parameter)
+#define OFFSET			-1 //0xE00000
+int myoffset = OFFSET;
+module_param(myoffset, int, 0);
+
+unsigned long *hacked_ni_syscall=NULL;
+unsigned long **hacked_syscall_tbl=NULL;
+
+
+
+/* This routine checks if the page contains the begin of the syscall_table.
+   It has the following assumption:
+	6) syscall_table is aligned to sizeof(void*) 
+	7) entries 134 and 174 of the syscall table are occupied by sys_ni_syscall
+	8) syscalls are aligned to 8B
+*/
+
+int validate_page(unsigned long *addr){
+	int i = 0;
+	unsigned long page 	= (unsigned long) addr;
+	unsigned long new_page 	= (unsigned long) addr;
+	for(; i < 4096; i+=sizeof(void*)){		// uses assumption 6)
+		new_page = page+i+SECOND_NI_SYSCALL*sizeof(void*);
+			
+		// If the table occupies 2 pages check if the second one is materialized in a frame
+		if( 
+			( (page+4096) == (new_page & ADDRESS_MASK) )
+			&& sys_vtpmo(new_page) == NO_MAP
+		) 
+			break;
+		// go for patter matching
+		addr = (unsigned long*) (page+i);
+		if(
+			   ( (addr[FIRST_NI_SYSCALL] & 0x3  ) == 0 )			// uses assumption 8)	
+			&& ( (addr[FIRST_NI_SYSCALL] & START) == START ) 		// uses assumption 4)
+			&&    addr[FIRST_NI_SYSCALL] == addr[SECOND_NI_SYSCALL]		// uses assumption 7)
+		){
+			// it matches
+			hacked_ni_syscall = (void*)(addr[FIRST_NI_SYSCALL]);				// save ni_syscall
+			hacked_syscall_tbl = (void*)(addr);				// save syscall_table address
+			return 1;
+		}
+	}
+	return 0;
+}
+
+/* This routines looks for the syscall table.
+ * It applies a biased search. 
+ * It assumes that:
+ *	1) segments of the kernel are aligned to 2**21 B
+ *	2) syscall_table is in rodata section of the linux image
+ *	3) when loaded in memory there is no randomization within a segment
+ *	4) the segment will be placed in an address equal to or grather than 0xffffffff00000000 
+ *	5) the syscall_table starts within the first page of rodata section
+ */
+void syscall_table_finder(void){
+	unsigned long k; // current page
+	unsigned long candidate; // current page
+
+	// starting from the initial address look for a couple of materialized pages whose distance is equal to OFFSET
+	// check only pages aligned to 2**21
+	for(k=START; k < MAX_ADDR; k+=ALIGN_21_INC){	// use assumption 1) & 4)
+		candidate = k+myoffset;
+		if(
+			(sys_vtpmo(k) != NO_MAP) 		// candidate for text section
+			&& (sys_vtpmo(candidate) != NO_MAP)	// candidate for rodata section
+		){
+			// both are materialized 
+			// check if candidate maintains the syscall_table
+			if(validate_page( (unsigned long *)(candidate)) ){
+				printk("%s: syscall table found at %px\n",MODNAME,(void*)(hacked_syscall_tbl));
+				break;
+			}
+		}
+	}
+	
+}
+
+int init_module(void) {
+	
+	unsigned long cr0;
+	int i;
+	int ret;
+	
+	if(myoffset < 0){
+		printk("Not valid offset\n");
+		return -1;
+	}
+		
+        printk("%s: initializing\n",MODNAME);
+	
+	syscall_table_finder();
+
+	if(!hacked_syscall_tbl){
+		printk("%s: failed to find the sys_call_table\n",MODNAME);
+		return -1;
+	}
+
+	for(i=0;i<ENTRIES_TO_EXPLORE;i++)
+		if(hacked_syscall_tbl[i] == hacked_ni_syscall)
+			printk("%s: found sys_ni_syscall entry at syscall_table[%d]\n",MODNAME,i);	
+	
+//	while(hacked_syscall_tbl[i] == hacked_ni_syscall){
+//		printk("FOUND NI_SYSCALL ENTRY @ %d\n", i++);	
+//	}
+
+        //ret = get_entries(restore,HACKED_ENTRIES,&the_syscall_table,&the_ni_syscall);
+		ret = 0;
+		
+        if (ret != HACKED_ENTRIES){
+                printk("%s: could not hack %d entires (just %d)\n",MODNAME,HACKED_ENTRIES,ret); 
+                return -1;      
+        }
+
+#ifdef RECOVER
+        cr0 = read_cr0();
+        write_cr0(cr0 & ~X86_CR0_WP);
+
+        for(i=0;i<HACKED_ENTRIES;i++){
+                ((unsigned long *)the_syscall_table)[restore[i]] = (unsigned long)new_sys_call_array[i];
+        }
+        write_cr0(cr0);
+#endif
+
+        printk("%s: all new system-calls correctly installed on sys-call table\n",MODNAME);
+
+        return 0;
+
+}
+
+void cleanup_module(void) {
+
+        unsigned long cr0;
+        int i;
+                
+        printk("%s: shutting down\n",MODNAME);
+#ifdef RECOVER
+        cr0 = read_cr0();
+        write_cr0(cr0 & ~X86_CR0_WP);
+        for(i=0;i<HACKED_ENTRIES;i++){
+                ((unsigned long *)the_syscall_table)[restore[i]] = the_ni_syscall;
+        }
+        write_cr0(cr0);
+        printk("%s: sys-call table restored to its original content\n",MODNAME);
+#endif
+        
+}
