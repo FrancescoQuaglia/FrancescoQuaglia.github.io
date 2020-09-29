@@ -27,7 +27,6 @@ Matricola	voto
 254277		19/30
 258005		25/30
 259416		16/30	non sufficiente
-266728		18/30
 
 
 Sistemi Operativi 9CFU
@@ -49,6 +48,7 @@ Matricola	voto
 270289		NV	non sufficiente
 270638		18/30
 270788		12/30	non sufficiente
+266728		18/30
 
 
 
