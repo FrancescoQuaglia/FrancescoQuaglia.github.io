@@ -70,6 +70,15 @@ will be part of TLS
 	
 <hr>
 
+<h3>
+	<A NAME="HSCTD"><b>Harder Sys Call Table Discovery (HSCTD)</b></a>
+</h3>
+
+<p>This homework deals with the implementation of a Linux kernel module that discovers at run-time the positioning of the system-call table. The assumption is that the module programmer can exploit the compressed executable image of the kernel as exposed in /boot (the script at <a href="../SOFTWARE/decompress.sh">this link</a> can be used as a facility for decompressing the kernel image).
+	The module should include a function returning the current memory address of the system-call table, also logging it  via a kernel level message accessible via the 'dmesg' shell command. The module should also include a function that identifies free entries of the system-call table, to be possibly used for inserting new services into the kernel. Essentially, this homework deals with providing a baseline module for hacking the system-call table which is independent of the kernel version (and should work across, e.g., kernel 3 to 5).
+	
+<hr>
+
 <!--
 
 <h3>
@@ -91,14 +100,6 @@ will be part of TLS
 The service should guarantee no intermediate copy of the message content between user and kernel level buffers (just one copy is admitted) and should also guarantee RCU synchronization across threads.	
 <hr>
 
-<h3>
-	<A NAME="HSCTD"><b>Harder Sys Call Table Discovery (HSCTD)</b></a>
-</h3>
-
-<p>This homework deals with the implementation of a Linux kernel module that discovers at run-time the positioning of the system-call table. The assumption is that the module programmer can exploit the compressed executable image of the kernel as exposed in /boot (the script at <a href="../SOFTWARE/decompress.sh">this link</a> can be used as a facility for decompressing the kernel image).
-	The module should include a function returning the current memory address of the system-call table, also logging it  via a kernel level message accessible via the 'dmesg' shell command. The module should also include a function that identifies free entries of the system-call table, to be possibly used for inserting new services into the kernel. Essentially, this homework deals with providing a baseline module for hacking the system-call table which is independent of the kernel version (and should work across, e.g., kernel 3 to 5).
-	
-<hr>
 
 <h3>
 	<A NAME="MSS"><b>Micro-sleep Service (MSS)</b></a>
