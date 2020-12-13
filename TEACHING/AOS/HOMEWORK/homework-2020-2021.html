@@ -79,6 +79,19 @@ will be part of TLS
 	
 <hr>
 
+<h3>
+	<A NAME="PC"><b>Process Controller (PC)</b></a>
+</h3>
+
+<p>This homework deals with the implementation of a Linux kernel module that offers a device file
+which allows updating the content of memory locations in the address space of an arbitrary process. The device file must support a write
+operation that leads to update the content of some memory location (supposed to be of type long) 
+in the address space of the target process.
+To be successful, the write operation needs to receive as input-stream a sequence of bytes structured as follows: "PID ADDRESS NEW_VALUE", where PID is the target process identifier, ADDRESS is the memory address where the update 
+needs to be installed and NEW_VALUE is the value to be installed on that memory location.
+
+<hr>
+
 <!--
 
 <h3>
