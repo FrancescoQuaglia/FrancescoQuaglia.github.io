@@ -38,7 +38,7 @@ This specification is related to the implementation of a Linux kernel subsystem
 				at a  given <i>level</i>. 
 				The operation can fail also because of the delivery of a Posix signal to the thread while the thread is waiting for the message.	
 				
-				<li> <i>int tag_ctl(int tag, int command)</i>, this system call allows the caller to control the TAG service with <i>tag</i> as descriptor according to <i>command</i> that can be either <i>AWAKE_ALL</i> (for awaking all the threads waiting for messages, independently of the level), or <i>REMOVE</i> (for removing the TAG service from the system). A TAG service cannot be removed if there are threads waiting for messages on it). 
+				<li> <i>int tag_ctl(int tag, int command)</i>, this system call allows the caller to control the TAG service with <i>tag</i> as descriptor according to <i>command</i> that can be either <i>AWAKE_ALL</i> (for awaking all the threads waiting for messages, independently of the level), or <i>REMOVE</i> (for removing the TAG service from the system). A TAG service cannot be removed if there are threads waiting for messages on it. 
 	</ul>
  
 
