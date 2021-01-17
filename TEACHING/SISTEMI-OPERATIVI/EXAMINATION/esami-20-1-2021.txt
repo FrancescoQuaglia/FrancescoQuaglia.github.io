@@ -1,0 +1,47 @@
+
+Gli esami di Sistemi Operativi del giorno 20 gennaio 2021 verranno svolti utilizzando google-meet, oltre che il sistema d'esame remoto accessibile via web la cui demo e' gia' stata resa disponibile tramite il sito del corso. Tale sistema sara' accessibile tramite un link che verra' comunicato in sede d'esame.
+
+Le sottostanti tabelle indicano per ogni studente (identificato tramite matricola) quale link di google-meet debba essere utilizzato, ed a quale orario.
+
+Si ricorda che quando si accede alla teleconferenza la telecamera ed il microfono del laptop dovranno sempre rimarere attivi (e non potranno essere utilizzate cuffie auricolari), inoltre lo studente condividera' il suo schermo interamente con il docente. 
+
+Ogni studente e' pregato di verificare in anticipo che il proprio laptop/browser supporti connessioni google-meet che soddisfino i suddetti requisiti (altrimenti la prova d'esame non potra' essere svolta). Inoltre ogni studente dovra' avere a disposizione il proprio documento di identita' da esibire al momento dell'inizio della teleconferenza relativa alla sua prova d'esame.
+
+Quando si accede alla teleconferenza e' necessario identificarsi con cognome, nome e numero di matricola.
+
+
+Schedule delle teleconferenze:
+
+20 Gennaio 2021 ore 10:00
+
+Matricola	Link
+
+201774		meet.google.com/dwa-otxo-nsp 
+205796		meet.google.com/shx-pxop-rma 
+216525		meet.google.com/tmo-oxqz-kea 
+233229		meet.google.com/sbu-kjhg-ofs
+239470		meet.google.com/rca-atob-zoj 
+259416		meet.google.com/cft-gkiy-yem
+	
+233634		meet.google.com/eat-mfoc-ods 
+240663		meet.google.com/ozk-ruws-gdt 
+240675		meet.google.com/tno-dgoh-peg 
+252299		meet.google.com/npb-zzwa-xjn 
+253152		meet.google.com/oaq-qpsb-jpw 
+258245		meet.google.com/xsh-imyi-ndq
+
+
+
+20 Gennaio 2021 ore 12:00
+
+Matricola 	Link
+
+252289		meet.google.com/dwa-otxo-nsp 
+256253		meet.google.com/shx-pxop-rma 
+266910		meet.google.com/tmo-oxqz-kea 
+266911		meet.google.com/sbu-kjhg-ofs 
+266912		meet.google.com/rca-atob-zoj
+
+
+
+
