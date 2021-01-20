@@ -1,0 +1,37 @@
+
+Gli esami di Sistemi Operativi Avanzati del giorno 22 gennaio 2021 verranno svolti utilizzando google-meet, oltre che il un sistema d'esame remoto basato su form accessibile via web (la demo di funzionamento e' disponibile al link https://francescoquaglia.github.io/TEACHING/SISTEMI-OPERATIVI/EXAMINATION/examination-demo.mp4). Tale sistema sara' accessibile tramite un link che verra' comunicato in sede d'esame.
+
+Le sottostanti tabelle indicano per ogni studente (identificato tramite matricola) quale link di google-meet debba essere utilizzato e a quale orario.
+
+Si ricorda che quando si accede alla teleconferenza la telecamera ed il microfono del laptop dovranno sempre rimanere attivi (e non potranno essere utilizzate cuffie auricolari), inoltre lo studente condividera' il suo schermo interamente con il docente. 
+
+Ogni studente e' pregato di verificare in anticipo che il proprio laptop/browser supporti connessioni google-meet che soddisfino i suddetti requisiti (altrimenti la prova d'esame non potra' essere svolta). Inoltre ogni studente dovra' avere a disposizione il proprio documento di identita' da esibire al momento dell'inizio della teleconferenza relativa alla sua prova d'esame.
+
+Quando si accede alla teleconferenza e' necessario identificarsi con cognome, nome e numero di matricola.
+
+
+Schedule delle teleconferenze:
+
+22 Gennaio 2021 ore 11:00
+
+Matricola	Link
+
+ 0264808  	meet.google.com/dwa-otxo-nsp 
+ 0265562  	meet.google.com/shx-pxop-rma 
+ 0279323  	meet.google.com/tmo-oxqz-kea 
+ 0279708  	meet.google.com/sbu-kjhg-ofs 
+ 0282370  	meet.google.com/rca-atob-zoj 
+ 0285612  	meet.google.com/cft-gkiy-yem 
+ 0285830  	meet.google.com/cae-citz-oip 
+ 0285967  	meet.google.com/ijb-rmep-uzd
+	
+ 0286376  	meet.google.com/eat-mfoc-ods 
+ 0286766  	meet.google.com/ozk-ruws-gdt 
+ 0287567  	meet.google.com/tno-dgoh-peg 
+ 0287760  	meet.google.com/npb-zzwa-xjn 
+ 0290810  	meet.google.com/oaq-qpsb-jpw 
+ 0292400  	meet.google.com/xsh-imyi-ndq 
+ 0294300  	meet.google.com/whd-mowf-wqd 
+ 0299946 	meet.google.com/ver-dukm-exe
+
+
