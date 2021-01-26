@@ -1,0 +1,41 @@
+
+Universita' di Roma Tor Vergata
+Corso di Laurea in Ingeneria Informatica
+
+Risultati dell'appello di Sistemi Operativi del 20/1/2021 
+
+
+Sistemi Operativi 6 CFU	
+	
+Matricola	Voto
+201774		9/30  non sufficiente
+205796		7/30  non sufficiente
+216525		16/30 non sufficiente
+233229		7/30  non sufficiente
+233634		15/30 non sufficiente
+240663		16/30 non sufficiente 
+240675		18/30
+252299		20/30
+253152		25/30
+258245		12/30 non sufficiente
+
+
+
+Sistemi Operativi 9 CFU	
+	
+Matricola	Voto
+256253		19/30
+266910		22/30
+268603		11/30 non sufficiente
+269430		15/30 non sufficiente
+
+
+
+Sistemi Operativi 6 CFU  solo parte di programmazione	
+		
+Matricola	Voto
+239470		6/10
+259416		5/10 non sufficiente
+
+	
+
