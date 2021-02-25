@@ -1,0 +1,27 @@
+Gentili Studenti
+
+data l'emergenza sanitaria in atto in Italia, l'Universita' di Roma Tor Vergata sta adottando strategie di erogazione delle lezioni on-line.
+
+Per il corso di Sistemi Operativi e' stato aperto un canale sulla piattaforma Microsoft Teams. 
+
+Per poter usufruire di tale servizio, ogni studente deve attivare la sua registrazione su Office365 seguendo le istruzioni al seguente link: https://docs.ccd.uniroma2.it/office-365/ - in particolare bisogna avere (o avere attivato) le credenziali di dominio @uniroma2.eu
+
+La documentazione ufficiale per utilizzare Microsoft Teams e' disponibile al link https://docs.microsoft.com/en-us/microsoftteams/enduser-training insieme e diverse guide e video introduttivi. Si puo' usare Teams sia tramite l'interfaccia Web sia scaricando ed installando l'applicazione localmente. Sembra che l'interfaccia Web funzioni in tutte le sue possibilita' operative solo con browser Chrome, che comunque si puo' installare in modo free. Vi invito pertanto ad individuare la soluzione che meglio si adatta alle vostre esigenze.
+
+Per seguire le lezioni del corso a distanza, e' sufficiente che installiate Team, o che accediate a Team via Web (loggandovi su Office365), e che partecipiate al Team del corso. Dovete selezionare il tab "Teams". A questo punto e' sufficiente cliccare sul riquadro "Partecipare a un team con un codice" (join a team with a code) e inserire il codice del corso. Per il corso di Sistemi Operativi il codice e' rxf5ad2
+
+Una volta effettuata take operazione, dovrete ulteriormente confermare al volonta di entrare nel meeting (ovvero nello svolgimento della lezione), tramite il tasto join.
+
+Le lezioni verranno svolte agli orari e nei giorni gia' prestabiliti per la didattica frontale, ma si richiede di eseguire il join al relativo team almeno 5 minuti prima che inizi la lezione, per non disturbare i partecipanti durante lo svolgimento.
+
+Inoltre quando si esegue il join, deve essere disabilitata la videocamera (per non consumare risorse di rete inutilmente) e deve essere spento il microfono (per non causare rumore di fondo durante lo svolgimento delle lezioni).
+
+Le lezioni on-line inizieranno a partire da domani 12 Marzo 2020 (allo stesso orario pianificato per le corrispettive lezione frontali del giovedi', ovvero alle 12:00). In particolare, per la lezione di domani avremo una prima parte dedicata ad illustarre le regole comportamentali per poter partecipare in modo fruttuoso alle lezioni on-line, e verificheremo anche la bonta' di tale strumento tecnologico per corsi di grandi dimensioni (attualmente gli studenti registrati su Delphi al corso di Sistemi Operativi sono oltre 200).
+
+Il Team di Sistemi Operativi e' attivo gia' da ora, per cui potete gia' da ora procedere alla verifica preliminare sulla possibilita' di connettervi.
+
+
+Cordiali saluti
+
+       Francesco Quaglia
+
