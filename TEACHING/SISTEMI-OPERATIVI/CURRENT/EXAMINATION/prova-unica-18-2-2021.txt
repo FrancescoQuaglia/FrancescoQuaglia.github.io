@@ -1,0 +1,33 @@
+
+I seguenti 3 quesiti sono stati presentati alla prova unica di Sistemi Operativi 6/9CFU svoltasi 
+in via telematica a causa dell'emergenza COVID-19
+
+
+DOMANDA 1
+Descrivere l'algoritmo dell'orologio per la selezione della pagina vittima in sistemi operativi 
+che supportano la memoria virtuale.
+
+
+DOMANDA 2
+Si consideri un insieme di processi {P1,...,Pn} che periodicamente scrivono un nuovo messaggio
+su una memoria condivisa M. Un ulteriore processo LETT legge un nuovo messaggio da M periodicamente
+rimanendo bloccato in attesa del messaggio qualora non fosse stato scritto. Ogni processo Pi che 
+tenta di scrivere un nuovo messaggio rimane anche esso bloccato in attesa che l'ultimo messaggio 
+scritto su M sia stato letto. Inoltre, un ulterore processo RAND, assegna la possibilita' di 
+scrivere un nuovo messaggio ad un processo Pi scelto a caso, solo dopo che l'ultimo processo 
+precedentemente scelto abbia depositato il proprio messaggio.
+Risolvere tale problema di sincronizzazione, utilizzando solo semafori, fornendo lo pseudo-codice
+delle procedure SCRIVI, LEGGI e SELEZIONA utilizzate, rispettivamente, dal generico 
+processo Pi da LETT e da RAND.
+
+DOMANDA 3
+Si scriva una funzione C (Posix o WinAPI a scelta) con la seguente 
+interfaccia "int manage_file(char *file_name, int num_threads)". Tale funzione dovra' lanciare 
+num_thread nuovi thread con indici crescenti a partire dal valore 1, ciascuno dei quali dovra' 
+scandire il file il cui nome e' identificato da file_name e calcolare il numero dei suoi bytes 
+che abbiano valore pari all'indice  del thread (espresso come singolo byte). 
+Il thread che esegue la funzione manage_file(..) dovra' attendere che gli altri thread abbiano 
+terminato per poi stampare su standard output il numero dei byte calcolati da ciascuno di essi. 
+La funzione manage_file(..) dovra' ritornare valore 1 se almeno uno dei numeri calcolati dai 
+thread e' diverso da zero, altrimenti dovra' tornare il valore 0.
+
