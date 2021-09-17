@@ -1,0 +1,3 @@
+/home/francesco/git-web-site/FrancescoQuaglia.github.io/TEACHING/AOS/SOFTWARE/KERNEL-LEVEL-TASK-MANAGEMENT/virtual-pids/virtual-pids.ko
+/home/francesco/git-web-site/FrancescoQuaglia.github.io/TEACHING/AOS/SOFTWARE/KERNEL-LEVEL-TASK-MANAGEMENT/virtual-pids/virtual-pids.o
+

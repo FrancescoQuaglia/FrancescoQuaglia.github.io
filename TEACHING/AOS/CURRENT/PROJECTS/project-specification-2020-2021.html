@@ -1,0 +1,59 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"> 
+<title> Advanced Operating Systems  </title>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<font face="Arial, Helvetica, sans-serif"> 
+<h2> 
+<p align="center">
+Advanced Operating Systems (9 CFU)<br>
+MS Degree in Computer Engineering<br>
+Academic Year 2020/2021<br>
+</p>
+</h2>
+<h3>
+<p align="center">
+Lecturer: Francesco Quaglia 
+</p>
+</h3>
+</p>
+
+<hr>
+<p> The examination requires fulfilling the development of a project in the Linux kernel, which must comply with the following specification. Each student should develop the project individually.
+
+</p><h3>
+TAG-based data exchange  
+</h3>
+This specification is related to the implementation of a Linux kernel subsystem  
+ that allows exchanging messages across threads. The service has 32 levels (namely, tags) by default, and should be driven by the following system calls:
+
+<ul>
+	<li> <i>int tag_get(int key, int command, int permission)</i>, this system call instantiates or opens the TAG service associated with <i>key</i> depending on the value of <i> command</i>. The <i>IPC_PRIVATE</i>
+		value should be used for <i>key</i> to instantiate the service in such a way that it could not be re-opened by this same system call. The return value should indicate the TAG service descriptor (-1 is the return error) for handling the actual operations on the TAG service. Also, the <i>permission</i> value  should indicate whether the TAG service is created for operations by threads running a program on behalf of the same user installing the service, or by any thread.
+		<li> <i>int tag_send(int tag, int level, char* buffer, size_t size)</i>, this service delivers to the TAG service with <i>tag</i> as the descriptor the message currently located in the buffer at <i>address</i> and made of <i>size</i> bytes. All the threads that are currently waiting for such a message on the corresponding value of <i>level</i> should be resumed for execution and should receive the message (zero lenght messages are anyhow allowed). The service does not keep the log of messages that have been sent, hence if no receiver is waiting for the message this is simply discarded.
+			
+			<li> <i>int tag_receive(int tag, int level, char* buffer, size_t size)</i>, this service allows a thread to call the blocking receive operation of the message to be taken from the corresponding <i>tag</i> descriptor
+				at a  given <i>level</i>. 
+				The operation can fail also because of the delivery of a Posix signal to the thread while the thread is waiting for the message.	
+				
+				<li> <i>int tag_ctl(int tag, int command)</i>, this system call allows the caller to control the TAG service with <i>tag</i> as descriptor according to <i>command</i> that can be either <i>AWAKE_ALL</i> (for awaking all the threads waiting for messages, independently of the level), or <i>REMOVE</i> (for removing the TAG service from the system). A TAG service cannot be removed if there are threads waiting for messages on it. 
+	</ul>
+ 
+
+	<p>By default, at least 256 TAG services should be allowed to be handled by software. Also, the maximum size of the handled message should  be of at least 4 KB.
+
+	<p>Also, a device driver musy be offered to check with the current state, namely the TAG service current keys and the number of threads currently waiting for messages. 
+Each line of the corresponding device file should be therefore structured as "TAG-key TAG-creator TAG-level Waiting-threads".
+	<hr>
+
+<h3>
+Project delivery
+</h3>
+Projects can be delivered (for analysis and discussion) at any scheduled tutoring slot
+<hr>
+<p>
+
+</font>
+

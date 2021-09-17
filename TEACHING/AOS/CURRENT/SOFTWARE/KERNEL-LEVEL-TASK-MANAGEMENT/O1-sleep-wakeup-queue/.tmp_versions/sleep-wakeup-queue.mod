@@ -1,0 +1,3 @@
+/home/francesco/git-web-site/FrancescoQuaglia.github.io/TEACHING/AOS/SOFTWARE/KERNEL-LEVEL-TASK-MANAGEMENT/O1-sleep-wakeup-queue/sleep-wakeup-queue.ko
+/home/francesco/git-web-site/FrancescoQuaglia.github.io/TEACHING/AOS/SOFTWARE/KERNEL-LEVEL-TASK-MANAGEMENT/O1-sleep-wakeup-queue/sleep-wakeup-queue.o
+
