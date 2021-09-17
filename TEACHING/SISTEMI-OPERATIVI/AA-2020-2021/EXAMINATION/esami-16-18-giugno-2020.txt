@@ -1,0 +1,59 @@
+
+Gli esami di Sistemi Operativi del 16 e 18 giugno 2020 verranno svolti utilizzando google-meet, oltre che il sistema d'esame remoto accessibile via web la cui demo e' gia' stata resa disponibile tramite il sito del corso. Tale sistema sara' accessibile tramite un link che verra' comunicato in sede d'esame.
+
+Le sottostanti tabelle indicano per ogni studente (identificato tramite matricola) quale link di google-meet debba essere utilizzato, ed a quale orario.
+
+Si ricorda che quando si accede alla teleconferenza la telecamera ed il microfono del laptop dovranno sempre rimarere attivi (e non potranno essere utilizzate cuffie auricolari), inoltre lo studente condividera' il suo schermo interamente con il docente. 
+
+Ogni studente e' pregato di verificare in anticipo che il proprio laptop/browser supporti connessioni google-meet che soddisfino i suddetti requisiti (altrimenti la prova d'esame non potra' essere svolta). Inoltre ogni studente dovra' avere a disposizione il proprio documento di identita' da esibire al momento dell'inizio della teleconferenza relativa alla sua prova d'esame.
+
+Quando si accede alla teleconferenza e' necessario identificarsi con cognome, nome e numero di matricola.
+
+
+Schedule delle teleconferenze:
+
+16 Giugno 2020 ore 9:00
+
+Matricola	Link
+0266833		meet.google.com/wip-fhek-obd 
+0266544		meet.google.com/ouy-jopv-kqe 
+0266938		meet.google.com/ent-feyi-adx 
+0267020		meet.google.com/hwm-rtnw-opm 
+0267157		meet.google.com/ohq-mrpa-dti
+0268976		meet.google.com/biz-akam-oae
+0270053		meet.google.com/emj-wwke-kqq
+0270289		meet.google.com/hba-yrbc-jds
+0272911		meet.google.com/swb-vacq-cjb
+
+
+
+16 Giugno 2020 ore 11:30
+
+Matricola 	Link
+0217407		meet.google.com/wip-fhek-obd 
+0218660		meet.google.com/ouy-jopv-kqe 
+0253571		meet.google.com/ent-feyi-adx
+0230137		meet.google.com/hwm-rtnw-opm 
+0232033		meet.google.com/ohq-mrpa-dti 
+0250474		meet.google.com/prr-bfpv-mob
+
+
+
+18 Giugno 2020 ore 9:00
+
+Matricola	Link
+0177424		meet.google.com/wip-fhek-obd 
+0216104		meet.google.com/ouy-jopv-kqe 
+0217438		meet.google.com/ent-feyi-adx 
+0228618		meet.google.com/ohq-mrpa-dti 
+0229655		meet.google.com/prr-bfpv-mob 
+0232356		meet.google.com/bmg-sftf-qmd 
+0233229		meet.google.com/noy-zaqk-cdu
+0238584		meet.google.com/biz-akam-oae
+0239156		meet.google.com/emj-wwke-kqq
+0241098		meet.google.com/hba-yrbc-jds
+0241424		meet.google.com/swb-vacq-cjb
+0254081		meet.google.com/stt-faoc-zdp
+0255092		meet.google.com/nmx-xebf-cvc
+0259244		meet.google.com/vnz-nycs-kok
+

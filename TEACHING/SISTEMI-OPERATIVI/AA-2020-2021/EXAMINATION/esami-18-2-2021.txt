@@ -1,0 +1,53 @@
+
+Gli esami di Sistemi Operativi del giorno 18 febbraio 2021 verranno svolti utilizzando google-meet, oltre che il sistema d'esame remoto accessibile via web la cui demo e' gia' stata resa disponibile tramite il sito del corso. Tale sistema sara' accessibile tramite un link che verra' comunicato in sede d'esame.
+
+Le sottostanti tabelle indicano per ogni studente (identificato tramite matricola) quale link di google-meet debba essere utilizzato, ed a quale orario.
+
+Si ricorda che quando si accede alla teleconferenza la telecamera ed il microfono del laptop dovranno sempre rimarere attivi (e non potranno essere utilizzate cuffie auricolari), inoltre lo studente condividera' il suo schermo interamente con il docente. 
+
+Ogni studente e' pregato di verificare in anticipo che il proprio laptop/browser supporti connessioni google-meet che soddisfino i suddetti requisiti (altrimenti la prova d'esame non potra' essere svolta). Inoltre ogni studente dovra' avere a disposizione il proprio documento di identita' da esibire al momento dell'inizio della teleconferenza relativa alla sua prova d'esame.
+
+Quando si accede alla teleconferenza e' necessario identificarsi con cognome, nome e numero di matricola.
+
+
+Schedule delle teleconferenze:
+
+18 Febbraio 2021 ore 10:00
+
+Matricola	Link
+
+0177424  	meet.google.com/dwa-otxo-nsp 
+0182354  	meet.google.com/shx-pxop-rma 
+0201774  	meet.google.com/tmo-oxqz-kea 
+0205796  	meet.google.com/sbu-kjhg-ofs 
+0216525  	meet.google.com/rca-atob-zoj 
+0217438  	meet.google.com/cft-gkiy-yem 
+0218028  	meet.google.com/cae-citz-oip 
+0218660  	meet.google.com/ijb-rmep-uzd
+
+0220229  	meet.google.com/eat-mfoc-ods 
+0227617  	meet.google.com/ozk-ruws-gdt 
+0227803  	meet.google.com/tno-dgoh-peg 
+0233229  	meet.google.com/npb-zzwa-xjn 
+0233634  	meet.google.com/oaq-qpsb-jpw 
+0240663  	meet.google.com/xsh-imyi-ndq 
+0240909  	meet.google.com/whd-mowf-wqd 
+0255559 	meet.google.com/ver-dukm-exe
+
+
+
+
+18 Febbraio 2021 ore 12:00
+
+Matricola 	Link
+
+0259416		meet.google.com/cae-citz-oip 
+0253591  	meet.google.com/dwa-otxo-nsp 
+0267670  	meet.google.com/shx-pxop-rma 
+0268603  	meet.google.com/tmo-oxqz-kea 
+0269430  	meet.google.com/sbu-kjhg-ofs 
+0270289  	meet.google.com/rca-atob-zoj 
+0270638 	meet.google.com/cft-gkiy-yem 
+
+
+
