@@ -1,0 +1,160 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"> 
+<title> Advanced Operating Systems Homework Page  </title>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<font face="Arial, Helvetica, sans-serif"> 
+<h2> 
+<p align="center">
+Advanced Operating Systems (9 CFU)<br>
+MS Degree in Computer Engineering<br>
+Academic Year 2021/2022<br>
+</p>
+</h2>
+<h3>
+<p align="center">
+Lecturer: Francesco Quaglia 
+</p>
+</h3>
+</p>
+
+<hr>
+<p> This page is used to post suggested homework which can help better making experience with the course topics. The suggested homework is not mandatory for passing the examination. 
+For each suggested homework a solution will be posted along with the "Software Examples" available via the course main page. Students are encouraged to provide their own solutions before checking with the posted one. 
+</p>
+<hr>
+
+<h3>
+	<A NAME="RCUL"><b>RCU List (RCUL)</b></a>
+</h3>
+
+	<p>This homework deals with the C-based implementation of an RCU (Read Copy Update) list offering the following API:
+
+<ul>
+	<li> int rcu_list_insert(rcu_list *l, long key) to insert into the RCU list a given key (an integer value);
+	<li> int rcu_list_search(rcu_list *l, long key) to check if the key is currently present within an element of  the RCU list;
+
+<li> int rcu_list_remove(rcu_list *l, long key) to remove a record containing the target key from the RCU list.
+
+</ul>
+<hr>
+
+<!--
+<p> Atomic memory operations via gcc bult-in API like, e.g., __sync_fetch_and_add(...), can be used as building blocks.
+Each function should return zero upon success.
+
+<hr>
+<h3>
+	<A NAME="TLS"><b>Alternative Thread Local Storage (TLS)</b></a>
+</h3>
+
+	<p>This homework deals with the implementation of a TLS support standing aside of the original one offered by gcc. It should be based on a few macros with the following meaning:
+
+<ul>
+	<li>PER_THREAD_MEMORY_START and PER_THREAD_MEMORY_END are used to delimitate the variable declarations that 
+will be part of TLS
+
+<li>READ_THREAD_VARIABLE(name) is used to return the value of a TLS variable with a given name
+
+	<li>WRITE_THREAD_VARIABLE(name, value) is used to update the TLS variable with a given name to a given value
+</ul><p> Essentially, the homework is tailored to implementing an interface for managing per-thread memory resembling the one offered by the Linux kernel for managing per-CPU memory.
+
+<hr>
+
+<h3>
+	<A NAME="SCTD"><b>Sys Call Table Discovery (SCTD)</b></a>
+</h3>
+
+	<p>This homework deals with the implementation of a Linux kernel module that discovers at run-time the positioning of the system-call table. The simplifying assumption is that the module programmer can exploit the kernel-side name of some system-call (hence the corresponding
+	actual address) in order to perform the discovery phase. The module should provide the current memory address of the system-call table via a kernel level message accessible via the 'dmesg' shell command.
+	
+<hr>
+
+<h3>
+	<A NAME="HSCTD"><b>Harder Sys Call Table Discovery (HSCTD)</b></a>
+</h3>
+
+<p>This homework deals with the implementation of a Linux kernel module that discovers at run-time the positioning of the system-call table. The assumption is that the module programmer can exploit the compressed executable image of the kernel as exposed in /boot (the script at <a href="../SOFTWARE/decompress.sh">this link</a> can be used as a facility for decompressing the kernel image).
+	The module should include a function returning the current memory address of the system-call table, also logging it  via a kernel level message accessible via the 'dmesg' shell command. The module should also include a function that identifies free entries of the system-call table, to be possibly used for inserting new services into the kernel. Essentially, this homework deals with providing a baseline module for hacking the system-call table which is independent of the kernel version (and should work across, e.g., kernel 3 to 5).
+	
+<hr>
+
+<h3>
+	<A NAME="PC"><b>Process Controller (PC)</b></a>
+</h3>
+
+<p>This homework deals with the implementation of a Linux kernel module that offers a device file
+which allows updating the content of memory locations in the address space of an arbitrary process. The device file must support a write
+operation that leads to update the content of some memory location (supposed to be of type long) 
+in the address space of the target process.
+To be successful, the write operation needs to receive as input-stream a sequence of bytes structured as follows: "PID ADDRESS NEW_VALUE", where PID is the target process identifier, ADDRESS is the memory address where the update 
+needs to be installed and NEW_VALUE is the value to be installed on that memory location.
+
+<hr>
+
+
+<h3>
+	<A NAME="VTPMO"><b>Virtual to Physical Memory Mapping Oracle (VTPMO)</b></a>
+</h3>
+
+	<p>This homework deals with the implementation of a Linux kernel module that offers 
+	a service accessible via a specific system-call, which can provide information on the 
+	current mapping of logical addresses to physical memory. The service will receive a virtual address as input parameter and will return the number of the frame that maps the corresponding virtual page to physical memory. If no mapping currently exists, the service should return an error value. The service should be able to cope with both regular and huge-page memory mappings.
+	
+<hr>
+
+<h3>
+	<A NAME="NICRCUM"><b>No Intermediate Copy RCU Messaging (NICRCUM)</b></a>
+</h3>
+
+	<p>This homework deals with the implementation of a Linux kernel module that offers 
+	a service accessible via specific system-calls for posting a message to the kernel and retrieving the current content of the message. A new post invalidates the content of the last posted message.
+The service should guarantee no intermediate copy of the message content between user and kernel level buffers (just one copy is admitted) and should also guarantee RCU synchronization across threads.	
+<hr>
+
+
+<h3>
+	<A NAME="MSS"><b>Micro-sleep Service (MSS)</b></a>
+</h3>
+
+<p>This homework deals with the implementation of a Linux kernel module that offers a new system call
+which implements a thread sleep service at microsecond granularity. Essentially the new system call has an execution semantic equivalent to the classical usleep() Posix service. The requirement is that the precision according to which the sleep-timeout
+provided by the calling thread is matched upon thread awake should be at least the same as the one of the native usleep() service.
+The user program at  <a href="../SOFTWARE/usleep-test.c">this link</a> can be used in order to determine if the actual precision of the
+implemented sleep service is comparable with the one of usleep(). The solution should NOT rely on a wait-event-queue 
+API that offers the possibility to set hr-timeouts, so hr-timers should be used explicitly.
+	
+<hr>
+
+<h3>
+	<A NAME="TI"><b>Trap Installer (TI)</b></a>
+</h3>
+
+<p>This homework deals with the implementation of a Linux kernel module that offers a new trap. 
+The new trap is a simple stub that can in turn pass control to a kernel function coded with a classical C-based
+interface. To find a free entry in the IDT table where to install the new trap either a search can be
+performed by exploiting the free_vectors symbol (this identifies a bitmap that can be accesses/modified with the test_bit(n,bitmap)/set_bit(n,bitmap) API) if available for module programming on the specific kernel version, or the entry 
+at displacement 255 can be overwritten (which is typically devoted to spurious interrupts). To manipulate the IDTR 
+the kernel API functions load_idt() and store_idt() can be exploited. Also, the notation ".globl NAME" can be exploited in a asm code block to make any label defined in the code block visible to the compiler via a corresponding function associated with NAME.  Recall that an IDT entry is a "struct desc_struct". Finally, the exemplifying assumption can be made that the kernel starts with the PTI=off option (KAISER is switched off).
+	
+<hr>
+
+<h3>
+	<A NAME="PC"><b>Process Controller (PC)</b></a>
+</h3>
+
+<p>This homework deals with the implementation of a Linux kernel module that offers a device file
+which allows updating the content of memory locations in the address space of an arbitrary process. The device file must support a write
+operation that leads to update the content of some memory location (supposed to be of type long) 
+in the address space of the target process.
+To be successful, the write operation needs to receive as input-stream a sequence of bytes structured as follows: "PID ADDRESS NEW_VALUE", where PID is the target process identifier, ADDRESS is the memory address where the update 
+needs to be installed and NEW_VALUE is the value to be installed on that memory location.
+
+<hr>
+-->
+
+</font>
+
+</body>
