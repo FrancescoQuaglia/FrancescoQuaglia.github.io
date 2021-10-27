@@ -60,6 +60,21 @@ will be part of TLS
 </ul><p> Essentially, the homework is tailored to implementing an interface for managing per-thread memory resembling the one offered by the Linux kernel for managing per-CPU memory.
 
 <hr>
+
+<h3>
+	<A NAME="VTPMO"><b>Virtual to Physical Mapping Oracle (VTPMO)</b></a>
+</h3>
+
+	<p>This homework deals with the implementation of a system-call <tt>int vtpmo(unsigned long x)</tt> dealing with memory management. This system call should take as input parameter a user-level logical address and should return to the user information related to the frame-number that hosts the virtual page (or huge page) associated with that address. Invalid addresses (e.g. kernel level addresses) should be correctly identified by the system call, which will simply return an error code in this case.
+
+<hr>
+
+
+
+
+
+
+
 <!--
 
 <h3>
