@@ -82,25 +82,6 @@ will be part of TLS
 
 
 
-<!--
-
-<h3>
-	<A NAME="SCTD"><b>Sys Call Table Discovery (SCTD)</b></a>
-</h3>
-
-	<p>This homework deals with the implementation of a Linux kernel module that discovers at run-time the positioning of the system-call table. The simplifying assumption is that the module programmer can exploit the kernel-side name of some system-call (hence the corresponding
-	actual address) in order to perform the discovery phase. The module should provide the current memory address of the system-call table via a kernel level message accessible via the 'dmesg' shell command.
-	
-<hr>
-
-<h3>
-	<A NAME="HSCTD"><b>Harder Sys Call Table Discovery (HSCTD)</b></a>
-</h3>
-
-<p>This homework deals with the implementation of a Linux kernel module that discovers at run-time the positioning of the system-call table. The assumption is that the module programmer can exploit the compressed executable image of the kernel as exposed in /boot (the script at <a href="../SOFTWARE/decompress.sh">this link</a> can be used as a facility for decompressing the kernel image).
-	The module should include a function returning the current memory address of the system-call table, also logging it  via a kernel level message accessible via the 'dmesg' shell command. The module should also include a function that identifies free entries of the system-call table, to be possibly used for inserting new services into the kernel. Essentially, this homework deals with providing a baseline module for hacking the system-call table which is independent of the kernel version (and should work across, e.g., kernel 3 to 5).
-	
-<hr>
 
 <h3>
 	<A NAME="PC"><b>Process Controller (PC)</b></a>
@@ -115,6 +96,7 @@ needs to be installed and NEW_VALUE is the value to be installed on that memory 
 
 <hr>
 
+<!--
 
 <h3>
 	<A NAME="VTPMO"><b>Virtual to Physical Memory Mapping Oracle (VTPMO)</b></a>
