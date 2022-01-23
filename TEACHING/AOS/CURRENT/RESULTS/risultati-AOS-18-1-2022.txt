@@ -10,7 +10,7 @@ Threshold for acceptance: 11
 
 Student-ID	Outcome
 
-298093		18	
+299838		18	
 299908		18	
 286480 		publication not allowed	
 293870		13	
