@@ -1,0 +1,154 @@
+/*
+
+  TCPCLIENT.C
+  ==========
+
+*/
+
+
+#include <stdio.h>
+#include <winsock.h>
+#include <stdlib.h>
+
+#include "helper.h"           /*  Our own helper functions  */
+
+/*  Global constants  */
+
+#define MAX_LINE           (1000)
+
+int ParseCmdLine(int argc, char *argv[], char **szAddress, char **szPort);
+
+/*  main()  */
+
+int main(int argc, char *argv[])
+{
+    SOCKET    conn_s;                /*  connection socket         */
+    short int port;                  /*  port number               */
+    struct    sockaddr_in servaddr;  /*  socket address structure  */
+    char      buffer[MAX_LINE];      /*  character buffer          */
+    char     *szAddress;             /*  Holds remote IP address   */
+    char     *szPort;                /*  Holds remote port         */
+    char     *endptr;                /*  for strtol()              */
+	struct	  hostent *he;
+
+	u_long    nRemoteAddr;
+	WSADATA   wsaData;
+
+	he=NULL;
+
+    /*  Get command line arguments  */
+
+    ParseCmdLine(argc, argv, &szAddress, &szPort);
+
+
+    /*  Set the remote port  */
+
+    port = strtol(szPort, &endptr, 0);
+    if ( *endptr )
+	{
+		printf("client: porta non riconosciuta.\n");
+		exit(EXIT_FAILURE);
+    }
+	
+
+	if (WSAStartup(MAKEWORD(1,1), &wsaData) != 0)
+	{
+		printf("errore in WSAStartup()\n");
+		exit(EXIT_FAILURE);
+	}
+
+    /*  Create the listening socket  */
+
+    if ( (conn_s = socket(AF_INET, SOCK_STREAM, 0)) == INVALID_SOCKET)
+	{
+		fprintf(stderr, "client: errore durante la creazione della socket.\n");
+		exit(EXIT_FAILURE);
+    }
+
+
+    /*  Set all bytes in socket address structure to
+        zero, and fill in the relevant data members   */
+	memset(&servaddr, 0, sizeof(servaddr));
+    servaddr.sin_family      = AF_INET;
+    servaddr.sin_port        = htons(port);
+
+    /*  Set the remote IP address  */
+    nRemoteAddr = inet_addr(szAddress);
+	if (nRemoteAddr == INADDR_NONE)
+	{
+		printf("client: indirizzo IP non valido.\nclient: risoluzione nome...");
+		if ( (he=gethostbyname(szAddress)) == 0)
+		{
+			printf("fallita.\n");
+  			exit(EXIT_FAILURE);
+		}
+		printf("riuscita.\n\n");
+		nRemoteAddr = *((u_long *)he->h_addr_list[0]);
+    }
+	servaddr.sin_addr.s_addr = nRemoteAddr;
+	
+    
+    
+    /*  connect() to the remote echo server  */
+
+    if ( connect(conn_s, (struct sockaddr *) &servaddr, sizeof(servaddr) ) == SOCKET_ERROR )
+	{
+		printf("client: errore durante la connect.\n");
+		exit(EXIT_FAILURE);
+    }
+
+
+    /*  Get string to echo from user  */
+
+    printf("Inserire la stringa da spedire: ");
+    fgets(buffer, MAX_LINE, stdin);
+
+    /*  Send string to echo server, and retrieve response  */
+
+    Writeline(conn_s, buffer, strlen(buffer));
+	memset(buffer, 0, sizeof(char)*(strlen(buffer)+1));
+    Readline(conn_s, buffer, MAX_LINE-1);
+
+
+    /*  Output echoed string  */
+
+    printf("Risposta del server: %s\n", buffer);
+
+	WSACleanup();
+    return EXIT_SUCCESS;
+}
+
+
+int ParseCmdLine(int argc, char *argv[], char **szAddress, char **szPort)
+{
+    int n = 1;
+
+    while ( n < argc )
+	{
+		if ( !strncmp(argv[n], "-a", 2) || !strncmp(argv[n], "-A", 2) )
+		{
+		    *szAddress = argv[++n];
+		}
+		else 
+			if ( !strncmp(argv[n], "-p", 2) || !strncmp(argv[n], "-P", 2) )
+			{
+			    *szPort = argv[++n];
+			}
+			else
+				if ( !strncmp(argv[n], "-h", 2) || !strncmp(argv[n], "-H", 2) )
+				{
+		    		printf("Sintassi:\n\n");
+			    	printf("    client -a (indirizzo server) -p (porta del server) [-h].\n\n");
+			    	exit(EXIT_SUCCESS);
+				}
+		++n;
+    }
+	if (argc==1)
+	{
+   		printf("Sintassi:\n\n");
+    	printf("    client -a (indirizzo server) -p (porta del server) [-h].\n\n");
+	    exit(EXIT_SUCCESS);
+	}
+    return 0;
+}
+
