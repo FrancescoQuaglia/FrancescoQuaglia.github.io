@@ -3,6 +3,9 @@
 
 <HEAD> 
 <TITLE>Francesco Quaglia's Selected Publications</TITLE> 
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
 </HEAD> 
 <BODY BGCOLOR="#FFFFFF">
 <font face="Arial, Helvetica, sans-serif"> 
@@ -25,12 +28,12 @@
 
 </table>
 
-<h3>Categories:</h3>
+<h3>Main Categories</h3>
 <UL>
 <LI>
 <A HREF="#journals">Journal Articles</A></LI>
 <LI>
-<A HREF="#conferences">Conference Articles</A></LI>
+<A HREF="#conferences">Conference Articles/Book Chapters</A></LI>
 <LI>
 <A HREF="#theses">Theses</A></LI>
 
@@ -38,6 +41,78 @@
            
 This material is presented to ensure timely dissemination. Copyrights are retained by authors or by other copyright
 holders. All persons copying this information are expected to adhere to the terms and constraints invoked by each copyright. 
+
+<hr>
+
+<h3>Timeline</h3>
+
+
+<label class="checkboxes"><span><img alt=editorial" src="./images/book-box.png" /> Editorials (10)</span></label>
+<label class="checkboxes"><span><img alt="chapter" src="./images/incollection-box.png" /> Book Chapters (3)</span></label>
+<label class="checkboxes"><span><img alt="article" src="./images/article-box.png" /> Journal Articles (51)</span></label>
+<label class="checkboxes"><span><img alt="conference" src="./images/inproceedings-box.png" /> Conference Articles (150)</span></label>
+<label class="checkboxes"><span><img alt="other" src="./images/informal-box.png" /> Other publications (10)</span></label>
+(total publications: 224)</p>
+
+<div id="columnchart_material" style="width: 400px; height:200px"></div>
+
+<script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['', 'Editorials', 'Chapters', 'Articles', 'Proceedings', 'Other'],
+		['1997', 0, 1, 0, 5, 0],
+		['1998', 0, 0, 2, 5, 1],
+		['1999', 1, 0, 4, 5, 0],
+		['2000', 0, 0, 1, 4, 0],
+		['2001', 0, 0, 3, 5, 0],
+		['2002', 1, 0, 3, 4, 0],
+		['2003', 0, 0, 1, 5, 0],
+		['2004', 0, 0, 0, 4, 1],
+		['2005', 0, 0, 3, 7, 0],
+		['2006', 0, 0, 2, 6, 0],
+		['2007', 0, 0, 4, 2, 0],
+		['2008', 1, 0, 0, 7, 0],
+		['2009', 0, 0, 2, 4, 0],
+		['2010', 1, 0, 0, 9, 0],
+		['2011', 1, 0, 1, 6, 0], 
+		['2012', 1, 0, 4, 13, 0], 
+		['2013', 0, 0, 0, 9, 1], 
+		['2014', 1, 1, 3, 7, 1],
+		['2015', 0, 1, 3, 8, 0], 
+		['2016', 0, 0, 2, 9, 0], 
+		['2017', 0, 0, 3, 8, 2], 
+		['2018', 1, 0, 0, 7, 1], 
+		['2019', 0, 0, 3, 4, 1], 
+		['2020', 2, 0, 3, 6, 1], 
+		['2021', 0, 0, 1, 0, 1], 
+		['2022', 0, 0, 3, 1, 0], 
+	],) ;
+
+
+        var options = {
+             isStacked: true,
+             height: 200,
+             width: 400,
+             legend: {position: 'none'},
+             vAxis: {minValue: 0},
+             series: {
+                    0:{color:'#f8c91f'},
+                    1:{color:'#ef942d'},
+                    2:{color:'#c32b72'},
+                    3:{color:'#196ca3'},
+                    4:{color:'#606b70'}
+                  }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+
 
 
 <P><P><HR><P><P>
@@ -361,9 +436,18 @@ Exploiting Intra-Object Dependencies in Parallel Simulation</a>,
 
 <P><P><HR><P><P>
 <IMG SRC = ./images/bluedot.gif> 
-<b><A NAME="conferences"></A>Conference Articles (by Year)</b><br><p><P>
+<b><A NAME="conferences"></A>Conference Articles/Book Chapters (by Year)</b><br><p><P>
 
 <OL>
+
+<h2>2022</h2>
+<p><li> 
+F. Montesano, R. Marotta and <b>F. Quaglia</b>,<br>
+ <b>
+Spatial/Temporal Locality-based Load-sharing in Speculative Discrete Event Simulation on Multi-core Machines,
+</b><br>
+<i> Proc. ACM SIGSIM Conference on Principles of Advanced Discrete Simulation</i> (<font color="#FF0000">PADS</font>), Atlanta, GA, USA, June 2022. 
+
 
 <h2>2020</h2>
 
