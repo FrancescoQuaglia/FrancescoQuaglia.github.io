@@ -10,6 +10,8 @@ Soglia per la sufficienza: 6
 
 Matricola	voto
 
+116831		 4
+
 291890		 8
 291944		 6
 294190		 6
