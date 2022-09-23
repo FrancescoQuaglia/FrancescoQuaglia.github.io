@@ -1,0 +1,20 @@
+/*********************************************************************************/
+This software example implements an alternative form of TLS for Posix systems.
+
+It is based on a few macros with the following meaning:
+
+PER_THREAD_MEMORY_START and PER_THREAD_MEMORY_END are used to delimitate the variable declarations that 
+will be part of TLS
+
+READ_THREAD_VARIABLE(name) is used to return the value of a TLS variable with a given name
+
+WRITE_THREAD_VARIABLE(name, value) is used to update the TLS variable with a given name to a given value
+
+This implentation exploits the GS x86 segment, so it is compatible with the traditional TLS 
+implementation offered by gcc, which exploits FS
+
+The Makfile shows the compilation rule for exploiting this implementation 
+
+NOTE: TLS for the main thread is not automatically setup by this implmentation,
+which offers automatic TLS setup for all the threads activated via pthread_create
+/*********************************************************************************/

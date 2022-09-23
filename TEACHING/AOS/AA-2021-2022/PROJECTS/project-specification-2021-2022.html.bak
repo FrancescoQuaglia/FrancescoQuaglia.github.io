@@ -1,0 +1,58 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"> 
+<title> Advanced Operating Systems  </title>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<font face="Arial, Helvetica, sans-serif"> 
+<h2> 
+<p align="center">
+Advanced Operating Systems (9 CFU)<br>
+MS Degree in Computer Engineering<br>
+Academic Year 2021/2022<br>
+</p>
+</h2>
+<h3>
+<p align="center">
+Lecturer: Francesco Quaglia 
+</p>
+</h3>
+</p>
+
+<hr>
+<p> The examination requires fulfilling the development of a project in the Linux kernel, which must comply with the following specification. Each student should develop the project individually.
+
+</p><h3>
+Multi-flow device file  
+</h3>
+This specification is related to a Linux device driver implementing low and high priority flows of data.
+Through an open session to the device file a thread can read/write data segments. The data delivery follows a First-in-First-out policy
+along each of the two different data flows (low and high priority). After read operations, the read data disappear from the flow. 
+Also, the high priority data flow must offer synchronous write operations while the low priority data flow must offer an asyncronous execution (based on delayed work) of write operations, while still keeping the interface able to synchronously notify the outcome. Read operations are all executed synchronously. The device driver should support 128 devices corresponding to the same amout of minor numbers.
+
+<p>
+The device driver should implement the support for the <i>ioctl(..)</i> service in order to manage the I/O session as follows:
+
+
+<ul>
+<li> setup of the priority level (high or low) for the operations
+<li> blocking vs non-blocking read and write operations
+<li> setup of a timeout regulating the awake of blocking operations
+</ul>
+
+A a few Linux module parameters and functions should be implemented in order to enable or disable the device file, in terms of a specific minor number. If it is disabled, any attempt to open a session should fail (but already open sessions will be still managed). Further additional parameters exposed via VFS should provide a picture of the current state of the device according to the following information:
+<ul>
+<li> enabled or disabled
+<li> number of bytes currently present in the two flows (high vs low prioriy) 
+<li> number of threads currently waiting for data along the two flows (high vs low priority) 
+</ul>
+<h3>
+Project delivery
+</h3>
+Projects can be delivered (for analysis and discussion) at any scheduled tutoring slot
+<hr>
+<p>
+
+</font>
+

@@ -1,0 +1,10 @@
+SRCS = memory-mapping-inspector.c scth.c
+intercept-objs += memory-mapping-inspector.o lib/scth.o
+obj-m += memory-mapping-inspector.o 
+
+all:
+	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules 
+
+clean:
+	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
+

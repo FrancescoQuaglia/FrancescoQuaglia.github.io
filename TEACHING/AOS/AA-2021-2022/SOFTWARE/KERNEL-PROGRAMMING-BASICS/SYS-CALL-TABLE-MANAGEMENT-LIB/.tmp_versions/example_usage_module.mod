@@ -1,0 +1,3 @@
+/home/francesco/git-web-site/FrancescoQuaglia.github.io/TEACHING/AOS/CURRENT/SOFTWARE/KERNEL-PROGRAMMING-BASICS/SYS-CALL-TABLE-MANAGEMENT-LIB/example_usage_module.ko
+/home/francesco/git-web-site/FrancescoQuaglia.github.io/TEACHING/AOS/CURRENT/SOFTWARE/KERNEL-PROGRAMMING-BASICS/SYS-CALL-TABLE-MANAGEMENT-LIB/example-usage.o /home/francesco/git-web-site/FrancescoQuaglia.github.io/TEACHING/AOS/CURRENT/SOFTWARE/KERNEL-PROGRAMMING-BASICS/SYS-CALL-TABLE-MANAGEMENT-LIB/lib/scth.o
+
