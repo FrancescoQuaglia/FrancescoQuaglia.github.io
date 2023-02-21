@@ -1,0 +1,93 @@
+
+Universita' di Roma Tor Vergata
+Corso di Laurea in Ingeneria Informatica
+
+Risultati dell'appello (prova scritta) di Sistemi Operativi del 13/6/2022
+
+Votazione massima ottenibile: 21
+Soglia per la sufficienza: 12
+
+
+Matricola	voto
+
+255041		 5 - non sufficiente		
+252947		10 - non sufficiente	
+253250		non firmata la delibera
+239928		 7 - non sufficiente	
+244632		14		
+252210		16		
+231615		 7 - non sufficiente	
+253234		11 - non sufficiente	
+257602		 5 - non sufficiente	
+253281		14		
+215450		12		
+220401		11 - non sufficiente	
+				
+286161		10 - non sufficiente	
+291937		 7 - non sufficiente	
+291890		18		
+299026		11 - non sufficiente	
+293662		 3 - non sufficiente	
+291944		16		
+292499		13		
+302457		17		
+294190		non firmata la delibera
+293597		 7 - non sufficiente	
+268350		18		
+280325		13		
+268692		13		
+292831		10 - non sufficiente	
+281478		11 - non sufficiente	
+256508		 6 - non sufficiente	
+293025		 6 - non sufficiente	
+293305		11 - non sufficiente	
+288745		 3 - non sufficiente	
+292589		 8 - non sufficiente	
+270103		10 - non sufficiente	
+303095		14		
+280269		12		
+279801		15		
+253093		10 - non sufficiente	
+268514		12		
+279002		12		
+284757		13		
+295512		11 - non sufficiente	
+293266		11 - non sufficiente	
+268668		11 - non sufficiente	
+280190		 5 - non sufficiente	
+292801		18		
+272280		14		
+284836		non firmata la delibera
+280176		 8 - non sufficiente	
+293688		16		
+284849		17		
+295584		 6 - non sufficiente	
+258206		11 - non sufficiente	
+258692		non firmata la delibera
+269093		 9 - non sufficiente		
+279605		14		
+294064		15		
+267629		11 - non sufficiente
+270788		non firmata la delibera
+271026		non firmata la delibera
+285063		11 - non sufficiente
+266419		15		
+255785		 5 - non sufficiente		
+279262		17		
+279209		16		
+292097		13		
+294365		 6 - non sufficiente	
+259108		 6 - non sufficiente	
+272282		10 - non sufficiente	
+268142		14		
+292230		 9 - non sufficiente	
+294643		11 - non sufficiente	
+293712		11 - non sufficiente	
+
+
+
+
+
+
+
+

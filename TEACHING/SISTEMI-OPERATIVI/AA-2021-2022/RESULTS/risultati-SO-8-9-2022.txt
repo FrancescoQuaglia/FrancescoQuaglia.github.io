@@ -1,0 +1,41 @@
+
+Universita' di Roma Tor Vergata
+Corso di Laurea in Ingeneria Informatica
+
+Risultati dell'appello (prova scritta) di Sistemi Operativi del 8/9/2022
+
+Votazione massima ottenibile: 21
+Soglia per la sufficienza: 12
+
+
+Matricola	voto
+
+252789		10 - non sufficiente
+252947		16
+116831		12
+253234		12
+245517		10 - non sufficiente
+254002		10 - non sufficiente
+	
+296192		non valutabile
+294227		12
+292232		11 - non sufficiente
+292416		12
+288745		12
+293571		non valutabile
+291937		 9 - non sufficiente
+292691		non valutabile
+285483		16
+292831		 9 - non sufficiente
+268701		12
+283760		 7 - non sufficiente
+292106		12
+284836		12
+266523		18
+256508		 6 - non sufficiente
+293662		non valutabile
+295584		 8 - non sufficiente
+295340		12
+
+
+
