@@ -14,7 +14,7 @@ Matricola	voto
 252797		20	
 228602		18	
 			
-292351		11	
+292351		11 - non sufficiente	
 308516		 9 - non sufficiente
 280263		17	
 284661		10 - non sufficiente
