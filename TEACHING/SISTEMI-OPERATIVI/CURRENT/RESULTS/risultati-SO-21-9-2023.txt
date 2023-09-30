@@ -29,6 +29,8 @@ Matricola	voto
 292506		 7 - non sufficiente
 306782		15
 319566		12
+310550		17
+
 
 
 
