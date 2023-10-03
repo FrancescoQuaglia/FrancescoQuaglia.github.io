@@ -25,7 +25,7 @@ Matricola	voto
 310915		10 - non sufficiente
 282496		 7 - non sufficiente
 280190		12
-270715		11 - non sufficiente
+270715		12
 292506		 7 - non sufficiente
 306782		15
 319566		12
