@@ -18,7 +18,7 @@ Matricola	voto
 307096		5 - non sufficiente
 308919		4 - non sufficiente
 279807		5 - non sufficiente
-294219		5 - non sufficiente
+294219		6 
 334458		4 - non sufficiente
 307348		7
 306804		5 - non sufficiente
