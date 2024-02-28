@@ -1,0 +1,31 @@
+
+I seguenti 3 quesiti sono stati presentati alla prova unica di Sistemi Operativi 6/9CFU svoltasi in via telematica
+a causa dell'emergenza COVID-19
+
+DOMANDA 1
+Descrivere le problematiche di scheduling dell'I/O su hard-disk a rotazione, e gli algoritmi che 
+il sistema operativo ha utilizzato storicamente per affrontare tali problematiche.
+
+
+DOMANDA 2
+Si consideri un insieme di processi {P1,...,Pn} che periodicamente cercano di leggere un nuovo 
+messaggio. Ciascun processo Pi cerca di leggere il nuovo messaggio da una memoria condivisa M, 
+e rimane bloccato in attesa che esso venga scritto su M se non presente. Un ulteriore processo 
+PROD deposita un nuovo messaggio su M periodicamente, solo se almeno n/2 processi sono in attesa 
+di riceverlo, altrimenti rimane in attesa che tale condizione sia verificata. 
+Inoltre, PROD puo' scrivere un nuovo messaggio su M solo dopo che il suo precedente messaggio e' 
+stato letto da tutti i processi nell'insieme {P1,...,Pn}. Risolvere tale problema di sincronizzazione, 
+utilizzando solo semafori, fornendo lo pseudo-codice delle procedure LEGGI e SCRIVI utilizzate, 
+rispettivamente, dal generico processo Pi e da PROD.
+
+
+DOMANDA 3
+Si scriva una funzione C (Posix o WinAPI a scelta) con la seguente 
+interfaccia "void file_check(char *file_name, int num_threads)". Tale funzione dovra' lanciare 
+num_thread nuovi threads, in modo che ciascuno di essi legga stringhe dallo standard input,
+e per ogni stringa letta verifichi l'occorrenza di tale stringa all'interno del file 
+il cui path e' identificato tramite il parametro file_name, e stampi la stringa su standard output
+in caso affermativo. L'esecuzione di file_check(..) dovra' avere un tempo
+massimo di 10 secondi, al termine dei quali essa dovra' ritornare il controllo al chiamante.
+ Per il caso Posix, si supponga di poter utilizzare i segnali senza vincoli imposti 
+dal software che utilizzera' la funzione file_check(..).

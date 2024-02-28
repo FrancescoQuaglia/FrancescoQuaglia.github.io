@@ -1,0 +1,47 @@
+
+Universita' di Roma Tor Vergata
+Corso di Laurea in Ingeneria Informatica
+
+Risultati dell'appello (prova pratica in laboratorio) di Sistemi Operativi del 21/7/2021
+
+Votazione massima ottenibile: 11
+Soglia per la sufficienza: 6
+
+
+Matricola	voto
+
+220229		4 - non sufficiente
+22843		4 - non sufficiente
+182354		6
+233229		4 - non sufficiente
+253467		9
+177424		4 - non sufficiente
+245061		6
+240909		7
+252159		6
+205796		4 - non sufficiente
+227617		non valutabile
+240149		10
+
+268014		8
+280268		6
+267355		7
+269843		4 - non sufficiente
+271472		4 - non sufficiente
+258974		7
+279744		9
+286891		non valutabile
+280167		5 - non sufficiente
+281668		4 - non sufficiente
+280155		5 - non sufficiente
+268437		6
+285065		non valutabile
+286148		3 - non sufficiente
+286161		3 - non sufficiente
+285629		non valutabile
+280749		8
+286073		3 - non sufficiente
+281686		10
+279440		6
+
+
