@@ -65,7 +65,7 @@ Matricola	voto
 323438		10 - non sufficiente	
 241079		non firmata la delibera
 330821		17	
-391766		9 - non sufficiente	
+341766		9 - non sufficiente	
 
 
 
