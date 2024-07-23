@@ -51,6 +51,8 @@ Matricola	voto
 327501		11
 328305		5 - non sufficiente
 292730		4 - non sufficiente
+309275		10
+
 		
 323237		5 - non sufficiente
 
