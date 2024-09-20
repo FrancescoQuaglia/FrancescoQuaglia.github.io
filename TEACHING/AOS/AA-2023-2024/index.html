@@ -1,0 +1,406 @@
+
+<html>
+
+<head> 
+<title> Advanced Operating Systems (and System Security) </title>
+
+</head>
+
+<style>
+.boxed {
+  border: 0.5px solid green ;
+} 
+</style>
+
+<!--
+<body background="../../images/bckgd_carta_blue.gif">
+<body TEXT="#ffff00" bgcolor="#009999">
+-->
+<body bgcolor="#FFFFFF">
+<font face="Arial, Helvetica, sans-serif"> 
+<h2> 
+<p align="center">
+ Advanced Operating Systems (and System Security) (9 CFU)<br>
+Academic Year 2023-2024<br>
+Laurea Magistrale in Computer Engineering<br>
+University of Rome Tor Vergata<br>
+</p>
+</h2>
+<h3>
+<p align="center">
+Lecturer: Francesco Quaglia 
+</p>
+</h3>
+</p>
+
+
+
+
+
+<hr>
+<h2>
+<p>
+<blink>
+<font color="red">NEW
+</font>
+</blink>
+<h3>
+<!--
+
+
+
+-->
+
+<p><b>16/9/2024 -</b> The examination scheduled on 17/9/2024 will be held in Aula A4 at 16:00
+
+</h3>
+
+<p><b>9/9/2024 -</b> The results of the examination held on 5/9/2024 are available at <a href="./RESULTS/risultati-AOS-5-9-2024.txt">this link</a>
+
+
+
+<p><b>3/9/2024 -</b> The examination scheduled on 5/9/2024 will be held in Aula B1 at 16:00
+
+<p><b>7/8/2024 -</b> Autumn examinations will be held on September 5 2024 (afternoon) and on September 17 2024 (afternoon)
+
+
+<p><b>22/7/2024 -</b> The results of the examination held on 17/7/2024 are available at <a href="./RESULTS/risultati-AOS-17-7-2024.txt">this link</a>
+
+
+<p><b>16/7/2024 -</b> The examination scheduled on 17/7/2024 will be held in Aula C4 at 16:30
+
+
+<p><b>26/6/2024 -</b> The results of the examination held on 19/6/2024 are available at <a href="./RESULTS/risultati-AOS-19-6-2024.txt">this link</a>
+
+
+<p><b>18/6/2024 -</b> The examination scheduled on 19/6/2024 will be held in Aula B4 at 15:30
+
+<p><b>13/5/2024 -</b> Summer examinations will be held on June 19 2024 (afternoon)   and on July 17 2024 (afternoon)
+
+
+<p><b>8/3/2024 -</b> The results of the examination held on 29/2/2024 are available at <a href="./RESULTS/risultati-AOS-29-2-2024.txt">this link</a>
+
+
+<p><b>28/2/2024 -</b> The examination scheduled on 29/2/2024 will be held in Aula C6 at 16:00
+
+<p><b>30/1/2024 -</b> The results of the examination held on 25/1/2024 are available at <a href="./RESULTS/risultati-AOS-25-1-2024.txt">this link</a>
+
+
+<p><b>24/1/2024 -</b> The examination scheduled on 25/1/2024 will be held in Aula C6 at 11:00
+
+<p><b>15/1/2024 -</b> Based on requests, the lecturer presentation of the project specification to the students has been moved again (from January 17) to January 18 at 14:30 (Room B8) 
+<p><b>10/1/2024 -</b>  The lecturer presentation of the project specification to the students has been moved (from January 11) to January 17 at 11:30 (Room B13) 
+<p><b>10/1/2024 -</b>  The project specification for the academic year 2023/2024 has been posted at <a href="./PROJECTS/project-specification-2023-2024.html">this link</a>
+<p><b>10/1/2024 -</b> All the students of the Advanced Operating Systems course are invited to verify their interest in participating to the Cyberchallenge 2024. Please check with this <a href="https://cyberchallenge.it/">link</a> 
+
+
+<p><b>23/11/2023 -</b> The lecture scheduled on 27/11/2023 has been cancelled</a>
+
+<p><b>23/11/2023 -</b> A homework suggestion deadling with the implementation of a blocking queuing service for thread management has been posted at <a href="./HOMEWORK/homework-2023-2024.html#QUEUING">this link</a>
+
+
+<p><b>14/11/2023 -</b> Winter examinations will be held on January 25 2024 (morning) and on February 29 2024 (afternoon)
+
+ 
+<p><b>16/10/2023 -</b> A homework suggestion deadling with an alternative TLS implementation has been posted at <a href="./HOMEWORK/homework-2023-2024.html#TLS">this link</a>.
+
+
+<p><b>9/10/2023 -</b> A homework suggestion deadling with the implementation of an RCU list has been posted at <a href="./HOMEWORK/homework-2023-2024.html#RCUL">this link</a>.
+
+
+<p><b>4/10/2023 -</b> Thursday lecture has been moved to room B5, 
+please check with the updated course-schedule table.
+
+
+<p><b>26/9/2023 -</b> The lectures' schedule has been updated to avoid conflicts with other courses, please check with the updated course-schedule table.
+
+<p><b>22/9/2023 -</b> This site has been made up and running.
+
+
+
+
+<hr>
+<h3>
+Lecture schedule (starting on 25/9/2023)
+</h3>
+<table width="512" border="1">
+
+<tr bgcolor="#BFFF00">
+<td> Monday </td>
+<td>11:30-13:15</td>
+<td> Room B13</td> 
+  </tr>
+<tr bgcolor="#BFFF00">
+<td>Wednesday</td>
+<td/> 11:30-13:15 </td>
+<td> Room B13</td>
+</tr>
+<tr bgcolor="#BFFF00">
+	<td> <del>Friday</del>Thursday</td>
+	<td> <del>11:30-13:15</del> 14:00-15:45</td>
+	<td> Room <del>B13</del> <del>C6</del> B5</td>
+</tr>
+</table>
+
+<hr>
+<h3>
+Course objectives 
+</h3>
+
+<p> The 'Advanced Operating Systems and System Security' course aims at presenting advanced design/implementation methods and techniques for modern operating systems. It will also provide insights on actual hardware operations in modern 
+processors (including implicit and explicit parallelism) and how these impact software design approaches. 
+<p>
+The topics dealt with by the course are bound to case studies oriented to Linux systems and x86 compliant processors. A strong focus on system-level security aspects will be made, which will include the analysis of the correlation between hardware and software as well as advanced methods and techniques for system security. The course requires basic knowledge on the structure and functionalities of operating systems, and knowledge on C/ASM programming. <br>
+
+<p><b><u>NOTE: why Linux? - why x86?</u></b>
+<ul>
+	<li> Linux is a fully open OS
+	<li> Linux is the dominating OS for public internet servers (it handles over twice the number of Windows servers)
+		<li>Linux fully dominates the supercomputing field (nowadays 100% of the TOP500 systems run this OS)
+			<li> x86 processors dominate workstation and cloud-computing systems, as well as personal computers and laptops
+</ul>
+<p> The lecture flow will be based on presenting concepts in combination with software/running examples. Both the slides and the software examples will be made available while delivering the course, 
+ clearly in advance to discussing them at any lecture. The slides as well as the software examples can be accessed and downloaded from links posted in a bottom section of this Web page.
+
+<hr>
+<h3>
+Examination rules
+</h3>
+The examination consists of a written test (where a set of questions will be proposed) and additionally requires the development of software sub-systems (a project) to be embedded within the Linux kernel, 
+whose specification for the academic year 2023/2024 will be posted during the course delivery. Projects are individual and each student is supposed to finalize both parts of the examination within the same accademic year. The delivery of the software project does not need to coincide with the scheduled examination dates. Rather, students can deliver their projects at any student reception (see <a href="../../../teaching.html">this link</a>).
+
+<p> As for the evaluation, the first part (questions and answers) accounts for <b>18 points</b>, while the project accounts for <b>12 points</b>. In any case both parts of the examination have thresholds for their acceptance. The thresholds are the following ones: 11 points for the first part and 7 for the project. In the event of an exceptionally well done project and/or exceptionally well replied questions, a student who cumulates 30 points can be awarded with 'laude'.
+
+<hr>
+
+<h3>
+References 
+</h3>
+<ul>
+<li>  William Stallings, "Operating Systems". Jackson Libri. 
+<li>  Abraham Silberschatz, Peter B. Galvin, "Operating Systems". Addison - Wesley 
+<li> Andrew S. Tanenbaum, "Modern Operating Systems". Jackson Libri.
+</ul>
+
+<h3>
+Useful links (permanently on going)
+</h3>
+<ul>
+<li> <a href="https://software.intel.com/en-us/articles/intel-sdm"> x86 documentation</a>
+<li> <a href="http://www.kernel.org/"> LINUX kernel source code</a>
+<li> <a href="https://elixir.bootlin.com/linux/latest/source"> LINUX kernel source code (cross referencing)</a>
+<li> <a href="http://www.xml.com/ldd/chapter/book/"> LINUX device drivers </a>
+<li> <a href="http://en.tldp.org/LDP/tlk/tlk.html"> LINUX internals</a>
+<li> <a href="http://lxr.linux.no/"> Cross-Referencing Linux</a>
+<li> <a href="https://www.kernel.org/doc/gorman/pdf/understand.pdf"> Understanding The
+Linux Virtual Memory Manager</a>
+ 
+</ul>
+
+<h3>
+IMPORTANT NOTICE
+</h3>
+<p>Even though the above references and links are provided, I must alert students that no unique 
+hand-book can fully cover the presented topics (and/or the way of presenting them). Hope this will be an added value to the course, rather than a limitation. Please come to any available student reception as soon as any doubt, or the need for whathever clarification, arises. 
+
+<hr>
+
+<h3>
+List of planned topics (2023-2024) - the topics will be presented in interleaved manner
+</h3>
+<ul>
+	<li> <u>Hardware insights</u>
+  <ul>
+      <li>Pipelining and superscalar processors
+      <li>Speculative hardware
+      <li>Multi-processors and multi-cores
+      <li>Physical memory organization
+      <li> Memory coherency and consistency
+      <li> Hardware synchronization support
+      <li> Advanced interrupt architectures 
+   </ul>
+
+<p>
+<li><u> Kernel Internals</u>
+<ul>
+ <li> Addressing and software protection models
+ <li> Kernel access GATEs
+ <li> System calls dispatching 
+<li> Memory management 
+<li> Advanced management of interrupts
+<li> System (kernel) scalability 
+<li> Virtual file system structures 
+<li> Software interactions with the memory hierarchy
+<li>Linearizability and advanced thread coordination approaches
+</ul>
+
+<!--
+<li> Compilation and executable formats 
+<ul> 
+<li> ELF
+<li>Advanced compilation tools 
+</ul>
+<br>
+-->
+
+<p>
+<li> <u>Security</u>
+<ul> 
+
+<li>Attacks at the border between hardware and software (e.g., Meltdown, Spectre, L1TF) and countermeasures
+<li>System internal attacks and countermeasures
+<li>Capabilities, protection domains and secure operating systems
+<li>IDS and Reference Monitor architectures
+</ul>
+<p>
+<li> <u>Case studies: Linux kernel - x86 architectures</u>
+<ul> 
+<li> Boot basics
+<li> Main data structures and initialization 
+<li> System call mechanisms
+<li> Steady state behavior 
+<li> Kernel hacking 
+<li> Modules
+
+</ul>
+<br>
+<br>
+
+</ul>
+</ul>
+
+
+<hr>
+<h3>
+Slides and software
+</h3>
+
+<table width="710" border="1">
+<tr bgcolor="#00FF40">
+<td> <b>Topic</b> </td>
+<td> <b>Slides</b> </td>
+<td> <b>Sofware Examples</b> </td>
+<td> <b>Latest Update</b> </td>
+</tr>
+
+<tr bgcolor="#BFFF00">
+<td> <b>Hardware insights</b> </td>
+<td> </img><a href="./SLIDES/hardware-insights.pdf">download link</a> </td>
+<td> <a href="./SOFTWARE/HARDWARE-INSIGHTS.tar">download link</a> </td>
+<td> 5/10/2023 </td>
+
+
+<tr bgcolor="#BFFF00">
+<td> <b>Kernel programming basics</b> </td>
+<td> <a href="./SLIDES/kernel-programming-basics.pdf">download link</a> </td>
+<td> <a href="./SOFTWARE/KERNEL-PROGRAMMING-BASICS.tar">download link</a> </td>
+<td>  11/10/2023 </td>
+</tr>
+
+
+<tr bgcolor="#BFFF00">
+<td> <b>Kernel level memory management</b> </td>
+<td> <a href="./SLIDES/kernel-level-memory-management.pdf">download link</a> </td>
+<td> <a href="./SOFTWARE/KERNEL-LEVEL-MEMORY-MANAGEMENT.tar">download link</a> </td>
+<td> 24/10/2023 </td>
+</tr>
+
+
+<tr bgcolor="#BFFF00">
+<td> <b>Cross ring data move</b> </td>
+<td> <a href="./SLIDES/cross-ring-data-move.pdf">download link</a> </td>
+<td> <a href="./SOFTWARE/CROSS-RING-DATA-MOVE.tar">download link</a> </td>
+<td> 12/11/2023 </td>
+</tr>
+
+
+<tr bgcolor="#BFFF00">
+<td> <b>Linux modules</b> </td>
+<td> <a href="./SLIDES/linux-modules.pdf">download link</a> </td>
+<td> <a href="./SOFTWARE/LINUX-MODULES.tar">download link</a> </td>
+<td> 14/11/2023 </td>
+</tr>
+
+
+<tr bgcolor="#BFFF00">
+<td> <b>Kernel level task management</b> </td>
+<td> <a href="./SLIDES/kernel-level-task-management.pdf">download link</a> </td>
+<td> <a href="./SOFTWARE/KERNEL-LEVEL-TASK-MANAGEMENT.tar">download link</a> </td>
+<td> 19/11/2023</td>
+</tr>
+
+
+<tr bgcolor="#BFFF00">
+<td> <b>Trap/interrupt architecture</b> </td>
+<td> <a href="./SLIDES/trap-interrupt-architecture.pdf">download link</a> </td>
+<td> <a href="./SOFTWARE/TRAP-INTERRUPT-ARCHITECTURE.tar">download link</a> </td>
+<td> 5/12/2023 </td>
+</tr>
+
+
+<tr bgcolor="#BFFF00">
+<td> <b>Virtual file system</b> </td>
+<td> <a href="./SLIDES/virtual-file-system.pdf">download link</a> </td>
+<td> <a href="./SOFTWARE/VIRTUAL-FILE-SYSTEM.tar">download link</a> </td>
+<td> 16/12/2023 </td>
+</tr>
+
+
+<tr bgcolor="#BFFF00">
+<td> <b>Software security</b> </td>
+<td> <a href="./SLIDES/system-software-security.pdf">download link</a> </td>
+<td> <a href="./SOFTWARE/SOFTWARE-SECURITY.tar">download link</a> </td>
+<td> 20/12/2023 </td>
+</tr>
+
+-->
+
+</table>
+
+<hr>
+
+<h3>
+Examples of previous examinations
+</h3>
+
+<ul>
+	<li> <a href="./EXAMINATIONS/scritto-21-2-2022.pdf">21-2-2022</a>
+	<li> <a href="./EXAMINATIONS/scritto-6-9-2021.pdf">6-9-2021</a>
+	<li> <a href="./EXAMINATIONS/scritto-21-6-2021.pdf">21-6-2021</a>
+	<li> <a href="./EXAMINATIONS/scritto-28-2-2020.pdf">28-2-2020</a>
+	<li> <a href="./EXAMINATIONS/scritto-24-1-2020.pdf">24-1-2020</a>
+	<li> <a href="./EXAMINATIONS/scritto-16-9-2019.pdf">16-9-2019</a>
+	<li> <a href="./EXAMINATIONS/scritto-17-6-2019.pdf">17-6-2019</a>
+
+</ul>
+
+
+<hr>
+<!--
+<tr bgcolor="#BFFF00">
+<td> <b>Hardware insights</b> </td>
+<td> <img align="left" "WIDTH="30" HEIGHT="20" src="./download.jpeg" border=1 ></img><a href="./SLIDES/hardware-insights.pdf">download link</a> </td>
+<td> <img align="left" "WIDTH="30" HEIGHT="20" src="./download.jpeg" border=1 ><a href="./SOFTWARE/HARDWARE-INSIGHTS.tar">download link</a> </td>
+<td> 20/9/2019 </td>
+-->
+
+<!--
+-->
+
+
+<!--
+-->
+
+
+</font>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
