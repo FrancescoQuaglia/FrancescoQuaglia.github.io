@@ -17,12 +17,12 @@ Matricola	voto
 306680		13
 284633		15
 325152		11 - non sufficiente
-292192		 9
+292192		 9 - non sufficiente
 321945		non valutabile
 271065		13
 280050		 9 - non sufficiente
 311013		16
-306822		9 - non sufficiente
+306822		 9 - non sufficiente
 321891		21
 307584		15
 337489		13
