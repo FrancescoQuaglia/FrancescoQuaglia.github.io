@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advanced Operating Systems (and System Security)</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #FFFFFF;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    h2, h3 {
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .notice {
+      color: red;
+      font-weight: bold;
+      animation: blink 1s step-start infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    hr {
+      border: 1px solid #BFFF00;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #BFFF00;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #BFFF00;
+    }
+
+    @media only screen and (max-width: 600px) {
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      h2, h3 {
+        font-size: 1.2rem;
+      }
+    }
+
+    ul {
+      margin: 20px 0;
+    }
+
+    .important-notice {
+      background-color: #ffcccc;
+      padding: 15px;
+      border-left: 5px solid red;
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Advanced Operating Systems (and System Security) (9 CFU)<br>
+      Academic Year 2024-2025<br>
+      Laurea Magistrale in Computer Engineering<br>
+      University of Rome Tor Vergata</h2>
+
+    <h3>Lecturer: Francesco Quaglia</h3>
+
+
+<hr>
+<p> This page is used to post suggested homework which can help better making experience with the course topics. The suggested homework is not mandatory for passing the examination.
+For each suggested homework a solution will be posted along with the "Software Examples" available via the course main page. Students are encouraged to provide their own solutions before checking with the posted one.
+</p>
+<hr>
+
+<h3>
+        <A NAME="TLS"><b>Alternative Thread Local Storage (TLS)</b></a>
+</h3>
+
+        <p>This homework deals with the implementation of a TLS support standing aside of the original one offered by gcc. It should be based on a few macros with the following meaning:
+
+<ul>
+        <li>PER_THREAD_MEMORY_START and PER_THREAD_MEMORY_END are used to delimitate the variable declarations that will be part of TLS
+
+<li>READ_THREAD_VARIABLE(name) is used to return the value of a TLS variable with a given name
+
+        <li>WRITE_THREAD_VARIABLE(name, value) is used to update the TLS variable with a given name to a given value
+</ul><p> Essentially, the homework is tailored to implementing an interface for managing per-thread memory resembling the one offered by the Linux kernel for managing per-CPU memory.
+
+<hr>
+
+
+</body>
+</html>
+
