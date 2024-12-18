@@ -1,0 +1,191 @@
+/**		      Copyright (C) 2014-2015 HPDCS Group
+*		       http://www.dis.uniroma1.it/~hpdcs
+* 
+* This is free software; 
+* You can redistribute it and/or modify this file under the
+* terms of the GNU General Public License as published by the Free Software
+* Foundation; either version 3 of the License, or (at your option) any later
+* version.
+* 
+* This file is distributed in the hope that it will be useful, but WITHOUT ANY
+* WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+* A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+* 
+* @brief This is a simple Linux Kernel Module which implements
+*	 a mandatory policy for the execve service, closing it to the root user for a 
+*	 black list of executables
+*	 NOTE: the module works by modifying the stub_execve module within the kernel
+*	       passages to kernel space via stub_x32_execve are not covered
+*
+* @author Francesco Quaglia
+*
+* @date May 21, 2017
+*/
+
+#define EXPORT_SYMTAB
+#include <linux/module.h>
+#include <linux/kernel.h>
+#include <linux/fs.h>
+#include <linux/cdev.h>
+#include <linux/errno.h>
+#include <linux/device.h>
+#include <linux/kprobes.h>
+#include <linux/mutex.h>
+#include <linux/mm.h>
+#include <linux/sched.h>
+#include <linux/slab.h>
+#include <linux/version.h>
+#include <linux/interrupt.h>
+#include <linux/time.h>
+#include <linux/string.h>
+#include <linux/vmalloc.h>
+#include <asm/page.h>
+#include <asm/cacheflush.h>
+#include <asm/apic.h>
+
+// This gives access to read_cr0() and write_cr0()
+#if LINUX_VERSION_CODE > KERNEL_VERSION(3,3,0)
+    #include <asm/switch_to.h>
+#else
+    #include <asm/system.h>
+#endif
+#ifndef X86_CR0_WP
+#define X86_CR0_WP 0x00010000
+#endif
+
+
+#define AUDIT if(1)
+
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Francesco Quaglia <quaglia@dis.uniroma1.it>");
+MODULE_DESCRIPTION("see the README file");
+
+#define MODNAME "Reference monitor"
+
+#define EPERM 1 //operation not permitted
+
+
+/* please take the four values below from the system map whathever way you would like */
+unsigned long sys_call_table = 0xffffffff81800300;
+unsigned long execve_stub = 0xffffffff81622f70;
+unsigned long next_symbol = 0xffffffff81623010;
+asmlinkage long (*sys_execve)(char*,char**,char**)=0xffffffff811bfe80;  
+
+int patch_address = 0x0;
+unsigned char* call;
+int restore_displacement;
+
+char *black_list[] = {"bash","tcsh","sh", "sudo", NULL}; //the list of programs root cannot use to spawn others - being root is still admitted if you exclude su 
+
+//#define STRONGHER //this allows you to blacklist the above executables even for EUID-root users
+
+#ifdef STRONGHER
+#define	corrector (current->cred->euid.val == 0)
+#else
+#define	corrector (0)
+#endif
+
+
+asmlinkage sys_execve_wrapper(char* a, char** b, char** c){
+
+	int i;
+
+	printk("%s: --------------------------------------------\n",MODNAME);
+	printk("%s: this is the wrapper for execve - running: %s\n",MODNAME,a);
+	printk("%s: request on behalf of user %d - euid %d (current command is: %s)\n",MODNAME,current->cred->uid.val,current->cred->euid.val,current->comm);
+	if(current->cred->uid.val == 0 || corrector){
+		printk("%s: need black list search\n",MODNAME);
+		for(i=0; black_list[i] != NULL; i++){
+			if(strcmp(black_list[i],current->comm) == 0 ){
+				AUDIT
+				printk("%s: current program is black listed - execve rejected\n",MODNAME);
+				goto reject;
+			}
+		}
+		AUDIT
+		printk("%s: current program is safe - finally executing the requested execve \n",MODNAME);
+		
+	}	
+        sys_execve(a, b, c);
+
+	return 0;
+
+reject:
+	return -EPERM;
+}
+
+
+static void print_bytes(char *str, unsigned char *ptr, size_t s) {
+        size_t i;
+
+        printk(KERN_DEBUG "%s: %s: ", KBUILD_MODNAME, str);
+        for(i = 0; i < s; i++)
+                printk(KERN_CONT "%02x ", ptr[i]);
+        printk(KERN_CONT "\n");
+}
+
+int init_module(void) {
+
+	int * aux;
+	int i;
+	int ret;
+	int disp;
+        int bytes_to_check;
+
+	unsigned long cr0;
+
+	printk("%s: initializing\n",MODNAME);
+
+
+	call = (unsigned char*) execve_stub;
+
+	bytes_to_check = next_symbol - execve_stub;
+
+	print_bytes("bynary code of execve_stub\n",execve_stub,bytes_to_check);
+
+	printk("%s: bytes to check are %d\n",MODNAME,bytes_to_check);
+
+	for(i=0;i<bytes_to_check;i++){
+
+		printk("%s: iteration %d - char value is %02x\n",MODNAME,i,call[i]);
+
+		if (call[i] == 0xe8){
+			call += i;
+			printk("%s: call found - i is %d\n",MODNAME,i);
+			goto patch_mount;
+		}
+
+	}
+
+	
+	printk("%s: patch not compatible with kernel image\n",MODNAME);
+
+	return -1; //patch not compatible with kernel image
+
+
+patch_mount:
+
+	disp = (int)((long int)sys_execve - (long int)(call+5));
+	
+	aux = (int*)(call + 1);
+
+	restore_displacement = *aux; //not actually used in this module
+	
+	printk("%s: cross check: displacement is %d - (int)call[i] is %d (before patch)\n",MODNAME,disp,*aux);
+
+	disp = (int)((long int)sys_execve_wrapper - (long int)(call+5));
+
+	cr0 = read_cr0();
+        write_cr0(cr0 & ~X86_CR0_WP);
+	*aux = disp;
+	write_cr0(cr0);
+
+	printk("%s: patch of execve_stub done\n",MODNAME);
+
+	ret = 0;
+
+	return ret;
+}
+
+
+
