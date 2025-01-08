@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advanced Operating Systems (and System Security)</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #FFFFFF;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    h2, h3 {
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .notice {
+      color: red;
+      font-weight: bold;
+      animation: blink 1s step-start infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    hr {
+      border: 1px solid #BFFF00;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #BFFF00;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #BFFF00;
+    }
+
+    @media only screen and (max-width: 600px) {
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      h2, h3 {
+        font-size: 1.2rem;
+      }
+    }
+
+    ul {
+      margin: 20px 0;
+    }
+
+    .important-notice {
+      background-color: #ffcccc;
+      padding: 15px;
+      border-left: 5px solid red;
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Advanced Operating Systems (and System Security) (9 CFU)<br>
+      Academic Year 2024-2025<br>
+      Laurea Magistrale in Computer Engineering<br>
+      University of Rome Tor Vergata</h2>
+
+    <h3>Lecturer: Francesco Quaglia</h3>
+
+    <hr>
+
+<p>The examination requires fulfilling the development of a project in the Linux kernel, which must comply with the following specification. Each student should develop the project individually. 
+
+    <h3>Project specification: block-device snapshot</h3>
+
+
+    <p>
+This specification is related to a Linux Kernel Module (LKM) implementing a snapshot service for block devices hosting file systems. The setup/switch-off of the service needs to be carried out via the following to API functions:
+
+<ul>
+<li><tt>activate_snapshot(char * dev_name, char * passwd) </tt>
+<li><tt>deactivate_snapshot(char * dev_name, char * passwd)</tt>
+</ul>
+
+
+<p>When activating the snapshot, the <tt>dev_name</tt> needs to be recorded at kernel level, so that when the device associated with that name gets mounted then the snapshot service for the corresponding file system gets activated. At the same time, the snapshot deactivating API is used to notify that such snapshot service does not need to occur any-longer for that specific <tt>dev_name</tt> upon remounting it. The <tt>passwd</tt> parameter needs to be a credential managed by the snapshot service (not corresponding to any credential used for logging into the system) so that the thread which calls one of the above two API functions can be authenticated. In order for the above API not to fail, the calling thread also needs to have (effective-)root-id.
+
+
+<p>For "loop" devices, the <tt>dev_name</tt> parameter will correspond to the actual path-name associated to the file managed as device-file.
+
+<p>When the snapshot service gets activated, a subdirectory needs to be created in the <tt>/snapshot</tt> directory of the root file system. Such subdirectory should keep any file and data that represent the snapshot being managed. The subdirectory should have a name expressing the original <tt>dev_name</tt> for which the snapshot has been activated and a timestamp indicating the time of the mount operation of that device.
+
+
+<p>When the snapshot service is active for a device, we need to be able to log the original content of any block that is modified by VFS operations occurring on the file system hosted on the device. Restoring the content of these modified blocks allows therefore to rebuild the exact content of that file system prior its mount operation.
+
+<p>Deferred work is expected to be exploited for keeping low  the on-critical-path activity executed by the snapshot service along the application threads using VFS.
+
+<p>The overall project will also need to offer a facility for restoring the snapshot of the device after the corresponding file system has been un-mounted. This part of the project can be limited to device-file management.
+
+<p>The project needs to be testable using the minimal file system layout and logic available via the <a href="./SINGLEFILE-FS.tar">following link</a>. 
+
+<h3>Project delivery</h3>
+Projects can be delivered (for analysis and discussion) at any scheduled tutoring slot
+
+
+    <hr>
+
+</body>
+</html>
+
