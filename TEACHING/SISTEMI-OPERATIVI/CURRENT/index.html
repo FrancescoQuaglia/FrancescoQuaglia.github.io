@@ -1,192 +1,123 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemi Operativi - Università di Roma Tor Vergata</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #FFFFFF;
+            color: #000;
+            margin: 20px;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .avvisi {
+            color: red;
+            font-weight: bold;
+        }
 
-<html>
+.table-container {
+  padding: 10px;
+  overflow-x: auto;  /* In case the table overflows horizontally */
+}
 
-<head> 
-<title> Sistemi Operativi </title>
+table {
+  width: 70%;
+  margin: 0 auto;  /* Centers the table horizontally */
+  border-collapse: collapse; /* Ensures table borders are nicely styled */
+  table-layout: fixed; /* Makes sure columns have a uniform width */
+}
 
+td {
+  padding: 10px; /* Adds padding inside table cells */
+  text-align: center; /* Centers text for better alignment */
+  word-wrap: break-word;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Alternates row background color for better readability */
+}
+
+
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th {
+            background-color: #BFFF00;
+        }
+        ul {
+            list-style-type: square;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+<body>
+<center>
+    <h2>Sistemi Operativi (9 CFU)</h2>
+    <h3>Corso di Laurea in Ingegneria Informatica<br>Università di Roma Tor Vergata<br><b>AA. 2024/2025</b></h3>
+    <h3>Docente: Francesco Quaglia</h3>
+</center>
+    <hr>
 
-<body bgcolor="#FFFFFF">
-<!--
-<body style="background-color:yellow">
--->
-<font face="Arial, Helvetica, sans-serif"> 
+    <h3 class="avvisi">AVVISI</h3>
+    <p><b>26/2/2025 -</b> Questa pagina e' stata pubblicata </p>
+    <hr>
 
+    <h3><center><u>Orario delle lezioni</u></center></h3>
+    <div class="table-container">
+        <table width:70%>
+            <tr>
+                <th>Giorno</th>
+                <th>Orario</th>
+                <th>Aula</th>
+            </tr>
+            <tr>
+                <td>Lunedì</td>
+                <td>11:30 - 13:15</td>
+                <td>Aula A4</td>
+            </tr>
+            <tr>
+                <td>Mercoledì</td>
+                <td>11:30 - 13:15</td>
+                <td>Aula A4</td>
+            </tr>
+            <tr>
+                <td>Giovedì</td>
+                <td>11:30 - 13:15</td>
+                <td>Aula A4</td>
+            </tr>
+        </table>
+    </div>
+    <hr>
 
-<!--
-<body TEXT="#ffff00" bgcolor="#009999">
--->
-
-<h2> 
-<p align="center">
-Sistemi Operativi  (9 CFU) <br>
-Corso di Laurea in Ingegneria Informatica<br>
-Universita' di Roma Tor Vergata<br>
-<b>AA. 2023/2024</b>
-</p>
-</h2>
-<h3>
-<p align="center">
-Docente: Francesco Quaglia 
-</p>
-</h3>
-</p>
-<hr>
-
-
-<h3>
-<p>
-<blink>
-<font color="red">AVVISI
-</font>
-<!--
--->
-
-
-<h3>
-
-<p><b>18/9/2024 - </b>  La prova in laboratorio del 19/9/2024 verra' svolta alle ore 15:30. 
-
-</h3>
-
-<p><b>16/9/2024 - </b>  La prova scritta del 17/9/2024 verra' svolta alle ore 16:00 in aula A4. 
-
-
-
-	    <p><b>10/9/2024 - </b> I risultati dell'appello d'esame (prova pratica) svoltosi il giorno 6/9/2024 sono disponibili a  <a href="./RESULTS/risultati-SO-6-9-2024-prova-pratica.txt">questo link</a>.
-	    <p><b>9/9/2024 - </b> I risultati dell'appello d'esame (prova scritta) svoltosi il giorno 5/9/2024 sono disponibili a  <a href="./RESULTS/risultati-SO-5-9-2024.txt">questo link</a>.
-
-
-<p><b>3/9/2024 - </b>  La prova in laboratorio del 6/9/2024 verra' svolta alle ore 15:00. 
-<p><b>3/9/2024 - </b>  La prova scritta del 5/9/2024 verra' svolta alle ore 16:00 in aula B1. 
-
-	    <p><b>22/7/2024 - </b> I risultati dell'appello d'esame (prova pratica) svoltosi il giorno 18/7/2024 sono disponibili a  <a href="./RESULTS/risultati-SO-18-7-2024-prova-pratica.txt">questo link</a>.
-
-	    <p><b>22/7/2024 - </b> I risultati dell'appello d'esame (prova scritta) svoltosi il giorno 17/7/2024 sono disponibili a  <a href="./RESULTS/risultati-SO-17-7-2024.txt">questo link</a>.
-
-
-	<p><b>20/7/2024 -</b> I secondi due appelli d'esame (sessione autunnale) si svolgeranno secondo il seguente calendario e le seguenti modalita':
-
-<ul>
-<li> Primo appello: Prova scritta il giorno 5/9/2024 - Prova di programmazione il giorno 6/9/2024
-<li> Secondo appello: Prova scritta il giorno 17/9/2024 - Prova di programmazione il giorno 19/9/2024 </ul>
-
-
-
-<p><b>17/7/2024 - </b>  La prova in laboratorio del 18/7/2024 verra' svolta secondo la seguente organizzazione:
-<ul>
-        <li> Cognomi A-M - ore 14:30 
-        <li> Cognomi N-Z - ore 17:00 
-</ul>
-
-<p><b>16/7/2024 - </b>  La prova scritta del 17/7/2024 verra' svolta alle ore 16:30 secondo la seguente organizzazione:
-<ul>
-        <li> Cognomi A-G aula C2 
-        <li> Cognomi H-Z aula C4 
-</ul>
-
-
-	    <p><b>27/6/2024 - </b> I risultati dell'appello d'esame (prova pratica) svoltosi il giorno 21/6/2024 sono disponibili a  <a href="./RESULTS/risultati-SO-21-6-2024-prova-pratica.txt">questo link</a>.
-
-	    <p><b>25/6/2024 - </b> I risultati dell'appello d'esame (prova scritta) svoltosi il giorno 19/6/2024 sono disponibili a  <a href="./RESULTS/risultati-SO-19-6-2024.txt">questo link</a>.
-
-	<p><b>20/6/2024 - </b>  La prova in laboratorio del 21/6/2024 verra' svolta alle ore 15:00.
-
-
-<p><b>18/6/2024 - </b>  La prova scritta del 19/6/2024 verra' svolta alle ore 15:30 secondo la seguente organizzazione:
-<ul>
-        <li> Cognomi A-L aula B2 
-        <li> Cognomi M-Z aula B4 
-</ul>
-
-
-
-<p><b>14/6/2024 - </b> Gli esercizi discussi nella esercitazione del 13/6/2024 sono disponibili a <a href="./SLIDES/esercizi.pdf">questo link</a>.
-
-<p><b>6/6/2024 - </b> Il giorno 13/6/2024 alle ore 16:00 verra' svolta in aula A4 una esercitazione inerente domande d'esame.
-
-
-
-<p><b>11/5/2024 - </b> Le assegnazioni delle tesine sono state attivate, seguire <a href="http://www.ce.uniroma2.it/~quaglia/cgi-bin/project-management/register.html">questo link</a> per accedere al sistema di assegnazione delle tesine via Web.
-
-
-	<p><b>4/4/2024 -</b> I primi due appelli d'esame (sessione estiva) si svolgeranno secondo il seguente calendario e le seguenti modalita':
-<ul>
-<li> Primo appello: Prova scritta il giorno 19/6/2024 - Prova di programmazione il giorno 21/6/2024
-<li> Secondo appello: Prova scritta il giorno 17/7/2024 - Prova di programmazione il giorno 18/7/2024 </ul>
-
-
-<p><b>18/3/2024 -</b> Le lezioni del 20 e 21 marzo 2024 non verranno svolte a causa della sospensione della didattica dovuta all'evento RomeCup 2024.
-
-
-<p><b>12/3/2024 -</b> Il giorno 14 marzo 2024 alle ore 14:00 i ragazzi del Roma2LUG svolgeranno per il corso di Sistemi Operativi un seminario inerente Linux, Virtualbox e altri supporti di sistema. Il seminario si terra' in aula B2.
-Il materiale che verra' utilizzato e' disponibile a questo <a href="https://drive.google.com/drive/folders/11LXKfufbVLFRzlVEwg6l09SfOYuoW7Bi">link</a>
-
-
-<p><b>1/3/2024 -</b> Questa pagina e' stata pubblicata 
-
-
-
-
-<hr>
-
-<h3><u>Orario delle lezioni</u></h3>
-<table width="512" border="1">
-  <tr bgcolor="#BFFF00">
-	  <td width="97"><b>Lunedi'</b></td>
-    <td width="57">11:30-13.15</td>
-    <td  width="100">Aula A4 </td>
-  </tr>
-  <tr bgcolor="#BFFF00">
-	  <td width="97"><b>Mercoledi'</b></td>
-    <td width="57">11:30-13.15</td>
-    <td  width="100">Aula A4 </td>
-  </tr>
-  <tr bgcolor="#BFFF00">
-	  <td><b>Giovedi'</b></td>
-    <td width="57">11.30-13.15</td>
-    <td  width="100">Aula A4 </td>
-  </tr>
-</table>
-
-<!--
-
-<h3><u>Tutoraggio</u> (attivo durante il periodo delle lezioni a partire dal 9 Marzo 2022)</h3>
-<table width="512" border="1">
-  <tr bgcolor="#BFFF00">
-    <td width="97">Mercoledi'</td>
-    <td width="57">16:00-18.00</td>
-    <td  width="100">Aula A4 </td>
-  </tr>
-</table>
-<hr>
-
--->
-
-<h3>
-	<blink><u>Obiettivi del corso</u> </blink>
-</h3>
-<p>
-Il corso ha l'obbiettivo di presentare allo studente concetti basici riguardanti la strutturazione dei moderni sistemi operativi, unitamente alle funzionalita' che essi offrono sia all'utenza che agli sviluppatori di applicazioni. 
+    <h3><u>Obiettivi del corso</u></h3>
+    <p>Il corso ha l'obbiettivo di presentare allo studente concetti basici riguardanti la strutturazione dei moderni sistemi operativi, unitamente alle funzionalita' che essi offrono sia all'utenza che agli sviluppatori di applicazioni. 
 Particolare attenzione verra' dedicata ai supporti che i sistemi operativi offrono per lo sviluppo del software in linguaggio C.
-I concetti introdotti verrano calati su due studi di caso, riguardanti la famiglia dei sistemi Unix (Posix) e quella dei sistemi Windows. 
+I concetti introdotti verrano calati su due studi di caso, riguardanti la famiglia dei sistemi Unix (Posix) e quella dei sistemi Windows.</p>
 
-
-<h3>
-	<blink><u>Prerequisiti </u></blink>
-</h3>
-<ul>
-<li> Conoscenza di base del linguaggio C
-<li> Conoscenza di base di tool-chain di compilazione (e.g. gcc) 
-<li> Conoscenza dell'architettura di massima di un sistema di calcolo
-<li> Nozioni di programmazione e strutturazione del software di livello assembler (ASM) 
-</ul>
-<h3>
-	<blink><u>Modalita' d'esame </u></font></blink>
-</h3>
-<p> L'esame richiede il superamento di una prova scritta e di una prova pratica di programmazione in linguaggio C (in tecnologia Posix o Win-API a scelta dello studente) da svolgersi in laboratorio. La prova scritta vale un massimo di 21 punti, con 12 come soglia per la sufficienza. La prova pratica in laboratorio vale un massimo di 11 punti, con 6 come soglia per la sufficienza. Il voto d'esame risultera' pari alla somma dei punteggi conseguiti alle due prove. Per la lode e' richiesto un punteggio complessivo di almeno 31.
-<p> Nel caso in cui lo studente consegua la sufficienza solo ad una delle due prove, nell'ambito dello stesso anno accademico egli sara' esonerato dal dover rieseguire la prova in cui e' risultato gia' sufficiente. Potra' quindi (ri)sostenere la prova (scritta o di programmazione) dove non ha riportato la sufficienza ad un appello successivo dello stesso anno accademico.
-
+    <h3><u>Prerequisiti</u></h3>
+    <ul>
+        <li>Conoscenza di base del linguaggio C</li>
+        <li>Conoscenza di base della tool-chain di compilazione (es. gcc)</li>
+	<li> Conoscenza dell'architettura di massima di un sistema di calcolo
+	<li> Nozioni di programmazione e strutturazione del software di livello assembler (ASM) 
+    </ul>
+    <hr>
+    <h3><u>Modalità d'esame</u></h3>
+	<p> L'esame richiede il superamento di una prova scritta e di una prova pratica di programmazione in linguaggio C (in tecnologia Posix o Win-API a scelta dello studente) da svolgersi in laboratorio. La prova scritta vale un massimo di 21 punti, con 12 come soglia per la sufficienza. La prova pratica in laboratorio vale un massimo di 11 punti, con 6 come soglia per la sufficienza. Il voto d'esame risultera' pari alla somma dei punteggi conseguiti alle due prove. Per la lode e' richiesto un punteggio complessivo di almeno 31.
+	<p> Nel caso in cui lo studente consegua la sufficienza solo ad una delle due prove, nell'ambito dello stesso anno accademico egli sara' esonerato dal dover rieseguire la prova in cui e' risultato gia' sufficiente. Potra' quindi (ri)sostenere la prova (scritta o di programmazione) dove non ha riportato la sufficienza ad un appello successivo dello stesso anno accademico.
 
 <h3>
 	<blink><u>Sviluppo di una tesina (opzionale) </u></font></blink>
@@ -199,17 +130,15 @@ I concetti introdotti verrano calati su due studi di caso, riguardanti la famigl
 </ul>
 <hr>
 <h3>
-	<u>Testi consigliati</u> 
-</h3>
-<ul>
-<li> [T1] Sistemi operativi - Silberschatz Abraham, Galvin Peter Baer, Gagne Greg - Addison Wesley, decima edizione 
-<li> [T2] Operating Systems: Internals and Design Principles - William Stallings - Prentice Hall, fifth edition (o superiori)
-<li> [T3] C/ANSI-C, Principi di Programmazione e Manuale di Riferimento - Brian W.Kernighan, Dennis M.Ritchie - Pearson, Prentice Hall 
-</ul>
 
-<h3>
-	<u>Link utili </u> 
-</h3>
+    <h3><u>Testi consigliati</u></h3>
+    <ul>
+        <li>[T1] Silberschatz et al. - Sistemi Operativi</li>
+        <li>[T2] Stallings - Operating Systems</li>
+        <li>[T3] Kernighan & Ritchie - C/ANSI-C</li>
+    </ul>
+
+    <h3><u>Link utili</u></h3>
 
 <ul>
 <li> <a href="https://www.google.it/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiDvqqJj8vZAhVC6RQKHeJlDN0QFggvMAA&url=https%3A%2F%2Fwww.visualstudio.com%2Fit%2Fvs%2Fvisual-studio-express%2F&usg=AOvVaw1kzM8bYw3XdJkhFqiAvCkM">Link</a> alla pagina dell'ambiente <b>Microsoft Visual Studio</b> (Express Edition - Now Community) per lo sviluppo di applicazioni software in tecnologia C/Windows (Win-API)
@@ -224,11 +153,9 @@ NOTA: per utilizzare correttamente il software di virtualizzazione attivare nel 
 
 </ul>
 
-<hr>
 
-<h3>
-	<u>Programma previsto per l'a.a. 2023-2024 </u><br>
-</h3>
+    <hr>
+	<h3><u>Programma previsto per l'a.a. 2024-2025 </u></h3>
 (<b>NOTA IMPORTANTE:</b>
 <font color="red">per coloro che devono sostenere l'esame da <u>6CFU</u> le parti del programma in rosso sono escluse sia dalla prova scritta che dalla prova di programmazione in laboratorio</font>)
 
@@ -335,7 +262,9 @@ NOTA: per utilizzare correttamente il software di virtualizzazione attivare nel 
 Materiale didattico (NOTA IMPORTANTE: le slides non sono un libro di testo, sono solo il canovaccio per lo svolgimento delle lezioni)
 </h3>
 
-<table width="710" border="1">
+    <div class="table-container">
+	<table>
+
 <tr bgcolor="#00FF40">
 <td> <b>Argomento</b> </td>
 <td> <b>Slides</b> </td>
@@ -348,9 +277,10 @@ Materiale didattico (NOTA IMPORTANTE: le slides non sono un libro di testo, sono
 <td> <b>Introduzione ai sistemi operativi</b> </td>
 <td> <a href="./SLIDES/SO-introduction.pdf">download link</a> </td>
 <td> <a href="./SOFTWARE-EXAMPLES/C-BASICS.tar">download link</a> </td>
-<td> 1/3/2024 </td>
+<td> 26/2/2025 </td>
 </tr>
 
+<!--
 
 <tr bgcolor="#BFFF00">
 <td> <b>Processi e thread</b> </td>
@@ -419,11 +349,10 @@ Materiale didattico (NOTA IMPORTANTE: le slides non sono un libro di testo, sono
 <td> 9/6/2024 </td>
 </tr>
 
-<!--
 -->
-
 </table>
-<p>
+</div>
+
 <hr>
 <h3>
 Esempi di precedenti prove d'esame 
@@ -463,15 +392,9 @@ AA. 2017-2018 (6CFU):
 </ul>
 </ul>
 <hr>
-</font>
+
+
+
 </body>
 </html>
-
-
-
-
-
-
-
-
 
