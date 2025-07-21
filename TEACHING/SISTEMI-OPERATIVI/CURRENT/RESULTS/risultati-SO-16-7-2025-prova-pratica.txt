@@ -61,6 +61,7 @@ Matricola	voto
 342431		7
 351310		5 - non sufficiente
 332149		5 - non sufficiente
+341997		4 - non sufficiente
 		
 324933		6
 	
