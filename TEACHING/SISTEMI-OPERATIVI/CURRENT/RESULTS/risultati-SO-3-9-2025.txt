@@ -17,7 +17,7 @@ Matricola	voto
 339561		19	
 345835		13	
 341512		19	
-322029		10	
+322029		10 - non sufficiente
 339642		20	
 340563		non firmata la delibera
 343176		10 - non sufficiente	
