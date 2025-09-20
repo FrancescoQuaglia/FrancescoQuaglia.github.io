@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advanced Operating Systems (and System Security)</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #FFFFFF;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    h2, h3 {
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .notice {
+      color: red;
+      font-weight: bold;
+      animation: blink 1s step-start infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    hr {
+      border: 1px solid #BFFF00;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #BFFF00;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #BFFF00;
+    }
+
+    @media only screen and (max-width: 600px) {
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      h2, h3 {
+        font-size: 1.2rem;
+      }
+    }
+
+    ul {
+      margin: 20px 0;
+    }
+
+    .important-notice {
+      background-color: #ffcccc;
+      padding: 15px;
+      border-left: 5px solid red;
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Advanced Operating Systems (and System Security) (9 CFU)<br>
+      Academic Year 2024-2025<br>
+      Laurea Magistrale in Computer Engineering<br>
+      University of Rome Tor Vergata</h2>
+
+    <h3>Lecturer: Francesco Quaglia</h3>
+
+    <hr>
+
+    <h2 class="notice">NEW</h2>
+    <h3>
+
+<center>
+<p><b>8/9/2025 -</b> The results of the examination held on 3/9/2025 are available at <a href="./RESULTS/risultati-AOS-3-9-2025.txt">this link</a>
+</center>
+    </h3>
+
+<center>
+<p><b>1/9/2025 -</b> The examination scheduled on 3/9/2025 will be held in Aula A4 at 16:00
+</center>
+
+<center>
+
+<p><b>19/7/2025 -</b> The results of the examination held on 14/7/2025 are available at <a href="./RESULTS/risultati-AOS-14-7-2025.txt">this link</a>
+</center>
+
+
+<center>
+<p><b>12/7/2025 -</b> The examination scheduled on 14/7/2025 will be held in Aula A4 at 14:30
+</center>
+<center>
+<p><b>12/7/2025 -</b> Autumn examinations will be held on September 3 2025 (afternoon) and on September 18 2025 (afternoon)
+</center>
+
+
+
+
+
+
+ 
+<center>
+<p><b>21/6/2025 -</b> The results of the examination held on 16/6/2025 are available at <a href="./RESULTS/risultati-AOS-16-6-2025.txt">this link</a>
+</center>
+<center>
+<p><b>14/6/2025 -</b> The examination scheduled on 16/6/2025 will be held in Aula B4 at 16:00
+</center>
+<center>
+<p><b>29/4/2025 -</b> Summer examinations will be held on June 16 2025 (afternoon) and on July 14 2025 (afternoon)
+</center>
+<center>
+<p><b>4/3/2025 -</b> The results of the examination held on 27/2/2025 are available at <a href="./RESULTS/risultati-AOS-27-2-2025.txt">this link</a>
+</center>
+
+<center>
+<p><b>25/2/2025 -</b> The examination scheduled on 27/2/2025 will be held in Aula C1 at 16:00
+</center>
+
+<center>
+<p><b>8/1/2025 -</b> The project specification for the academic year 2024/2025 has been posted at <a href="./PROJECTS/project-specification-2024-2025.html">this link</a>
+</center>
+
+<center>
+<p><b>18/12/2024 -</b> The lecture scheduled on 19/12/2024 will start at 3:00 PM
+</center>
+
+<center>
+<p><b>17/12/2024 -</b> The project specification for the academic year 2024/2025 will be discussed on 9/1/2025 (at 14:30 in Room B5) 
+</center>
+
+<center>
+<p><b>11/12/2024 -</b> Students are invited to participate in the cyberchallenge 2025, information for which can be found at <a href="https://cyberchallenge.it/">this link</a> 
+</center>
+
+<center>
+<p><b>11/12/2024 -</b> The lecture scheduled on 12/12/2024 has been cancelled
+</center>
+
+
+
+
+
+
+<center>
+<p><b>21/11/2024 -</b> A homework suggestion deadling with the implementation of a blocking queuing service for thread management has been posted at <a href="./HOMEWORK/homework-2024-2025.html#QUEUING">this link</a>
+</center>
+
+<center><p><b>28/10/2024 -</b> Winter examinations will be held on January 23 2025 (afternoon) and on February 27 2025 (afternoon)
+</center>
+
+<center>
+<p><b>16/10/2024 -</b> A homework suggestion deadling with an alternative TLS implementation has been posted at <a href="./HOMEWORK/homework-2024-2025.html#TLS">this link</a>.
+</center>
+
+<center>
+    <b>13/10/2024 -</b> The kernel level stuff used for the demos on Meltdown and Spectre is available at <a href="./STUFF/kernel-stuff.tar">this link</a>.
+</center>
+
+<center>
+    <b>9/10/2024 -</b> The lecture scheduled on 10/10/2024 will start at 14:30 (rather than 14:00).
+</center>
+<center>
+    <b>20/9/2024 -</b> This site has been made up and running.
+</center>
+
+    <hr>
+
+    <h3>Lecture Schedule (starting on 23/9/2024)</h3>
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Room</th>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td>11:30-13:15</td>
+        <td>Room B13</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>11:30-13:15</td>
+        <td>Room B13</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>14:00-15:45</td>
+        <td>Room B5</td>
+      </tr>
+    </table>
+
+    <hr>
+
+    <h3>Course Objectives</h3>
+    <p>The 'Advanced Operating Systems and System Security' course aims at presenting advanced design/implementation methods and techniques for modern operating systems. It will also provide insights on actual hardware operations in modern
+      processors (including implicit and explicit parallelism) and how these impact software design approaches.
+    </p>
+    <p>The topics dealt with by the course are bound to case studies oriented to Linux systems and x86 compliant processors. A strong focus on system-level security aspects will be made, which will include the analysis of the correlation between hardware and software as well as advanced methods and techniques for system security. The course requires basic knowledge on the structure and functionalities of operating systems, and knowledge on C/ASM programming.</p>
+
+    <p><b><u>NOTE: Why Linux? Why x86?</u></b></p>
+    <ul>
+      <li>Linux is a fully open OS</li>
+      <li>Linux is the dominating OS for public internet servers (it handles over twice the number of Windows servers)</li>
+      <li>Linux fully dominates the supercomputing field (nowadays 100% of the TOP500 systems run this OS)</li>
+      <li>x86 processors dominate workstation and cloud-computing systems, as well as personal computers and laptops</li>
+    </ul>
+
+    <p>The lecture flow will be based on presenting concepts in combination with software/running examples. Both the slides and the software examples will be made available while delivering the course, clearly in advance to discussing them at any lecture. The slides as well as the software examples can be accessed and downloaded from links posted in a bottom section of this web page.</p>
+
+    <hr>
+
+    <h3>Examination Rules</h3>
+    <p>The examination consists of a written test (where a set of questions will be proposed) and additionally requires the development of software sub-systems (a project) to be embedded within the Linux kernel, whose specification for the academic year 2024/2025 will be posted during the course delivery. Projects are individual and each student is supposed to finalize both parts of the examination within the same academic year. The delivery of the software project does not need to coincide with the scheduled examination dates. Rather, students can deliver their projects at any student reception (see <a href="../../../teaching.html">this link</a>).</p>
+    
+    <p>As for the evaluation, the first part (questions and answers) accounts for <b>18 points</b>, while the project accounts for <b>12 points</b>. In any case, both parts of the examination have thresholds for their acceptance. The thresholds are the following ones: 11 points for the first part and 7 for the project. In the event of an exceptionally well-done project and/or exceptionally well-replied questions, a student who accumulates 30 points can be awarded with 'laude'.</p>
+
+    <hr>
+
+    <h3>References</h3>
+    <ul>
+      <li>William Stallings, "Operating Systems". Jackson Libri.</li>
+      <li>Abraham Silberschatz, Peter B. Galvin, "Operating Systems". Addison - Wesley</li>
+      <li>Andrew S. Tanenbaum, "Modern Operating Systems". Jackson Libri.</li>
+    </ul>
+
+    <hr>
+
+    <h3>Useful Links (permanently ongoing)</h3>
+    <ul>
+      <li><a href="https://software.intel.com/en-us/articles/intel-sdm">x86 documentation</a></li>
+      <li><a href="http://www.kernel.org/">LINUX kernel source code</a></li>
+      <li><a href="https://elixir.bootlin.com/linux/latest/source">LINUX kernel source code (cross-referencing)</a></li>
+      <li><a href="http://www.xml.com/ldd/chapter/book/">LINUX device drivers</a></li>
+      <li><a href="http://en.tldp.org/LDP/tlk/tlk.html">LINUX internals</a></li>
+      <li><a href="http://lxr.linux.no/">Cross-Referencing Linux</a></li>
+      <li><a href="https://www.kernel.org/doc/gorman/pdf/understand.pdf">Understanding The Linux Virtual Memory Manager</a></li>
+    </ul>
+
+    <hr>
+
+    <div class="important-notice">
+      <h3>IMPORTANT NOTICE</h3>
+      <p>Even though the above references and links are provided, I must alert students that no unique hand-book can fully cover the presented topics (and/or the way of presenting them). Hope this will be an added value to the course, rather than a limitation. Please come to any available student reception as soon as any doubt, or the need for whatever clarification, arises.</p>
+    </div>
+
+    <hr>
+
+    <h3>List of Planned Topics (2024-2025) - To be presented in interleaved manner</h3>
+    <ul>
+      <li><u>Hardware insights</u>
+        <ul>
+          <li>Pipelining and superscalar processors</li>
+          <li>Speculative hardware</li>
+          <li>Multi-processors and multi-cores</li>
+          <li>Physical memory organization</li>
+          <li>Memory coherency and consistency</li>
+          <li>Hardware synchronization support</li>
+          <li>Advanced interrupt architectures</li>
+        </ul>
+      </li>
+      <li><u>Kernel Internals</u>
+        <ul>
+	 <li> Addressing and software protection models
+	 <li> Kernel access GATEs
+	 <li> System calls dispatching
+	<li> Memory management
+	<li> Advanced management of interrupts
+	<li> System (kernel) scalability
+	<li> Virtual file system structures
+	<li> Software interactions with the memory hierarchy
+	<li>Linearizability and advanced thread coordination approaches
+        </ul>
+      </li>
+
+      <li><u>Security</u>
+        <ul>
+	<li>Attacks at the border between hardware and software (e.g., Meltdown, Spectre, L1TF) and countermeasures
+	<li>System internal attacks and countermeasures
+	<li>Capabilities, protection domains and secure operating systems
+<li>IDS and Reference Monitor architectures
+        </ul>
+      </li>
+
+      <li><u>Case studies: Linux kernel - x86 architectures</u>
+        <ul>
+	<li> Boot basics
+	<li> Main data structures and initialization
+	<li> System call mechanisms
+	<li> Steady state behavior
+	<li> Kernel hacking
+	<li> Modules
+        </ul>
+      </li>
+    </ul>
+    <hr>
+
+    <h3>Slides and Software</h3>
+    <table>
+      <tr>
+        <th>Topic</th>
+        <th>Slides</th>
+        <th>Software Examples</th>
+        <th>Latest Update</th>
+      </tr>
+
+      <tr>
+        <td>Hardware insights</td>
+        <td><a href="./SLIDES/hardware-insights.pdf">Download</a></td>
+        <td><a href="./SOFTWARE/HARDWARE-INSIGHTS.tar">Download</a></td>
+        <td>24/9/2024</td>
+      </tr>
+
+
+
+      <tr>
+	<td> Kernel programming basics </td>
+	<td> <a href="./SLIDES/kernel-programming-basics.pdf">Download</a> </td>
+	<td> <a href="./SOFTWARE/KERNEL-PROGRAMMING-BASICS.tar">Download</a> </td>
+	<td>  13/10/2024 </td>
+	</tr>
+
+
+<tr bgcolor="#BFFF00">
+<td> Kernel level memory management </td>
+<td> <a href="./SLIDES/kernel-level-memory-management.pdf">Download</a> </td>
+<td> <a href="./SOFTWARE/KERNEL-LEVEL-MEMORY-MANAGEMENT.tar">Download</a> </td>
+<td> 27/10/2024 </td>
+</tr>
+
+
+<tr bgcolor="#BFFF00">
+<td> Cross ring data move </td>
+<td> <a href="./SLIDES/cross-ring-data-move.pdf">Download</a> </td>
+<td> <a href="./SOFTWARE/CROSS-RING-DATA-MOVE.tar">Download</a> </td>
+<td> 5/11/2024 </td>
+</tr>
+
+
+<tr bgcolor="#BFFF00">
+<td> Linux modules </td>
+<td> <a href="./SLIDES/linux-modules.pdf">Download</a> </td>
+<td> <a href="./SOFTWARE/LINUX-MODULES.tar">Download</a> </td>
+<td> 10/11/2024 </td>
+</tr>
+
+
+<tr bgcolor="#BFFF00">
+<td> Kernel level task management </td>
+<td> <a href="./SLIDES/kernel-level-task-management.pdf">Download</a> </td>
+<td> <a href="./SOFTWARE/KERNEL-LEVEL-TASK-MANAGEMENT.tar">Download</a> </td>
+<td> 17/11/2024</td>
+</tr>
+
+
+<tr bgcolor="#BFFF00">
+<td> Trap/interrupt architecture </td>
+<td> <a href="./SLIDES/trap-interrupt-architecture.pdf">Download</a> </td>
+<td> <a href="./SOFTWARE/TRAP-INTERRUPT-ARCHITECTURE.tar">Download</a> </td>
+<td> 1/12/2024 </td>
+</tr>
+
+
+<tr bgcolor="#BFFF00">
+<td> Virtual file system </td>
+<td> <a href="./SLIDES/virtual-file-system.pdf">Download</a> </td>
+<td> <a href="./SOFTWARE/VIRTUAL-FILE-SYSTEM.tar">Download</a> </td>
+<td> 9/12/2024 </td>
+</tr>
+
+
+<tr bgcolor="#BFFF00">
+<td> Software security </td>
+<td> <a href="./SLIDES/system-software-security.pdf">Download</a> </td>
+<td> <a href="./SOFTWARE/SOFTWARE-SECURITY.tar">Download</a> </td>
+<td> 17/12/2024 </td>
+</tr>
+
+<!--
+-->
+
+
+    </table>
+
+    <hr>
+
+    <h3>Examples of Previous Examinations</h3>
+    <ul>
+      <li><a href="./EXAMINATIONS/scritto-21-2-2022.pdf">21-2-2022</a></li>
+      <li><a href="./EXAMINATIONS/scritto-6-9-2021.pdf">6-9-2021</a></li>
+      <li><a href="./EXAMINATIONS/scritto-12-4-2021.pdf">12-4-2021</a></li>
+      <li><a href="./EXAMINATIONS/scritto-2-3-2021.pdf">2-3-2021</a></li>
+    </ul>
+
+  </div>
+</body>
+</html>
+
