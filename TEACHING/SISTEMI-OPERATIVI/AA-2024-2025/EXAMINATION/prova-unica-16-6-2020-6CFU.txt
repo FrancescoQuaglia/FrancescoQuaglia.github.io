@@ -1,0 +1,38 @@
+
+I seguenti 3 quesiti sono stati presentati alla prova unica di Sistemi Operativi 6CFU svoltasi in via telematica
+a causa dell'emergenza COVID-19
+
+DOMANDA 1
+Descrivere lo schema di gestione della memoria basato su paginazione. Inoltre, per il caso di 
+memoria virtuale basata su paginazione a 2 livelli, in cui ciascuna tabella delle pagine a 
+qualsiasi livello sia costituita da 512 elementi, si determini: 1) per indirizzi logici 
+a 40 bit la struttura dell'indirizzo e l'utilizzo dei bit nel suddetto schema di paginazione;
+2) il numero massimo delle pagine fisiche (frame) di memoria impegnate da un processo nel 
+caso in cui il numero delle tabelle a qualsiasi livello correntemente usate per quel processo 
+in suddetto schema di paginazione sia pari a 10.
+
+
+DOMANDA 2
+Si consideri un insieme di 3 processi {LETT, PROD1, PROD2}. LETT accede periodicamente ad un segmento di 
+memoria condivisa M fatto di due slot (M[1] ed M[2]) per leggerne il contenuto. PROD1 e PROD2 aggiornano 
+periodicamente il contenuto della memora condivisa secondo il seguente schema: PROD1 aggiorna M[1] mentre 
+PROD2 aggiorna M[2]. Lettura ed aggiornamento devono avvenire in mutua esclusione. L'aggiornamento di entrambi
+gli slot M[1] ed M[2] deve figurare come se fosse un’azione atomica, ovvero LETT non può leggere il contenuto 
+della memoria condivisa M nel caso in cui sia stato aggiornato solo uno dei due slot. Inoltre, la lettura 
+del contenuto della memoria condivisa da parte di LETT non deve essere impedita nel caso in cui solo uno 
+tra i due processi PROD1 e PROD2 sia pronto per l'aggiornamento.
+Si risolva tale problema di sincronizzazione, utilizzando solo semafori, fornendo 
+lo pseudo-codice delle procedure: AGGIORNA (usata da PROD1 e PROD2) e LEGGI (usata da LETT).
+
+
+DOMANDA 3
+Si scriva il codice di una funzione C (Posix oppure WinAPI a scelta dello studente) con la seguente 
+interfaccia "void tunnel(int/handle descriptors[], int count)" tale che, se eseguita, porti l'applicazione
+a gestire, per ogni file-descriptor (o hanlde) dell'array "descriptors[]" l'inoltro del flusso  dei dati 
+in ingresso sul quel canale verso il canale standard-output dell'applicazione. Il parametro "count" indica
+di quanti elementi e' costituito l'array "descriptors[]". Tale inoltro dovra' essere attuato in modo
+concorrente per i diversi canali. 
+La funzione "tunnel" dovra' anche attivare un gestore del segnale Posix SIGINT 
+(o dell'evento CTRL_C_EVENT nel caso WinAPI) che dovra', se eseguito chiudere tutti i canali associati
+agli elementi dell'array "descriptors[]" portando al completamento delle operazioni di inoltro dei dati. 
+E' compito dello studente scrivere anche il codice C del gestore.

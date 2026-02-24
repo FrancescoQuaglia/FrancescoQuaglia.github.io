@@ -1,0 +1,98 @@
+
+Gli esami di Sistemi Operativi del 20 e 22 luglio 2020 verranno svolti utilizzando google-meet, oltre che il sistema d'esame remoto accessibile via web la cui demo e' gia' stata resa disponibile tramite il sito del corso. Tale sistema sara' accessibile tramite un link che verra' comunicato in sede d'esame.
+
+Le sottostanti tabelle indicano per ogni studente (identificato tramite matricola) quale link di google-meet debba essere utilizzato, ed a quale orario.
+
+Si ricorda che quando si accede alla teleconferenza la telecamera ed il microfono del laptop dovranno sempre rimarere attivi (e non potranno essere utilizzate cuffie auricolari), inoltre lo studente condividera' il suo schermo interamente con il docente. 
+
+Ogni studente e' pregato di verificare in anticipo che il proprio laptop/browser supporti connessioni google-meet che soddisfino i suddetti requisiti (altrimenti la prova d'esame non potra' essere svolta). Inoltre ogni studente dovra' avere a disposizione il proprio documento di identita' da esibire al momento dell'inizio della teleconferenza relativa alla sua prova d'esame.
+
+Quando si accede alla teleconferenza e' necessario identificarsi con cognome, nome e numero di matricola.
+
+
+Schedule delle teleconferenze:
+
+20 Luglio 2020 ore 10:00
+
+Matricola	Link
+201149		meet.google.com/wip-fhek-obd 
+204883		meet.google.com/ouy-jopv-kqe 
+205796		meet.google.com/ent-feyi-adx 
+215609		meet.google.com/hwm-rtnw-opm 
+217438		meet.google.com/ohq-mrpa-dti 
+227617		meet.google.com/prr-bfpv-mob 
+228618		meet.google.com/bmg-sftf-qmd 
+229655		meet.google.com/noy-zaqk-cdu
+231821		meet.google.com/biz-akam-oae
+233634		meet.google.com/emj-wwke-kqq
+239156		meet.google.com/hba-yrbc-jds
+239470		meet.google.com/swb-vacq-cjb
+240148		meet.google.com/stt-faoc-zdp
+240321		meet.google.com/nmx-xebf-cvc
+240524		meet.google.com/vnz-nycs-kok
+
+
+
+20 Luglio 2020 ore 12:00
+
+Matricola 	Link
+240579		meet.google.com/wip-fhek-obd 
+240581		meet.google.com/ouy-jopv-kqe 
+240663		meet.google.com/ent-feyi-adx 
+240675		meet.google.com/hwm-rtnw-opm 
+241098		meet.google.com/ohq-mrpa-dti 
+241186		meet.google.com/prr-bfpv-mob 
+241424		meet.google.com/bmg-sftf-qmd 
+241870		meet.google.com/noy-zaqk-cdu
+244291		meet.google.com/biz-akam-oae
+252956		meet.google.com/emj-wwke-kqq
+253571		meet.google.com/hba-yrbc-jds
+254002		meet.google.com/swb-vacq-cjb
+258005		meet.google.com/stt-faoc-zdp
+258245		meet.google.com/nmx-xebf-cvc
+272280		meet.google.com/vnz-nycs-kok
+
+
+
+22 Luglio 2020 ore 10:00
+
+Matricola 	Link
+240885		meet.google.com/wip-fhek-obd 
+252289		meet.google.com/ouy-jopv-kqe 
+256508		meet.google.com/ent-feyi-adx 
+266403		meet.google.com/hwm-rtnw-opm 
+266404		meet.google.com/ohq-mrpa-dti
+266728		meet.google.com/biz-akam-oae
+266759		meet.google.com/emj-wwke-kqq
+267157		meet.google.com/hba-yrbc-jds
+267412		meet.google.com/swb-vacq-cjb
+267670		meet.google.com/stt-faoc-zdp
+
+
+
+22 Luglio 2020 ore 12:00
+
+Matricola 	Link
+267878		meet.google.com/wip-fhek-obd 
+268014		meet.google.com/ouy-jopv-kqe 
+268431		meet.google.com/ent-feyi-adx 
+268603		meet.google.com/hwm-rtnw-opm 
+269426		meet.google.com/ohq-mrpa-dti
+270126		meet.google.com/biz-akam-oae
+270289		meet.google.com/emj-wwke-kqq
+270988		meet.google.com/hba-yrbc-jds
+271472		meet.google.com/swb-vacq-cjb
+271775		meet.google.com/stt-faoc-zdp
+
+
+
+22 Luglio 2020 ore 15:00
+
+Matricola 	Link
+217407		meet.google.com/wip-fhek-obd 
+230137		meet.google.com/ouy-jopv-kqe 
+232033		meet.google.com/ent-feyi-adx 
+250474		meet.google.com/hwm-rtnw-opm
+266938		meet.google.com/ohq-mrpa-dti
+
+

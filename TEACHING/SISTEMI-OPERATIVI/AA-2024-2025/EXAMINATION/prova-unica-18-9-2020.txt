@@ -1,0 +1,41 @@
+
+I seguenti 3 quesiti sono stati presentati alla prova unica di Sistemi Operativi 6/9CFU svoltasi 
+in via telematica a causa dell'emergenza COVID-19
+
+
+DOMANDA 1
+Descrivere gli obiettivi e le caratteristiche delle tecniche di gestione del "resident-set" nei sistemi 
+operativi basati su memoria virtuale. Descrivere inoltre l'algoritmo dell'orologio per la sostituzione delle
+pagine.
+
+DOMANDA 2
+Sia dato un insieme processi (P1, ... , Pn) con n=16. Ogni processo Pi deposita 
+periodicamente un nuovo messaggio sull'i-esimo slot di una memoria condivisa M di n slot. 
+Un ulteriore processo LETT legge i messaggi accedendo ad M secondo 
+la regola del buffer circolare. Ogni 4 nuovi messaggi letti, LETT inserisce una 
+risposta in un ulteriore buffer di memoria condivisa R a slot singolo,
+destinata a tutti i processi Pi scrittori dei 4 messaggi 
+appena letti da LETT. Pi rimane in attesa della risposta al suo messaggio dopo averlo inserito 
+nell’apposito slot di M. LETT deve entrare in stato di attesa nel caso in cui lo slot della 
+memoria condivisa correntemente di interesse non contiene 
+alcun nuovo messaggio, oppure quando il buffer R contiene una risposta non ancora letta dal 
+relativo destinatario.  Si risolva tale problema di 
+sincronizzazione, usando solo semafori, fornendo lo pseudo-codice delle procedure 
+LEGGI e PRODUCI usate rispettivamente da LETT e Pi.
+
+DOMANDA 3
+Si scriva il codice di una funzione C (Posix o WinAPI a scelta) con la seguente 
+interfaccia "void file_check(char *files[], char ** the_string)" dove ogni stringa  
+puntata dagli elemeni dell'array null-terminated "files[]"  
+rappresenta un file-name. 
+La funzione "file_check" dovra' attivare un gestore del segnale Posix SIGINT 
+(o dell'evento CTRL_C_EVENT nel caso WinAPI) che dovra', per ogni file identificato tramite
+files[], eseguire il conteggio di quante volte quel file contiene la stringa identificata 
+tramite il puntatore di puntatore a carattere "the_string" passato come secondo parametro 
+alla funzione file_check. Tale controllo dovra' essere eseguito sui diversi
+file in concorrenza, ed in modo atomico rispetto all'arrivo di altre segnalazioni.
+Una volta controllati tutti i files, il gestore della segnalazione dovra' riportare su standard output
+il nome di ogni file controllato ed il relativo numero di occorrenze della stringa.
+
+
+

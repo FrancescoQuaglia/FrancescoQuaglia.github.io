@@ -1,0 +1,33 @@
+
+I seguenti 3 quesiti sono stati presentati alla prova unica di Sistemi Operativi 6/9CFU svoltasi 
+in via telematica a causa dell'emergenza COVID-19
+
+
+DOMANDA 1
+Descrivere le caratteristiche salienti di un file system UNIX, indicando anche i relativi 
+aspetti di sicurezza.
+
+DOMANDA 2
+Si consideri un insieme di processi (P1 .. PN) e un ulteriore processo PROC. Si consideri inoltre
+una memoria condivisa M. Il processo PROC scrive periodicamente un nuovo messaggio su M, che 
+deve essere letto da N/2 tra i processi Pi. Data una coppia di messaggi successivi m e m' scritti 
+da PROC, m' non puo' essere letto da un processo Pi se questo processo aveva letto il messaggio m. 
+Inoltre PROC non puo' depositare su M un nuovo messaggio se l'ultimo messaggio da lui depositato 
+non sia stato gia' letto da N/2 tra i processi Pi. Si fornisca la soluzione di tale problema di 
+sincronizzazione, utilizzando solo semafori, fornendo lo pseudocodice delle procedure SCRIVI e 
+LEGGI usate, rispettivamente, da PROC e dai processi Pi.
+
+DOMANDA 3
+Si scriva il codice di una funzione C (Posix o WinAPI a scelta) con la seguente 
+interfaccia "void file_shuffle(char *files[])" dove ogni stringa  
+puntata dagli elemeni dell'array null-terminated "files[]"  
+rappresenta un file-name. Per ciascuno di questi file, dovra' essere attuata 
+l'inversione dei byte (l'ultimo byte deve diventare il primo, il penultimo
+deve diventare il secondo e cosi' via). Le operazioni di inversione dei byte sui 
+diversi file dovranno avvenire in modo concorrente.
+La funzione "file_shuffle" dovra' anche attivare un gestore del segnale Posix SIGINT 
+(o dell'evento CTRL_C_EVENT nel caso WinAPI) che dovra', se eseguito, stampare a terminale 
+per ogni file il numero di byte che sono gia' stati invertiti.
+La funzione "file_shuffle" potra' ritornare il controllo anche prima  che tutti i file i cui 
+nomi sono indicati tramite l'array "files[]" siano stati invertiti.
+

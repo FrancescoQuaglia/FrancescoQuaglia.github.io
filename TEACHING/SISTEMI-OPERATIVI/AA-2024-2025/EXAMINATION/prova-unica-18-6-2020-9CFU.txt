@@ -1,0 +1,30 @@
+
+I seguenti 3 quesiti sono stati presentati alla prova unica di Sistemi Operativi 9CFU svoltasi in via telematica
+a causa dell'emergenza COVID-19
+
+DOMANDA 1
+Descrivere l'algoritmo di di scheduling di CPU Round-Robin (RR), discutendo l’impatto della scelta del time-slice 
+sul comportamento dei processi I/O bound. Si consideri inoltre il caso in cui vengono attivati allo stesso istante 
+temporale 5 processi P1, ... , P5. P1 e' un processo I/O bound che interagisce con un dispositivo 
+D per N=10 volte e poi termina (il processo termina non appena l’ultima interazione e' completata). 
+Tutti gli altri processi sono CPU bound di durata infinita. Supponendo che (1) la lunghezza di ogni CPU burst di 
+P1 prima di una nuova richiesta di I/O sia nota a priori e pari a 5 ms., (2)  il dispositivo D impieghi 9 ms. per 
+ogni interazione, (3) il tempo di CPU per il dispatcher RR sia nullo, si determini (motivando la risposta) quale tra i seguenti 
+valori del time-slice minimizza il tempo di attesa di P1 in caso di dispatching RR:  2 ms., 6 ms., 18 ms. 
+Si calcoli inoltre il tempo di attesa almeno nel caso del time-slice che minimizza tale tempo.
+
+
+DOMANDA 2
+Descrivere i possibili metodi di indirizzamento nella tecnica di comunicazione basata su scambio di messaggi. 
+Indicare inoltre che tipologia di indirizzamento viene utilizzata sui sistemi UNIX e Windows.
+
+
+DOMANDA 3
+Scrivere una funzione in linguaggio C (Posix o WinAPI a scelta dello studente)  
+con la seguente interfaccia "void channels(int descriptors[])" tale che, ricevendo in input l'array null-terminated 
+di file descriptors "descriptors[]" crei, per ogni elemento non nullo dell'array, una nuova pipe ed un thread
+che riversi lo stream associato all'elemento dell'array sul canale di scrittura della pipe. 
+Inoltre, la funzione "int channels(int  descriptors[])" dovra' attivare la gestione del segnale SIGINT nel caso 
+Posix (oppure dell'evento CTRL_C_EVENT nel caso WinAPI) in modo tale che il gestore del segnale esegua la lettura 
+di tutti gli stream associati alle pipe e riversi il contenuto sullo standard output. 
+E' compito dello studente produrre anche il codice C del gestore.

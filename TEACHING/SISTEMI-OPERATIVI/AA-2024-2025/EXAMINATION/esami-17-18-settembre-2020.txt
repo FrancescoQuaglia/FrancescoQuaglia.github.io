@@ -1,0 +1,87 @@
+
+Gli esami di Sistemi Operativi del 17 e 18 settembre 2020 verranno svolti utilizzando google-meet, oltre che il sistema d'esame remoto accessibile via web la cui demo e' gia' stata resa disponibile tramite il sito del corso. Tale sistema sara' accessibile tramite un link che verra' comunicato in sede d'esame.
+
+Le sottostanti tabelle indicano per ogni studente (identificato tramite matricola) quale link di google-meet debba essere utilizzato, ed a quale orario.
+
+Si ricorda che quando si accede alla teleconferenza la telecamera ed il microfono del laptop dovranno sempre rimarere attivi (e non potranno essere utilizzate cuffie auricolari), inoltre lo studente condividera' il suo schermo interamente con il docente. 
+
+Ogni studente e' pregato di verificare in anticipo che il proprio laptop/browser supporti connessioni google-meet che soddisfino i suddetti requisiti (altrimenti la prova d'esame non potra' essere svolta). Inoltre ogni studente dovra' avere a disposizione il proprio documento di identita' da esibire al momento dell'inizio della teleconferenza relativa alla sua prova d'esame.
+
+Quando si accede alla teleconferenza e' necessario identificarsi con cognome, nome e numero di matricola.
+
+
+Schedule delle teleconferenze:
+
+17 Settembre 2020 ore 10:00
+
+Matricola	Link
+
+177424		meet.google.com/dbn-wqeb-euf 
+192449		meet.google.com/qvv-kvnh-rjz 
+201149		meet.google.com/zjp-dwcx-osy 
+201774		meet.google.com/kqs-bhkj-sgn 
+205796		meet.google.com/ure-wwew-xyz 
+217438		meet.google.com/nzu-pcjx-ywk
+
+218660		meet.google.com/sxj-dwsp-vem 
+227803		meet.google.com/daq-qvww-tyx 
+228618		meet.google.com/yix-yrvx-pwo 
+233229		meet.google.com/tjc-bvpu-fii 
+233634		meet.google.com/jqn-zqdj-dou 
+240524		meet.google.com/rpj-utkm-rrh
+
+
+
+17 Settembre 2020 ore 12:00
+
+Matricola	Link
+
+240663		meet.google.com/dbn-wqeb-euf 
+240675		meet.google.com/qvv-kvnh-rjz 
+241186		meet.google.com/zjp-dwcx-osy 
+252792		meet.google.com/kqs-bhkj-sgn 
+253152		meet.google.com/ure-wwew-xyz 
+254002		meet.google.com/nzu-pcjx-ywk
+
+254081		meet.google.com/sxj-dwsp-vem 
+254277		meet.google.com/daq-qvww-tyx 
+258005		meet.google.com/yix-yrvx-pwo 
+258974		meet.google.com/tjc-bvpu-fii 
+259416		meet.google.com/jqn-zqdj-dou 
+
+
+
+18 Settembre 2020 ore 10:00
+
+Matricola	Link
+
+243311		meet.google.com/dbn-wqeb-euf 
+253093		meet.google.com/qvv-kvnh-rjz 
+256253		meet.google.com/zjp-dwcx-osy 
+258206		meet.google.com/kqs-bhkj-sgn 
+266403		meet.google.com/ure-wwew-xyz 
+266404		meet.google.com/nzu-pcjx-ywk
+
+266439		meet.google.com/sxj-dwsp-vem 
+266643		meet.google.com/daq-qvww-tyx 
+266728		meet.google.com/yix-yrvx-pwo 
+267412		meet.google.com/tjc-bvpu-fii 
+267670		meet.google.com/jqn-zqdj-dou 
+267878		meet.google.com/rpj-utkm-rrh
+
+
+
+18 Settembre 2020 ore 12:00
+
+Matricola	Link
+
+268431		meet.google.com/dbn-wqeb-euf 
+268603		meet.google.com/qvv-kvnh-rjz 
+269082		meet.google.com/zjp-dwcx-osy 
+269901		meet.google.com/kqs-bhkj-sgn 
+270126		meet.google.com/ure-wwew-xyz 
+270289		meet.google.com/nzu-pcjx-ywk
+
+270638		meet.google.com/sxj-dwsp-vem 
+270788		meet.google.com/daq-qvww-tyx 
+			
