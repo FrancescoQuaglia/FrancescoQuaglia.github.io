@@ -1,250 +1,137 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistemi Operativi - Università di Roma Tor Vergata</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #FFFFFF;
-            color: #000;
-            margin: 20px;
-            padding: 20px;
-        }
-        h2 {
-            text-align: center;
-        }
-        .avvisi {
-            color: red;
-            font-weight: bold;
-        }
-
-.table-container {
-  padding: 10px;
-  overflow-x: auto;  /* In case the table overflows horizontally */
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistemi Operativi - Università di Roma Tor Vergata</title>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #FFFFFF;
+        color: #000;
+        margin: 20px;
+        padding: 20px;
+    }
+    h2, h3 {
+        text-align: left; /* Titoli allineati a sinistra */
+    }
+	.centered h2,
+	.centered h3 {
+	    text-align: center;
+	}
+    .avvisi {
+        color: red;
+        font-weight: bold;
+    }
+    .table-container {
+        padding: 10px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    table {
+        width: 100%;
+        min-width: 600px;
+        border-collapse: collapse;
+        table-layout: auto;
+    }
+.orario-table {
+    width: 60%;
+    min-width: 0;
+    margin: 0;        /* aligns left */
 }
-
-table {
-  width: 70%;
-  margin: 0 auto;  /* Centers the table horizontally */
-  border-collapse: collapse; /* Ensures table borders are nicely styled */
-  table-layout: fixed; /* Makes sure columns have a uniform width */
-}
-
-td {
-  padding: 10px; /* Adds padding inside table cells */
-  text-align: center; /* Centers text for better alignment */
-  word-wrap: break-word;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2; /* Alternates row background color for better readability */
-}
-
-
-
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-        }
-        th {
-            background-color: #BFFF00;
-        }
-        ul {
-            list-style-type: square;
-        }
-        a {
-            color: blue;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        white-space: nowrap;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    th {
+        background-color: #BFFF00;
+    }
+    @media screen and (max-width: 600px) {
+        body { font-size: 16px; }
+        table, th, td { font-size: 14px; padding: 8px; }
+    }
+    a { color: blue; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: square; padding-left: 20px; }
+</style>
 </head>
 <body>
-<center>
-    <h2>Sistemi Operativi (9 CFU)</h2>
-    <h3>Corso di Laurea in Ingegneria Informatica<br>Università di Roma Tor Vergata<br><b>AA. 2024/2025</b></h3>
-    <h3>Docente: Francesco Quaglia</h3>
-</center>
-    <hr>
 
-    <h3 class="avvisi">AVVISI</h3>
+<hr>
+<div class="centered">
+<h2>Sistemi Operativi (9 CFU)</h2>
+<h3>Corso di Laurea in Ingegneria Informatica<br>Università di Roma Tor Vergata<br><b>AA. 2025/2026</b></h3>
+<h3>Docente: Francesco Quaglia</h3>
+</div>
 
-<p><b>24/2/2026 -</b>  La prova in laboratorio del 26/2/2026 verra' svolta alle ore 15:00 
+<hr>
+<h3 class="avvisi">AVVISI</h3>
+<p><b>27/2/2026 -</b> Questa pagina e' stata pubblicata</p>
 
-<p><b>24/2/2026 -</b> La prova scritta del 25/2/2026 verra' svolta alle ore 11:00 in aula B4 
+<!-- Inserisci qui tutti gli altri avvisi come nel file originale -->
 
-<p>28/1/2026 - I risultati dell'appello d'esame (prova pratica) svoltosi il giorno 22/1/2026 sono disponibili a  <a href="./RESULTS/risultati-SO-22-1-2026-prova-pratica.txt">questo link</a>.
-<p>23/1/2026 - I risultati dell'appello d'esame (prova scritta) svoltosi il giorno 19/1/2026 sono disponibili a  <a href="./RESULTS/risultati-SO-19-1-2026.txt">questo link</a>.
+<hr>
+<h3>Orario delle lezioni</h3>
+<div class="table-container">
+    <table class="orario-table">
+        <tr>
+            <th>Giorno</th>
+            <th>Orario</th>
+            <th>Aula</th>
+        </tr>
+        <tr><td>Lunedì</td><td>11:30 - 13:15</td><td>Aula A4</td></tr>
+        <tr><td>Mercoledì</td><td>11:30 - 13:15</td><td>Aula A4</td></tr>
+        <tr><td>Giovedì</td><td>11:30 - 13:15</td><td>Aula A4</td></tr>
+    </table>
+</div>
 
-<p>21/1/2026 -  La prova in laboratorio del 22/1/2026 verra' svolta alle ore 15:00 
-
-<p>16/1/2026 - La prova scritta del 19/1/2026 verra' svolta alle ore 10:30 in aula C1 
-
-<p>24/11/2025 - I terzi due appelli d'esame (sessione invernale) si svolgeranno secondo il seguente calendario e le seguenti modalita':
-<ul>
-<li> Primo appello: Prova scritta il giorno 19/1/2026 - Prova di programmazione il giorno 22/1/2026
-<li> Secondo appello: Prova scritta il giorno 25/2/2026 - Prova di programmazione il giorno 26/2/2026 </ul>
-
-<p>26/9/2025 - I risultati dell'appello d'esame (prova pratica) svoltosi il giorno 19/9/2025 sono disponibili a  <a href="./RESULTS/risultati-SO-19-9-2025-prova-pratica.txt">questo link</a>.
-
-<p>23/9/2025 - I risultati dell'appello d'esame (prova scritta) svoltosi il giorno 18/9/2025 sono disponibili a  <a href="./RESULTS/risultati-SO-18-9-2025.txt">questo link</a>.
-
-<p>18/9/2025 -  La prova in laboratorio del 19/9/2025 verra' svolta secondo la seguente organizzazione:
-<ul>
-        <li> Cognomi A-P - ore 12:00 
-        <li> Cognomi Q-Z - ore 15:30 
-</ul>
-
-<p>17/9/2025 - La prova scritta del 18/9/2025 verra' svolta alle ore 16:00 in aula C3 
-
-<p>9/9/2025 - I risultati dell'appello d'esame (prova pratica) svoltosi il giorno 5/9/2025 sono disponibili a  <a href="./RESULTS/risultati-SO-5-9-2025-prova-pratica.txt">questo link</a>.
-<p>8/9/2025 - I risultati dell'appello d'esame (prova scritta) svoltosi il giorno 3/9/2025 sono disponibili a  <a href="./RESULTS/risultati-SO-3-9-2025.txt">questo link</a>.
-
-<p>3/9/2025 -   La prova in laboratorio del 5/9/2025 verra' svolta alle ore 11:30
- 
-<p>1/9/2025 - La prova scritta del 3/9/2025 verra' svolta alle ore 16:00 in aula A4 
-
-<p>20/7/2025 - I risultati dell'appello d'esame (prova pratica) svoltosi il giorno 16/7/2025 sono disponibili a  <a href="./RESULTS/risultati-SO-16-7-2025-prova-pratica.txt">questo link</a>.
-
-<p>18/7/2025 - I risultati dell'appello d'esame (prova scritta) svoltosi il giorno 14/7/2025 sono disponibili a  <a href="./RESULTS/risultati-SO-14-7-2025.txt">questo link</a>.
-
-<p>14/6/2025 -  La prova in laboratorio del 16/7/2025 verra' svolta secondo la seguente organizzazione:
-<ul>
-        <li> Cognomi A-H - ore 11:30 
-        <li> Cognomi I-Z - ore 15:00 
-</ul>
-
-<p>12/7/2025 - La prova scritta del 14/7/2025 verra' svolta alle ore 14:30 secondo la seguente organizzazione:
-<ul>
-        <li> Cognomi A-M aula A4 
-        <li> Cognomi N-Z aula A3 
-</ul>
-
-
-       <p>10/7/2025 - I secondi due appelli d'esame (sessione autunnale) si svolgeranno secondo il seguente calendario e le seguenti modalita':
-<ul>
-<li> Primo appello: Prova scritta il giorno 3/9/2025 - Prova di programmazione il giorno 5/9/2025
-<li> Secondo appello: Prova scritta il giorno 18/9/2025 - Prova di programmazione il giorno 19/9/2025 </ul>
-
-
-
-
-<p>20/6/2025 - I risultati dell'appello d'esame (prova pratica) svoltosi il giorno 17/6/2025 sono disponibili a  <a href="./RESULTS/risultati-SO-17-6-2025-prova-pratica.txt">questo link</a>.
-<p>20/6/2025 - I risultati dell'appello d'esame (prova scritta) svoltosi il giorno 16/6/2025 sono disponibili a  <a href="./RESULTS/risultati-SO-16-6-2025.txt">questo link</a>.
-
-
-
-
-<p>15/6/2025 -  La prova in laboratorio del 17/6/2025 verra' svolta secondo la seguente organizzazione:
-<ul>
-        <li> Cognomi A-L - ore 11:30 
-        <li> Cognomi M-Z - ore 15:00 
-</ul>
-
-<p>14/6/2025 -  La prova scritta del 16/6/2025 verra' svolta alle ore 16:00 secondo la seguente organizzazione:
-<ul>
-        <li> Cognomi A-F aula B1 
-        <li> Cognomi G-Z aula B4 
-</ul>
-
-
-
-<p>4/6/2025 - La lezione del 5/6/2025 non avra' luogo, verra' recuperata il giorno 13/6/2025 alle ore 16:00 in Aula A4
-
-
-
-<p>10/5/2025 - Le assegnazioni delle tesine sono state attivate, seguire
- <a href="http://www.ce.uniroma2.it/~quaglia/cgi-bin/project-management/register
-.html">questo link</a> per accedere al sistema di assegnazione delle tesine via 
-Web.
-
-
-
-    <p>17/4/2025 - Le lezioni del 23/4/2025 e 24/4/2025 non verranno svolte.
-
-
-    <p>9/4/2025 - Il tutoraggio previsto per il giorno 14/4/2025 e' cancellato. L'Ing. Pasquale Caporaso recuperera' tale tutoraggio accordandosi con gli studenti.
-
-       <p>12/3/2025 - I primi due appelli d'esame (sessione estiva) si svolgeranno secondo il seguente calendario e le seguenti modalita':
-<ul>
-<li> Primo appello: Prova scritta il giorno 16/6/2025 - Prova di programmazione il giorno 17/6/2025
-<li> Secondo appello: Prova scritta il giorno 14/7/2025 - Prova di programmazione il giorno 16/7/2025 </ul>
-
-
-
-
-    <p>2/3/2025 - Per l'AA 2024/2025 il tutoraggio del corso  verra' svolto dall'Ing. Pasquale Caporaso. Il tutoraggio avra' luogo ogni lunedi alle ore 9:30 in aula A3, a partire da lunedi' 10/3/2025. Per il materiale relativo al tutoraggio ci si puo' riferire a <a href="https://capo80.github.io/"> questo link</a> </p>
-    <p>26/2/2025 - Questa pagina e' stata pubblicata </p>
-    <hr>
-
-    <h3><center><u>Orario delle lezioni</u></center></h3>
-    <div class="table-container">
-        <table width:70%>
-            <tr>
-                <th>Giorno</th>
-                <th>Orario</th>
-                <th>Aula</th>
-            </tr>
-            <tr>
-                <td>Lunedì</td>
-                <td>11:30 - 13:15</td>
-                <td>Aula A4</td>
-            </tr>
-            <tr>
-                <td>Mercoledì</td>
-                <td>11:30 - 13:15</td>
-                <td>Aula A4</td>
-            </tr>
-            <tr>
-                <td>Giovedì</td>
-                <td>11:30 - 13:15</td>
-                <td>Aula A4</td>
-            </tr>
-        </table>
-    </div>
-    <hr>
-
-    <h3><u>Obiettivi del corso</u></h3>
+<hr>
+<h3>Obiettivi del corso</h3>
     <p>Il corso ha l'obbiettivo di presentare allo studente concetti basici riguardanti la strutturazione dei moderni sistemi operativi, unitamente alle funzionalita' che essi offrono sia all'utenza che agli sviluppatori di applicazioni. 
 Particolare attenzione verra' dedicata ai supporti che i sistemi operativi offrono per lo sviluppo del software in linguaggio C.
 I concetti introdotti verrano calati su due studi di caso, riguardanti la famiglia dei sistemi Unix (Posix) e quella dei sistemi Windows.</p>
 
-    <h3><u>Prerequisiti</u></h3>
-    <ul>
-        <li>Conoscenza di base del linguaggio C</li>
-        <li>Conoscenza di base della tool-chain di compilazione (es. gcc)</li>
-	<li> Conoscenza dell'architettura di massima di un sistema di calcolo
-	<li> Nozioni di programmazione e strutturazione del software di livello assembler (ASM) 
-    </ul>
-    <hr>
-    <h3><u>Modalità d'esame</u></h3>
-	<p> L'esame richiede il superamento di una prova scritta e di una prova pratica di programmazione in linguaggio C (in tecnologia Posix o Win-API a scelta dello studente) da svolgersi in laboratorio. La prova scritta vale un massimo di 21 punti, con 12 come soglia per la sufficienza. La prova pratica in laboratorio vale un massimo di 11 punti, con 6 come soglia per la sufficienza. Il voto d'esame risultera' pari alla somma dei punteggi conseguiti alle due prove. Per la lode e' richiesto un punteggio complessivo di almeno 31.
-	<p> Nel caso in cui lo studente consegua la sufficienza solo ad una delle due prove, nell'ambito dello stesso anno accademico egli sara' esonerato dal dover rieseguire la prova in cui e' risultato gia' sufficiente. Potra' quindi (ri)sostenere la prova (scritta o di programmazione) dove non ha riportato la sufficienza ad un appello successivo dello stesso anno accademico.
+<h3>Prerequisiti</h3>
+<ul>
+<li>Conoscenza di base del linguaggio C</li>
+<li>Conoscenza di base della tool-chain di compilazione (es. gcc)</li>
+<li>Conoscenza dell'architettura di massima di un sistema di calcolo</li>
+<li>Nozioni di programmazione e strutturazione del software di livello assembler (ASM)</li>
+</ul>
 
-<h3>
-	<blink><u>Sviluppo di una tesina (opzionale) </u></font></blink>
-</h3>
+<hr>
+<h3>Modalità d'esame</h3>
+
+   <p> L'esame richiede il superamento di una prova scritta e di una prova pratica di programmazione in linguaggio C (in tecnologia Posix o Win-API a scelta dello studente) da svolgersi in laboratorio. La prova scritta vale un massimo di 21 punti, con 12 come soglia per la sufficienza. La prova pratica in laboratorio vale un massimo di 11 punti, con 6 come soglia per la sufficienza. Il voto d'esame risultera' pari alla somma dei punteggi conseguiti alle due prove. Per la lode e' richiesto un punteggio complessivo di almeno 31.
+        <p> Nel caso in cui lo studente consegua la sufficienza solo ad una delle due prove, nell'ambito dello stesso anno accademico egli sara' esonerato dal dover rieseguire la prova in cui e' risultato gia' sufficiente. Potra' quindi (ri)sostenere la prova (scritta o di programmazione) dove non ha riportato la sufficienza ad un appello successivo dello stesso anno accademico.
+
+
+
+<h3>Sviluppo di una tesina (opzionale)</h3>
+
 
 <p> Allo studente e' data la possibilita' di sviluppare una tesina (un progetto) in linguaggio C, da svolgersi individualmente o in gruppo formato da al piu' 2 persone, che vale fino ad un massimo di ulteriori 5 punti, i quali si sommeranno alla valutazione ottenuta come somma dei punteggi della prova scritta e della prova di programmazione in laboratorio. Si potra' usufruire dei punti addizionali dati dalla tesina solo nel caso in cui si sia gia' conseguita una valutazione di almeno 18 alla prova d'esame.
 <b>L'assegnazione della tesina ha validita' per l'anno accademico corrente. La consegna della tesina (se si e' scelto di svilupparla) dovra' quindi avvenire nello stesso anno accademico in cui viene svolta la prova d'esame. Per consegnare la tesina basta richiedere un appuntamento al docente via email.</b>
 <ul>
 <li> Seguire <a href="http://www.ce.uniroma2.it/~quaglia/cgi-bin/project-management/register.html">questo link</a> per accedere al sistema di assegnazione delle tesine via Web.
 </ul>
+
+
 <hr>
-<h3>
+<h3>Testi consigliati</h3>
+<ul>
+<li>[T1] Silberschatz et al. - Sistemi Operativi</li>
+<li>[T2] Stallings - Operating Systems</li>
+<li>[T3] Kernighan & Ritchie - C/ANSI-C</li>
+</ul>
 
-    <h3><u>Testi consigliati</u></h3>
-    <ul>
-        <li>[T1] Silberschatz et al. - Sistemi Operativi</li>
-        <li>[T2] Stallings - Operating Systems</li>
-        <li>[T3] Kernighan & Ritchie - C/ANSI-C</li>
-    </ul>
+<h3>Link utili</h3>
 
-    <h3><u>Link utili</u></h3>
 
 <ul>
 <li> <a href="https://www.google.it/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiDvqqJj8vZAhVC6RQKHeJlDN0QFggvMAA&url=https%3A%2F%2Fwww.visualstudio.com%2Fit%2Fvs%2Fvisual-studio-express%2F&usg=AOvVaw1kzM8bYw3XdJkhFqiAvCkM">Link</a> alla pagina dell'ambiente <b>Microsoft Visual Studio</b> (Express Edition - Now Community) per lo sviluppo di applicazioni software in tecnologia C/Windows (Win-API)
@@ -259,14 +146,13 @@ NOTA: per utilizzare correttamente il software di virtualizzazione attivare nel 
 
 </ul>
 
-
     <hr>
-	<h3><u>Programma previsto per l'a.a. 2024-2025 </u></h3>
+        <h3><u>Programma previsto per l'a.a. 2025-2026 </u></h3>
 (<b>NOTA IMPORTANTE:</b>
 <font color="red">per coloro che devono sostenere l'esame da <u>6CFU</u> le parti del programma in rosso sono escluse sia dalla prova scritta che dalla prova di programmazione in laboratorio</font>)
 
 <ul>
-	<li><u>Introduzione ai sistemi operativi</u>
+        <li><u>Introduzione ai sistemi operativi</u>
 <ul>
  <li> Richiami sull'organizzazione di un sistema di calcolo
  <li> Obiettivi dei sistemi operativi
@@ -314,7 +200,7 @@ NOTA: per utilizzare correttamente il software di virtualizzazione attivare nel 
 <br>
 
 <font color="red">
-	<li><u>Comunicazione</u>
+        <li><u>Comunicazione</u>
 <ul>
  <li> Pipe  
  <li> Pipe con nome 
@@ -350,7 +236,7 @@ NOTA: per utilizzare correttamente il software di virtualizzazione attivare nel 
 <br>
 
 <font color="red">
-	<li> <u>Servizi di sistema per la programmazione di rete</u>
+        <li> <u>Servizi di sistema per la programmazione di rete</u>
 <ul> 
 <li> Stack di protocolli di comunicazione
 <li> Sockets in sistemi UNIX/Windows 
@@ -362,146 +248,96 @@ NOTA: per utilizzare correttamente il software di virtualizzazione attivare nel 
 </ul>
 
 
-
 <hr>
-<h3>
-Materiale didattico (NOTA IMPORTANTE: le slides non sono un libro di testo, sono solo il canovaccio per lo svolgimento delle lezioni)
-</h3>
+<h3>Materiale didattico</h3>
+<p>(NOTA: le slides non sono un libro di testo, sono solo il canovaccio per le lezioni)</p>
 
-    <div class="table-container">
-	<table>
+<p>Cerca argomento: <input id="searchInput" placeholder="Scrivi qui..."></p>
 
-<tr bgcolor="#00FF40">
-<td> <b>Argomento</b> </td>
-<td> <b>Slides</b> </td>
-<td> <b>Esempi Software</b> </td>
-<td> <b>Ultimo Aggiornamento</b> </td>
-</tr>
-
-
-<tr bgcolor="#BFFF00">
-<td> <b>Introduzione ai sistemi operativi</b> </td>
-<td> <a href="./SLIDES/SO-introduction.pdf">download link</a> </td>
-<td> <a href="./SOFTWARE-EXAMPLES/C-BASICS.tar">download link</a> </td>
-<td> 26/2/2025 </td>
-</tr>
-
-
-<tr bgcolor="#BFFF00">
-<td> <b>Processi e thread</b> </td>
-<td> <a href="./SLIDES/SO-processes-and-threads.pdf">download link</a> </td>
-<td> <a href="./SOFTWARE-EXAMPLES/PROCESSES-AND-THREADS.tar">download link</a> </td>
-<td> 19/3/2025 </td>
-</tr>
-
-
-
-<tr bgcolor="#BFFF00">
-<td> <b>Scheduling della CPU</b> </td>
-<td> <a href="./SLIDES/SO-CPU-scheduling.pdf">download link</a> </td>
-<td> <a href="./SOFTWARE-EXAMPLES/CPU-SCHEDULING.tar">download link</a> </td>
-<td> 28/3/2025 </td>
-</tr>
-
-
-<tr bgcolor="#BFFF00">
-<td> <b>Virtual file system</b> </td>
-<td> <a href="./SLIDES/SO-virtual-file-system.pdf">download link</a> </td>
-<td> <a href="./SOFTWARE-EXAMPLES/VIRTUAL-FILE-SYSTEM.tar">download link</a> </td>
-<td> 6/4/2025 </td>
-</tr>
-
-
-<tr bgcolor="#BFFF00">
-<td> <b>Comunicazione</b> </td>
-<td> <a href="./SLIDES/SO-pipes-messages.pdf">download link</a> </td>
-<td> <a href="./SOFTWARE-EXAMPLES/PIPES-MESSAGES.tar">download link</a> </td>
-<td> 7/5/2025 </td>
-</tr>
-
-
-
-<tr bgcolor="#BFFF00">
-<td> <b>Gestione della memoria</b> </td>
-<td> <a href="./SLIDES/SO-memory-management.pdf">download link</a> </td>
-<td> <a href="./SOFTWARE-EXAMPLES/MEMORY-MANAGEMENT.tar">download link</a> </td>
-<td> 8/5/2025 </td>
-</tr>
-
-
-
-<tr bgcolor="#BFFF00">
-<td> <b>Sincronizzazione</b> </td>
-<td> <a href="./SLIDES/SO-synchronization.pdf">download link</a> </td>
-<td> <a href="./SOFTWARE-EXAMPLES/SYNCHRONIZATION.tar">download link</a> </td>
-<td> 29/5/2025 </td>
-</tr>
-
-
-<tr bgcolor="#BFFF00">
-<td> <b>Eventi</b> </td>
-<td> <a href="./SLIDES/SO-events.pdf">download link</a> </td>
-<td> <a href="./SOFTWARE-EXAMPLES/EVENTS-AND-SIGNALS.tar">download link</a> </td>
-<td> 10/6/2025 </td>
-</tr>
-
-
-
-
-<tr bgcolor="#BFFF00">
-<td> <b>Sockets</b> </td>
-<td> <a href="./SLIDES/SO-sockets.pdf">download link</a> </td>
-<td> <a href="./SOFTWARE-EXAMPLES/SOCKETS.tar">download link</a> </td>
-<td> 13/6/2025 </td>
-</tr>
-
-<!--
--->
+<div class="table-container">
+<table id="slidesTable">
+    <thead>
+        <tr>
+            <th>Argomento</th>
+            <th>Slides</th>
+            <th>Esempi Software</th>
+            <th>Ultimo Aggiornamento</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Introduzione ai sistemi operativi</td>
+            <td><a href="./SLIDES/SO-introduction.pdf">download link</a></td>
+            <td><a href="./SOFTWARE-EXAMPLES/C-BASICS.tar">download link</a></td>
+            <td>26/2/2025</td>
+        </tr>
+        <!-- Inserisci tutte le altre righe qui
+        <tr>
+            <td>Processi e thread</td>
+            <td><a href="./SLIDES/SO-processes-and-threads.pdf">download link</a></td>
+            <td><a href="./SOFTWARE-EXAMPLES/PROCESSES-AND-THREADS.tar">download link</a></td>
+            <td>27/2/2026</td>
+        </tr>
+        -->
+    </tbody>
 </table>
 </div>
 
+<script>
+document.getElementById('searchInput').addEventListener('input', function() {
+    const filter = this.value.toLowerCase();
+    const rows = document.querySelectorAll('#slidesTable tbody tr');
+    rows.forEach(row => {
+        const firstCell = row.cells[0].textContent.toLowerCase();
+        if(firstCell.includes(filter)) {
+            row.style.display = '';
+        } else {
+            row.style.display = 'none';
+        }
+    });
+});
+</script>
+
 <hr>
-<h3>
-Esempi di precedenti prove d'esame 
-</h3>
+<h3>Esempi di precedenti prove d'esame</h3>
+
 <ul>
 AA. 2021-2022 (6/9CFU):
 <ul>
-	<li>prove scritte: <a href="./EXAMINATION/scritto-13-6-2022.pdf">13-6-2022</a> - <a href="./EXAMINATION/scritto-18-7-2022.pdf">18-7-2022</a> - <a href="./EXAMINATION/scritto-8-9-2022.pdf">8-9-2022</a> - <a href="./EXAMINATION/scritto-21-9-2022.pdf">22-9-2022</a> - <a href="./EXAMINATION/scritto-26-1-2023.pdf">26-1-2023</a>
+        <li>prove scritte: <a href="./EXAMINATION/scritto-13-6-2022.pdf">13-6-2022</a> - <a href="./EXAMINATION/scritto-18-7-2022.pdf">18-7-2022</a> - <a href="./EXAMINATION/scritto-8-9-2022.pdf">8-9-2022</a> - <a href="./EXAMINATION/scritto-21-9-2022.pdf">22-9-2022</a> - <a href="./EXAMINATION/scritto-26-1-2023.pdf">26-1-2023</a>
 <li>prove di programmazione: <a href="./EXAMINATION/prova-pratica-14-6-2022.tar">14-6-2022</a> - <a href="./EXAMINATION/prova-pratica-20-7-2022.tar">20-7-2022</a> - <a href="./EXAMINATION/prova-pratica-9-9-2022.tar">9-9-2022</a> -  <a href="./EXAMINATION/prova-pratica-23-9-2022.tar">23-9-2022</a> - <a href="./EXAMINATION/prova-pratica-27-1-2023.tar">27-1-2023</a> - <a href="./EXAMINATION/prova-pratica-23-2-2023.tar">23-2-2023</a>
 </ul>
 </ul>
 <ul>
 AA. 2020-2021 (6/9CFU):
 <ul>
-	<li>prove scritte: <a href="./EXAMINATION/scritto-21-6-2021-6CFU.pdf">21-6-2021</a>  - <a href="./EXAMINATION/scritto-21-6-2021-9CFU.pdf">21-6-2021</a>  - <a href="./EXAMINATION/scritto-19-7-2021.pdf">19-7-2021</a> - <a href="./EXAMINATION/scritto-6-9-2021.pdf">6-9-2021</a> - <a href="./EXAMINATION/scritto-16-9-2021.pdf">16-9-2021</a> - <a href="./EXAMINATION/scritto-24-1-2022.pdf">24-1-2022</a>  - <a href="./EXAMINATION/scritto-21-2-2022.pdf">21-2-2022</a> 
+        <li>prove scritte: <a href="./EXAMINATION/scritto-21-6-2021-6CFU.pdf">21-6-2021</a>  - <a href="./EXAMINATION/scritto-21-6-2021-9CFU.pdf">21-6-2021</a>  - <a href="./EXAMINATION/scritto-19-7-2021.pdf">19-7-2021</a> - <a href="./EXAMINATION/scritto-6-9-2021.pdf">6-9-2021</a> - <a href="./EXAMINATION/scritto-16-9-2021.pdf">16-9-2021</a> - <a href="./EXAMINATION/scritto-24-1-2022.pdf">24-1-2022</a>  - <a href="./EXAMINATION/scritto-21-2-2022.pdf">21-2-2022</a> 
 <li>prove di programmazione: <a href="./EXAMINATION/prova-pratica-26-6-2021-6cfu.tar">26-6-2021</a> - <a href="./EXAMINATION/prova-pratica-26-6-2021-9cfu.tar">26-6-2021</a> - <a href="./EXAMINATION/prova-pratica-21-7-2021-6cfu.tar">21-7-2021</a> -  <a href="./EXAMINATION/prova-pratica-21-7-2021-9cfu.tar">21-7-2021</a> - <a href="./EXAMINATION/prova-pratica-7-9-2021.tar">7-9-2021</a> - <a href="./EXAMINATION/prova-pratica-17-9-2021.tar">17-9-2021</a>
 </ul>
 </ul>
 <ul>
 AA. 2019-2020 (6/9CFU):
 <ul>
-	<li>prove uniche: <a href="./EXAMINATION/prova-unica-16-6-2020-6CFU.txt">16-6-2020</a>  - <a href="./EXAMINATION/prova-unica-18-6-2020-9CFU.txt">18-6-2020</a> - <a href="./EXAMINATION/prova-unica-17-9-2020.txt">17-9-2020</a> - <a href="./EXAMINATION/prova-unica-18-9-2020.txt">18-9-2020</a>- <a href="./EXAMINATION/prova-unica-20-1-2021.txt">20-1-2021</a> - <a href="./EXAMINATION/prova-unica-18-2-2021.txt">18-2-2021</a>
+        <li>prove uniche: <a href="./EXAMINATION/prova-unica-16-6-2020-6CFU.txt">16-6-2020</a>  - <a href="./EXAMINATION/prova-unica-18-6-2020-9CFU.txt">18-6-2020</a> - <a href="./EXAMINATION/prova-unica-17-9-2020.txt">17-9-2020</a> - <a href="./EXAMINATION/prova-unica-18-9-2020.txt">18-9-2020</a>- <a href="./EXAMINATION/prova-unica-20-1-2021.txt">20-1-2021</a> - <a href="./EXAMINATION/prova-unica-18-2-2021.txt">18-2-2021</a>
 </ul>
 </ul>
 <ul>
 AA. 2018-2019 (6CFU):
 <ul>
-	<li>prove scritte: <a href="./EXAMINATION/scritto-25-6-2019.pdf">25-6-2019</a>  - <a href="./EXAMINATION/scritto-24-7-2019.pdf">24-7-2019</a> - <a href="./EXAMINATION/scritto-3-9-2019.pdf">3-9-2019</a> - <a href="./EXAMINATION/scritto-16-9-2019.pdf">16-9-2019</a> - <a href="./EXAMINATION/scritto-20-1-2020.pdf">20-1-2020</a> - <a href="./EXAMINATION/scritto-24-2-2020.pdf">24-2-2020 </a> 
+        <li>prove scritte: <a href="./EXAMINATION/scritto-25-6-2019.pdf">25-6-2019</a>  - <a href="./EXAMINATION/scritto-24-7-2019.pdf">24-7-2019</a> - <a href="./EXAMINATION/scritto-3-9-2019.pdf">3-9-2019</a> - <a href="./EXAMINATION/scritto-16-9-2019.pdf">16-9-2019</a> - <a href="./EXAMINATION/scritto-20-1-2020.pdf">20-1-2020</a> - <a href="./EXAMINATION/scritto-24-2-2020.pdf">24-2-2020 </a> 
 <li>prove di programmazione (e soluzioni): <a href="./EXAMINATION/prova-pratica-18-9-2019.tar">18-9-2019</a> - <a href="./EXAMINATION/prova-pratica-17-10-2019.tar">17-10-2019</a> - <a href="./EXAMINATION/prova-pratica-21-1-2020.tar">21-1-2020</a>
 </ul>
 </ul>
 <ul>
 AA. 2017-2018 (6CFU):
 <ul>
-	<li>prove scritte: <a href="./EXAMINATION/scritto-4-6-2018.pdf">4-6-2018</a>  - <a href="./EXAMINATION/scritto-27-6-2018.pdf">27-6-2018</a> -  <a href="./EXAMINATION/scritto-17-7-2018.pdf">17-7-2018</a> - <a href="./EXAMINATION/scritto-7-9-2018.pdf">7-9-2018</a> - <a href="./EXAMINATION/scritto-18-9-2018.pdf">18-9-2018 </a> - <a href="./EXAMINATION/scritto-22-1-2019.pdf">22-1-2019</a> - <a href="./EXAMINATION/scritto-18-2-2019.pdf">18-2-2019</a>
+        <li>prove scritte: <a href="./EXAMINATION/scritto-4-6-2018.pdf">4-6-2018</a>  - <a href="./EXAMINATION/scritto-27-6-2018.pdf">27-6-2018</a> -  <a href="./EXAMINATION/scritto-17-7-2018.pdf">17-7-2018</a> - <a href="./EXAMINATION/scritto-7-9-2018.pdf">7-9-2018</a> - <a href="./EXAMINATION/scritto-18-9-2018.pdf">18-9-2018 </a> - <a href="./EXAMINATION/scritto-22-1-2019.pdf">22-1-2019</a> - <a href="./EXAMINATION/scritto-18-2-2019.pdf">18-2-2019</a>
 <li>prove di programmazione (e soluzioni): <a href="./EXAMINATION/prova-pratica-26-6-2018.tar">26-6-2018</a> - <a href="./EXAMINATION/prova-pratica-18-7-2018.tar">18-7-2018</a> - <a href="./EXAMINATION/prova-pratica-7-9-2018.tar">7-9-2018</a> - <a href="./EXAMINATION/prova-pratica-19-9-2018.tar">19-9-2018</a> - <a href="./EXAMINATION/prova-pratica-23-1-2019.tar">23-1-2019</a>
 </ul>
 </ul>
-<hr>
 
+<hr>
 
 
 </body>
 </html>
-
