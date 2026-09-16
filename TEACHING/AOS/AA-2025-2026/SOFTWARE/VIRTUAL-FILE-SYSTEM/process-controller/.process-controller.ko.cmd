@@ -1,0 +1,1 @@
+savedcmd_process-controller.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /usr/src/linux-headers-6.14.0-37-generic/scripts/module.lds -o process-controller.ko process-controller.o process-controller.mod.o .module-common.o

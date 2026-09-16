@@ -1,0 +1,5 @@
+
+This software presents a running test for the L1TF hardware bug for security.
+
+The Linux module that enables the dev-mem access is supported up to kernel 5.7.
+Substituting the direct usage of kallsyms_lookup_name via its address discovery through kprobes will enable working with more recent kernels.

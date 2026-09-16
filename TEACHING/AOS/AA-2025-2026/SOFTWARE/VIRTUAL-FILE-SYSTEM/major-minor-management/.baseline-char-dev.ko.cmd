@@ -1,0 +1,1 @@
+savedcmd_baseline-char-dev.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /usr/src/linux-headers-6.14.0-37-generic/scripts/module.lds -o baseline-char-dev.ko baseline-char-dev.o baseline-char-dev.mod.o .module-common.o

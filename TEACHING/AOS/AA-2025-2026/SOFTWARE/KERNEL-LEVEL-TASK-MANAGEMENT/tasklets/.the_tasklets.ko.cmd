@@ -1,0 +1,1 @@
+savedcmd_the_tasklets.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /usr/src/linux-headers-6.14.0-35-generic/scripts/module.lds -o the_tasklets.ko the_tasklets.o the_tasklets.mod.o .module-common.o

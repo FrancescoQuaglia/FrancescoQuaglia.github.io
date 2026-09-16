@@ -1,0 +1,3 @@
+/home/francesco/git-web-site/FrancescoQuaglia.github.io/TEACHING/AOS/CURRENT/SOFTWARE/KERNEL-LEVEL-MEMORY-MANAGEMENT/l1tf-attacker/devmem_allow_ko/devmem_allow.ko
+/home/francesco/git-web-site/FrancescoQuaglia.github.io/TEACHING/AOS/CURRENT/SOFTWARE/KERNEL-LEVEL-MEMORY-MANAGEMENT/l1tf-attacker/devmem_allow_ko/devmem_allow.o
+

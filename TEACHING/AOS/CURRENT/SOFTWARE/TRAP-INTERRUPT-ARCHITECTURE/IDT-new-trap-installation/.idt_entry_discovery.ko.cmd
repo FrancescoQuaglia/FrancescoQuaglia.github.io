@@ -1,0 +1,1 @@
+savedcmd_idt_entry_discovery.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /usr/src/linux-headers-6.14.0-36-generic/scripts/module.lds -o idt_entry_discovery.ko idt_entry_discovery.o idt_entry_discovery.mod.o .module-common.o

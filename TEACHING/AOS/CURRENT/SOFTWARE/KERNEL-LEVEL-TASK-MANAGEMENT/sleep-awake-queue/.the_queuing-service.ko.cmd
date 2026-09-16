@@ -1,0 +1,1 @@
+savedcmd_the_queuing-service.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /usr/src/linux-headers-6.14.0-36-generic/scripts/module.lds -o the_queuing-service.ko the_queuing-service.o the_queuing-service.mod.o .module-common.o

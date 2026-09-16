@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advanced Operating Systems (and System Security)</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #FFFFFF;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    h2, h3 {
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .notice {
+      color: red;
+      font-weight: bold;
+      animation: blink 1s step-start infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    hr {
+      border: 1px solid #BFFF00;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #BFFF00;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #BFFF00;
+    }
+
+    @media only screen and (max-width: 600px) {
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      h2, h3 {
+        font-size: 1.2rem;
+      }
+    }
+
+    ul {
+      margin: 20px 0;
+    }
+
+    .important-notice {
+      background-color: #ffcccc;
+      padding: 15px;
+      border-left: 5px solid red;
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Advanced Operating Systems (and System Security) (9 CFU)<br>
+      Academic Year 2025-2026<br>
+      Laurea Magistrale in Computer Engineering<br>
+      University of Rome Tor Vergata</h2>
+
+    <h3>Lecturer: Francesco Quaglia</h3>
+
+    <hr>
+
+<p>The examination requires fulfilling the development of a project in the Linux kernel, which must comply with the following specification. Each student should develop the project individually. 
+
+    <h3>Project specification: syscall throttling</h3>
+
+
+    <p>
+This specification is related to a Linux Kernel Module (LKM) implementing a system call throttling mechanism. 
+The LKM should offer a device driver for supporting the registration/deregistration of:
+
+<ul>
+<li> program names (executable names)
+<li> user IDs
+<li> syscall numbers (according to x86-64 specification)
+</ul>
+
+Such registration can be supported via the <tt>ioctl(...)</tt> system call.
+
+The registered syscall numbers are used to indicate that the corresponding systen calls can be critical for various aspects, like scalability, performance or security. 
+
+<p>Each time one of the registered syscall is invoked by a program that is registered by the device driver or by a user (effective user-ID) that is registered by the device driver, the real execution of the system call needs to be controlled by a <b>monitor</b> offered by the LKM.
+
+<p>In particular, the LKM monitor can be configured to indicate what is the maximum number MAX of registered syscalls that can be actually invoked in a wall-clock-time window of 1 second by the registered program-names/user-IDs.  If the actual volume of invocations per wall-clock-time unit exceeds MAX, then the invoking threads need to be temporarily blocked, thus preventing their actual syscall invocation.
+
+<p> The syscalls managed by the LKM can be of whathever nature. Hence they can be either blocking or non-blocking.
+
+<p>The device driver also needs to offer the possibility to verify at each time instant what are the registered program names, user-IDs and syscall numbers. Also, the update of such information can be only carried out by a thread which is running with effective user-ID set to the value 0 (root).
+
+<p>Also, the device driver needs to support the possibility to turn the syscall monitor off/on along time. If it is turned off, no limit on the frequencey of registered syscalls ivocations per wall-clock-time unit gets applied. Additionally, on the basis of the selected value for MAX, the device driver should also provide data related to:
+
+<ul>
+<li> The peak delay for the actual execution of an invoked system call, and the corresponding program-name and user-ID
+<li> The average and peak numbers of threads that had to be blocked 
+</ul>
+
+<p> It is expected that the user level code for configuring the LKM monitor, and for testing the correct behavior of the developed LKM software is delivered as part of the project.
+
+<h3>Project delivery</h3>
+Projects can be delivered (for analysis and discussion) at any scheduled tutoring slot
+
+
+    <hr>
+
+</body>
+</html>
+
