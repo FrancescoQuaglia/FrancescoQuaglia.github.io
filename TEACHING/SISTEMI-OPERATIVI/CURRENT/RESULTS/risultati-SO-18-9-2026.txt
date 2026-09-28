@@ -14,7 +14,7 @@ Matricola	voto
 343024		10 - non sufficiente
 354944		12
 323166		14
-355263		10 - non sufficiente
+355263		12
 294919		14
 343839		14
 324696		15
